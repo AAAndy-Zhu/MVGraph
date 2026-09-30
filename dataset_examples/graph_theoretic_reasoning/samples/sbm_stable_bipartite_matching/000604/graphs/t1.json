@@ -1,0 +1,279 @@
+{
+  "graph_id": "t1",
+  "title": "t1",
+  "nodes": [
+    "E11",
+    "E16",
+    "E22",
+    "E28",
+    "E30",
+    "E35",
+    "E37",
+    "E39",
+    "E55",
+    "E65",
+    "E66",
+    "E70",
+    "E71",
+    "E75",
+    "E79",
+    "E80"
+  ],
+  "edges": [
+    {
+      "source": "E16",
+      "target": "E22",
+      "relation": "R1"
+    },
+    {
+      "source": "E16",
+      "target": "E35",
+      "relation": "R2"
+    },
+    {
+      "source": "E16",
+      "target": "E70",
+      "relation": "R3"
+    },
+    {
+      "source": "E28",
+      "target": "E35",
+      "relation": "R4"
+    },
+    {
+      "source": "E28",
+      "target": "E80",
+      "relation": "R1"
+    },
+    {
+      "source": "E30",
+      "target": "E37",
+      "relation": "R2"
+    },
+    {
+      "source": "E37",
+      "target": "E65",
+      "relation": "R3"
+    },
+    {
+      "source": "E37",
+      "target": "E66",
+      "relation": "R4"
+    },
+    {
+      "source": "E11",
+      "target": "E39",
+      "relation": "R1"
+    },
+    {
+      "source": "E35",
+      "target": "E39",
+      "relation": "R2"
+    },
+    {
+      "source": "E11",
+      "target": "E55",
+      "relation": "R3"
+    },
+    {
+      "source": "E30",
+      "target": "E55",
+      "relation": "R4"
+    },
+    {
+      "source": "E35",
+      "target": "E55",
+      "relation": "R1"
+    },
+    {
+      "source": "E55",
+      "target": "E66",
+      "relation": "R2"
+    },
+    {
+      "source": "E65",
+      "target": "E71",
+      "relation": "R3"
+    },
+    {
+      "source": "E70",
+      "target": "E71",
+      "relation": "R4"
+    },
+    {
+      "source": "E22",
+      "target": "E75",
+      "relation": "R1"
+    },
+    {
+      "source": "E35",
+      "target": "E75",
+      "relation": "R2"
+    },
+    {
+      "source": "E65",
+      "target": "E75",
+      "relation": "R3"
+    },
+    {
+      "source": "E75",
+      "target": "E80",
+      "relation": "R4"
+    },
+    {
+      "source": "E65",
+      "target": "E79",
+      "relation": "R1"
+    },
+    {
+      "source": "E66",
+      "target": "E79",
+      "relation": "R2"
+    },
+    {
+      "source": "E70",
+      "target": "E79",
+      "relation": "R3"
+    }
+  ],
+  "directed": false,
+  "partitions": {
+    "applicants": [
+      "E75",
+      "E37",
+      "E39",
+      "E79",
+      "E16",
+      "E55",
+      "E71",
+      "E28"
+    ],
+    "jobs": [
+      "E22",
+      "E80",
+      "E30",
+      "E11",
+      "E35",
+      "E65",
+      "E66",
+      "E70"
+    ]
+  },
+  "triples": [
+    [
+      "E16",
+      "R1",
+      "E22"
+    ],
+    [
+      "E16",
+      "R2",
+      "E35"
+    ],
+    [
+      "E16",
+      "R3",
+      "E70"
+    ],
+    [
+      "E28",
+      "R4",
+      "E35"
+    ],
+    [
+      "E28",
+      "R1",
+      "E80"
+    ],
+    [
+      "E30",
+      "R2",
+      "E37"
+    ],
+    [
+      "E37",
+      "R3",
+      "E65"
+    ],
+    [
+      "E37",
+      "R4",
+      "E66"
+    ],
+    [
+      "E11",
+      "R1",
+      "E39"
+    ],
+    [
+      "E35",
+      "R2",
+      "E39"
+    ],
+    [
+      "E11",
+      "R3",
+      "E55"
+    ],
+    [
+      "E30",
+      "R4",
+      "E55"
+    ],
+    [
+      "E35",
+      "R1",
+      "E55"
+    ],
+    [
+      "E55",
+      "R2",
+      "E66"
+    ],
+    [
+      "E65",
+      "R3",
+      "E71"
+    ],
+    [
+      "E70",
+      "R4",
+      "E71"
+    ],
+    [
+      "E22",
+      "R1",
+      "E75"
+    ],
+    [
+      "E35",
+      "R2",
+      "E75"
+    ],
+    [
+      "E65",
+      "R3",
+      "E75"
+    ],
+    [
+      "E75",
+      "R4",
+      "E80"
+    ],
+    [
+      "E65",
+      "R1",
+      "E79"
+    ],
+    [
+      "E66",
+      "R2",
+      "E79"
+    ],
+    [
+      "E70",
+      "R3",
+      "E79"
+    ]
+  ]
+}

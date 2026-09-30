@@ -1,0 +1,750 @@
+{
+  "sample_id": "r-sbm_000792",
+  "sample_index": 792,
+  "task_id": "R-SBM",
+  "task_name": "stable_bipartite_matching",
+  "task_english_name": "Stable Bipartite Matching",
+  "task_dir": "r-sbm_stable_bipartite_matching",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Each tN block is one time step of a graph in the original image order; the same node label denotes the same node across time.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- A row \"E1,,\" means that E1 is an isolated node. Empty relation and destination together are the isolated-node encoding.\n- Every node in the graph appears in at least one row, either as an endpoint of an edge or as an isolated-node row.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nt1\nsrc,relation,dst\nE1,R2,E5\nE1,R1,E11\nE1,R2,E16\nE1,R3,E24\nE1,R4,E42\nE1,R1,E47\nE5,R2,E44\nE5,R4,E69\nE11,R3,E25\nE11,R1,E37\nE11,R1,E57\nE11,R3,E59\nE16,R2,E57\nE24,R2,E69\nE25,R4,E47\nE27,R2,E37\nE27,R4,E44\nE27,R3,E56\nE27,R4,E59\nE37,R3,E47\nE42,R1,E44\nE47,R1,E59\nE47,R3,E69\nE56,R4,E61\nE61,R1,E69\n\nt2\nsrc,relation,dst\nE1,R2,E5\nE1,R3,E24\nE1,R2,E61\nE5,R3,E25\nE5,R3,E56\nE5,R2,E59\nE11,R1,E44\nE11,R3,E60\nE24,R2,E69\nE25,R4,E47\nE27,R4,E44\nE27,R4,E60\nE37,R4,E42\nE37,R3,E47\nE42,R1,E44\nE42,R1,E59\nE42,R1,E60\nE42,R3,E69\nE44,R2,E52\nE52,R4,E56\nE60,R2,E61\n\nQuestion:\nThe applicant partitions in image order are [[\"E1\", \"E37\", \"E25\", \"E59\", \"E56\", \"E69\", \"E44\", \"E57\"], [\"E1\", \"E37\", \"E25\", \"E59\", \"E56\", \"E69\", \"E44\", \"E60\"]], and the job partitions are [[\"E27\", \"E11\", \"E5\", \"E24\", \"E42\", \"E47\", \"E61\", \"E16\"], [\"E27\", \"E11\", \"E5\", \"E24\", \"E42\", \"E47\", \"E61\", \"E52\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+  "answer": [
+    [
+      [
+        "E1",
+        "E42"
+      ],
+      [
+        "E37",
+        "E11"
+      ],
+      [
+        "E25",
+        "E47"
+      ],
+      [
+        "E59",
+        "E27"
+      ],
+      [
+        "E56",
+        "E61"
+      ],
+      [
+        "E69",
+        "E24"
+      ],
+      [
+        "E44",
+        "E5"
+      ],
+      [
+        "E57",
+        "E16"
+      ]
+    ],
+    [
+      [
+        "E1",
+        "E61"
+      ],
+      [
+        "E37",
+        "E42"
+      ],
+      [
+        "E25",
+        "E47"
+      ],
+      [
+        "E59",
+        "E5"
+      ],
+      [
+        "E56",
+        "E52"
+      ],
+      [
+        "E69",
+        "E24"
+      ],
+      [
+        "E44",
+        "E11"
+      ],
+      [
+        "E60",
+        "E27"
+      ]
+    ]
+  ],
+  "answer_type": "temporal_matchings",
+  "required_images": [],
+  "source": null,
+  "target": null,
+  "graph_generator": "filtered_random_high_level",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 18,
+    "num_unique_edges": 39,
+    "per_graph_node_counts": {
+      "t1": 16,
+      "t2": 16
+    },
+    "per_graph_edge_counts": {
+      "t1": 25,
+      "t2": 21
+    },
+    "num_time_steps": 2,
+    "visual_level": 1
+  },
+  "checks": {
+    "semantic_gold_valid": true,
+    "multi_image": true,
+    "all_images_required_by_task_contract": true
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "title": "t1",
+      "nodes": [
+        "E1",
+        "E5",
+        "E11",
+        "E16",
+        "E24",
+        "E25",
+        "E27",
+        "E37",
+        "E42",
+        "E44",
+        "E47",
+        "E56",
+        "E57",
+        "E59",
+        "E61",
+        "E69"
+      ],
+      "edges": [
+        {
+          "source": "E1",
+          "target": "E11",
+          "relation": "R1"
+        },
+        {
+          "source": "E1",
+          "target": "E16",
+          "relation": "R2"
+        },
+        {
+          "source": "E1",
+          "target": "E24",
+          "relation": "R3"
+        },
+        {
+          "source": "E1",
+          "target": "E42",
+          "relation": "R4"
+        },
+        {
+          "source": "E1",
+          "target": "E47",
+          "relation": "R1"
+        },
+        {
+          "source": "E1",
+          "target": "E5",
+          "relation": "R2"
+        },
+        {
+          "source": "E11",
+          "target": "E25",
+          "relation": "R3"
+        },
+        {
+          "source": "E25",
+          "target": "E47",
+          "relation": "R4"
+        },
+        {
+          "source": "E11",
+          "target": "E37",
+          "relation": "R1"
+        },
+        {
+          "source": "E27",
+          "target": "E37",
+          "relation": "R2"
+        },
+        {
+          "source": "E37",
+          "target": "E47",
+          "relation": "R3"
+        },
+        {
+          "source": "E27",
+          "target": "E44",
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E44",
+          "relation": "R1"
+        },
+        {
+          "source": "E5",
+          "target": "E44",
+          "relation": "R2"
+        },
+        {
+          "source": "E27",
+          "target": "E56",
+          "relation": "R3"
+        },
+        {
+          "source": "E56",
+          "target": "E61",
+          "relation": "R4"
+        },
+        {
+          "source": "E11",
+          "target": "E57",
+          "relation": "R1"
+        },
+        {
+          "source": "E16",
+          "target": "E57",
+          "relation": "R2"
+        },
+        {
+          "source": "E11",
+          "target": "E59",
+          "relation": "R3"
+        },
+        {
+          "source": "E27",
+          "target": "E59",
+          "relation": "R4"
+        },
+        {
+          "source": "E47",
+          "target": "E59",
+          "relation": "R1"
+        },
+        {
+          "source": "E24",
+          "target": "E69",
+          "relation": "R2"
+        },
+        {
+          "source": "E47",
+          "target": "E69",
+          "relation": "R3"
+        },
+        {
+          "source": "E5",
+          "target": "E69",
+          "relation": "R4"
+        },
+        {
+          "source": "E61",
+          "target": "E69",
+          "relation": "R1"
+        }
+      ],
+      "directed": false,
+      "partitions": {
+        "applicants": [
+          "E1",
+          "E37",
+          "E25",
+          "E59",
+          "E56",
+          "E69",
+          "E44",
+          "E57"
+        ],
+        "jobs": [
+          "E27",
+          "E11",
+          "E5",
+          "E24",
+          "E42",
+          "E47",
+          "E61",
+          "E16"
+        ]
+      },
+      "triples": [
+        [
+          "E1",
+          "R1",
+          "E11"
+        ],
+        [
+          "E1",
+          "R2",
+          "E16"
+        ],
+        [
+          "E1",
+          "R3",
+          "E24"
+        ],
+        [
+          "E1",
+          "R4",
+          "E42"
+        ],
+        [
+          "E1",
+          "R1",
+          "E47"
+        ],
+        [
+          "E1",
+          "R2",
+          "E5"
+        ],
+        [
+          "E11",
+          "R3",
+          "E25"
+        ],
+        [
+          "E25",
+          "R4",
+          "E47"
+        ],
+        [
+          "E11",
+          "R1",
+          "E37"
+        ],
+        [
+          "E27",
+          "R2",
+          "E37"
+        ],
+        [
+          "E37",
+          "R3",
+          "E47"
+        ],
+        [
+          "E27",
+          "R4",
+          "E44"
+        ],
+        [
+          "E42",
+          "R1",
+          "E44"
+        ],
+        [
+          "E5",
+          "R2",
+          "E44"
+        ],
+        [
+          "E27",
+          "R3",
+          "E56"
+        ],
+        [
+          "E56",
+          "R4",
+          "E61"
+        ],
+        [
+          "E11",
+          "R1",
+          "E57"
+        ],
+        [
+          "E16",
+          "R2",
+          "E57"
+        ],
+        [
+          "E11",
+          "R3",
+          "E59"
+        ],
+        [
+          "E27",
+          "R4",
+          "E59"
+        ],
+        [
+          "E47",
+          "R1",
+          "E59"
+        ],
+        [
+          "E24",
+          "R2",
+          "E69"
+        ],
+        [
+          "E47",
+          "R3",
+          "E69"
+        ],
+        [
+          "E5",
+          "R4",
+          "E69"
+        ],
+        [
+          "E61",
+          "R1",
+          "E69"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t2",
+      "title": "t2",
+      "nodes": [
+        "E1",
+        "E5",
+        "E11",
+        "E24",
+        "E25",
+        "E27",
+        "E37",
+        "E42",
+        "E44",
+        "E47",
+        "E52",
+        "E56",
+        "E59",
+        "E60",
+        "E61",
+        "E69"
+      ],
+      "edges": [
+        {
+          "source": "E1",
+          "target": "E24",
+          "relation": "R3"
+        },
+        {
+          "source": "E1",
+          "target": "E5",
+          "relation": "R2"
+        },
+        {
+          "source": "E1",
+          "target": "E61",
+          "relation": "R2"
+        },
+        {
+          "source": "E25",
+          "target": "E47",
+          "relation": "R4"
+        },
+        {
+          "source": "E5",
+          "target": "E25",
+          "relation": "R3"
+        },
+        {
+          "source": "E37",
+          "target": "E42",
+          "relation": "R4"
+        },
+        {
+          "source": "E37",
+          "target": "E47",
+          "relation": "R3"
+        },
+        {
+          "source": "E11",
+          "target": "E44",
+          "relation": "R1"
+        },
+        {
+          "source": "E27",
+          "target": "E44",
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E44",
+          "relation": "R1"
+        },
+        {
+          "source": "E44",
+          "target": "E52",
+          "relation": "R2"
+        },
+        {
+          "source": "E5",
+          "target": "E56",
+          "relation": "R3"
+        },
+        {
+          "source": "E52",
+          "target": "E56",
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E59",
+          "relation": "R1"
+        },
+        {
+          "source": "E5",
+          "target": "E59",
+          "relation": "R2"
+        },
+        {
+          "source": "E11",
+          "target": "E60",
+          "relation": "R3"
+        },
+        {
+          "source": "E27",
+          "target": "E60",
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E60",
+          "relation": "R1"
+        },
+        {
+          "source": "E60",
+          "target": "E61",
+          "relation": "R2"
+        },
+        {
+          "source": "E24",
+          "target": "E69",
+          "relation": "R2"
+        },
+        {
+          "source": "E42",
+          "target": "E69",
+          "relation": "R3"
+        }
+      ],
+      "directed": false,
+      "partitions": {
+        "applicants": [
+          "E1",
+          "E37",
+          "E25",
+          "E59",
+          "E56",
+          "E69",
+          "E44",
+          "E60"
+        ],
+        "jobs": [
+          "E27",
+          "E11",
+          "E5",
+          "E24",
+          "E42",
+          "E47",
+          "E61",
+          "E52"
+        ]
+      },
+      "triples": [
+        [
+          "E1",
+          "R3",
+          "E24"
+        ],
+        [
+          "E1",
+          "R2",
+          "E5"
+        ],
+        [
+          "E1",
+          "R2",
+          "E61"
+        ],
+        [
+          "E25",
+          "R4",
+          "E47"
+        ],
+        [
+          "E5",
+          "R3",
+          "E25"
+        ],
+        [
+          "E37",
+          "R4",
+          "E42"
+        ],
+        [
+          "E37",
+          "R3",
+          "E47"
+        ],
+        [
+          "E11",
+          "R1",
+          "E44"
+        ],
+        [
+          "E27",
+          "R4",
+          "E44"
+        ],
+        [
+          "E42",
+          "R1",
+          "E44"
+        ],
+        [
+          "E44",
+          "R2",
+          "E52"
+        ],
+        [
+          "E5",
+          "R3",
+          "E56"
+        ],
+        [
+          "E52",
+          "R4",
+          "E56"
+        ],
+        [
+          "E42",
+          "R1",
+          "E59"
+        ],
+        [
+          "E5",
+          "R2",
+          "E59"
+        ],
+        [
+          "E11",
+          "R3",
+          "E60"
+        ],
+        [
+          "E27",
+          "R4",
+          "E60"
+        ],
+        [
+          "E42",
+          "R1",
+          "E60"
+        ],
+        [
+          "E60",
+          "R2",
+          "E61"
+        ],
+        [
+          "E24",
+          "R2",
+          "E69"
+        ],
+        [
+          "E42",
+          "R3",
+          "E69"
+        ]
+      ]
+    }
+  ],
+  "original_graph_text": "t1\nsrc,relation,dst\nE1,R2,E5\nE1,R1,E11\nE1,R2,E16\nE1,R3,E24\nE1,R4,E42\nE1,R1,E47\nE5,R2,E44\nE5,R4,E69\nE11,R3,E25\nE11,R1,E37\nE11,R1,E57\nE11,R3,E59\nE16,R2,E57\nE24,R2,E69\nE25,R4,E47\nE27,R2,E37\nE27,R4,E44\nE27,R3,E56\nE27,R4,E59\nE37,R3,E47\nE42,R1,E44\nE47,R1,E59\nE47,R3,E69\nE56,R4,E61\nE61,R1,E69\n\nt2\nsrc,relation,dst\nE1,R2,E5\nE1,R3,E24\nE1,R2,E61\nE5,R3,E25\nE5,R3,E56\nE5,R2,E59\nE11,R1,E44\nE11,R3,E60\nE24,R2,E69\nE25,R4,E47\nE27,R4,E44\nE27,R4,E60\nE37,R4,E42\nE37,R3,E47\nE42,R1,E44\nE42,R1,E59\nE42,R1,E60\nE42,R3,E69\nE44,R2,E52\nE52,R4,E56\nE60,R2,E61",
+  "validation_context": {
+    "applicants_by_time": [
+      [
+        "E1",
+        "E37",
+        "E25",
+        "E59",
+        "E56",
+        "E69",
+        "E44",
+        "E57"
+      ],
+      [
+        "E1",
+        "E37",
+        "E25",
+        "E59",
+        "E56",
+        "E69",
+        "E44",
+        "E60"
+      ]
+    ],
+    "jobs_by_time": [
+      [
+        "E27",
+        "E11",
+        "E5",
+        "E24",
+        "E42",
+        "E47",
+        "E61",
+        "E16"
+      ],
+      [
+        "E27",
+        "E11",
+        "E5",
+        "E24",
+        "E42",
+        "E47",
+        "E61",
+        "E52"
+      ]
+    ],
+    "stable_applicants": [
+      "E1",
+      "E37",
+      "E25",
+      "E59",
+      "E56",
+      "E69",
+      "E44"
+    ],
+    "stable_jobs": [
+      "E27",
+      "E11",
+      "E5",
+      "E24",
+      "E42",
+      "E47",
+      "E61"
+    ],
+    "maximum_matching_sizes": [
+      8,
+      8
+    ],
+    "maximum_matching_counts": [
+      12,
+      4
+    ],
+    "minimum_reassignments": 5,
+    "optimal_transition_reassignments": [
+      5
+    ],
+    "view_node_sets_are_distinct": true
+  },
+  "generation": {
+    "generator": "sample_gen_high_level",
+    "version": 29
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "graph_id": "G3",
+  "title": "Graph 3",
+  "nodes": [
+    "E5",
+    "E22",
+    "E24",
+    "E39",
+    "E50",
+    "E56",
+    "E64",
+    "E68",
+    "E70"
+  ],
+  "edges": [
+    {
+      "source": "E5",
+      "target": "E56",
+      "capacity": 11,
+      "relation": "R3"
+    },
+    {
+      "source": "E50",
+      "target": "E22",
+      "capacity": 9,
+      "relation": "R4"
+    },
+    {
+      "source": "E50",
+      "target": "E24",
+      "capacity": 11,
+      "relation": "R1"
+    },
+    {
+      "source": "E64",
+      "target": "E39",
+      "capacity": 8,
+      "relation": "R2"
+    },
+    {
+      "source": "E64",
+      "target": "E56",
+      "capacity": 10,
+      "relation": "R3"
+    },
+    {
+      "source": "E68",
+      "target": "E56",
+      "capacity": 14,
+      "relation": "R4"
+    },
+    {
+      "source": "E70",
+      "target": "E68",
+      "capacity": 11,
+      "relation": "R1"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E5",
+      "R3",
+      "E56"
+    ],
+    [
+      "E50",
+      "R4",
+      "E22"
+    ],
+    [
+      "E50",
+      "R1",
+      "E24"
+    ],
+    [
+      "E64",
+      "R2",
+      "E39"
+    ],
+    [
+      "E64",
+      "R3",
+      "E56"
+    ],
+    [
+      "E68",
+      "R4",
+      "E56"
+    ],
+    [
+      "E70",
+      "R1",
+      "E68"
+    ]
+  ]
+}

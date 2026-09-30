@@ -1,0 +1,149 @@
+{
+  "graph_id": "t3",
+  "title": "t3",
+  "nodes": [
+    "E4",
+    "E28",
+    "E48",
+    "E58",
+    "E61",
+    "E68",
+    "E71",
+    "E72"
+  ],
+  "edges": [
+    {
+      "source": "E4",
+      "target": "E68",
+      "relation": "R3"
+    },
+    {
+      "source": "E4",
+      "target": "E72",
+      "relation": "R4"
+    },
+    {
+      "source": "E48",
+      "target": "E28",
+      "relation": "R1"
+    },
+    {
+      "source": "E48",
+      "target": "E4",
+      "relation": "R1"
+    },
+    {
+      "source": "E58",
+      "target": "E28",
+      "relation": "R3"
+    },
+    {
+      "source": "E68",
+      "target": "E28",
+      "relation": "R2"
+    },
+    {
+      "source": "E71",
+      "target": "E28",
+      "relation": "R2"
+    },
+    {
+      "source": "E71",
+      "target": "E4",
+      "relation": "R3"
+    },
+    {
+      "source": "E71",
+      "target": "E58",
+      "relation": "R3"
+    },
+    {
+      "source": "E71",
+      "target": "E61",
+      "relation": "R4"
+    },
+    {
+      "source": "E71",
+      "target": "E72",
+      "relation": "R4"
+    },
+    {
+      "source": "E72",
+      "target": "E28",
+      "relation": "R4"
+    },
+    {
+      "source": "E72",
+      "target": "E61",
+      "relation": "R1"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E4",
+      "R3",
+      "E68"
+    ],
+    [
+      "E4",
+      "R4",
+      "E72"
+    ],
+    [
+      "E48",
+      "R1",
+      "E28"
+    ],
+    [
+      "E48",
+      "R1",
+      "E4"
+    ],
+    [
+      "E58",
+      "R3",
+      "E28"
+    ],
+    [
+      "E68",
+      "R2",
+      "E28"
+    ],
+    [
+      "E71",
+      "R2",
+      "E28"
+    ],
+    [
+      "E71",
+      "R3",
+      "E4"
+    ],
+    [
+      "E71",
+      "R3",
+      "E58"
+    ],
+    [
+      "E71",
+      "R4",
+      "E61"
+    ],
+    [
+      "E71",
+      "R4",
+      "E72"
+    ],
+    [
+      "E72",
+      "R4",
+      "E28"
+    ],
+    [
+      "E72",
+      "R1",
+      "E61"
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "total_samples": 80,
+  "task_sample_counts": {
+    "BM": 10,
+    "HP": 10,
+    "MF": 10,
+    "MFC": 10,
+    "SBM": 10,
+    "STS": 10,
+    "THP": 10,
+    "TS": 10
+  }
+}

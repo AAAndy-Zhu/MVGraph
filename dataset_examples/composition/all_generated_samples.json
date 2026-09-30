@@ -1,0 +1,3206 @@
+[
+  {
+    "id": "c-cd_000205",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000205/images/G1.png",
+      "samples/c-cd_component_decomposition/000205/images/G2.png",
+      "samples/c-cd_component_decomposition/000205/images/G3.png",
+      "samples/c-cd_component_decomposition/000205/images/G4.png",
+      "samples/c-cd_component_decomposition/000205/images/G5.png",
+      "samples/c-cd_component_decomposition/000205/images/G6.png",
+      "samples/c-cd_component_decomposition/000205/images/G7.png",
+      "samples/c-cd_component_decomposition/000205/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E4",
+          "E5",
+          "E37"
+        ],
+        "edges": [
+          [
+            "E4",
+            "R1",
+            "E37"
+          ],
+          [
+            "E4",
+            "R4",
+            "E5"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E8",
+          "E68",
+          "E78"
+        ],
+        "edges": [
+          [
+            "E8",
+            "R3",
+            "E78"
+          ],
+          [
+            "E68",
+            "R2",
+            "E78"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E23",
+          "E30",
+          "E44"
+        ],
+        "edges": [
+          [
+            "E23",
+            "R1",
+            "E44"
+          ],
+          [
+            "E30",
+            "R2",
+            "E44"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E53",
+          "E77"
+        ],
+        "edges": [
+          [
+            "E53",
+            "R3",
+            "E77"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000205/sample.json"
+  },
+  {
+    "id": "c-cd_000254",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000254/images/G1.png",
+      "samples/c-cd_component_decomposition/000254/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E17",
+          "E28"
+        ],
+        "edges": [
+          [
+            "E17",
+            "R3",
+            "E28"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E21",
+          "E35",
+          "E77"
+        ],
+        "edges": [
+          [
+            "E21",
+            "R2",
+            "E77"
+          ],
+          [
+            "E35",
+            "R1",
+            "E77"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E36",
+          "E40",
+          "E72"
+        ],
+        "edges": [
+          [
+            "E36",
+            "R1",
+            "E40"
+          ],
+          [
+            "E40",
+            "R4",
+            "E72"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000254/sample.json"
+  },
+  {
+    "id": "c-cd_000500",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000500/images/G1.png",
+      "samples/c-cd_component_decomposition/000500/images/G2.png",
+      "samples/c-cd_component_decomposition/000500/images/G3.png",
+      "samples/c-cd_component_decomposition/000500/images/G4.png",
+      "samples/c-cd_component_decomposition/000500/images/G5.png",
+      "samples/c-cd_component_decomposition/000500/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E8",
+          "E33",
+          "E65",
+          "E72"
+        ],
+        "edges": [
+          [
+            "E8",
+            "R1",
+            "E65"
+          ],
+          [
+            "E33",
+            "R2",
+            "E65"
+          ],
+          [
+            "E33",
+            "R3",
+            "E72"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E11",
+          "E60",
+          "E79"
+        ],
+        "edges": [
+          [
+            "E11",
+            "R4",
+            "E60"
+          ],
+          [
+            "E60",
+            "R1",
+            "E79"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E14",
+          "E67"
+        ],
+        "edges": [
+          [
+            "E14",
+            "R2",
+            "E67"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E44",
+          "E75"
+        ],
+        "edges": [
+          [
+            "E44",
+            "R3",
+            "E75"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000500/sample.json"
+  },
+  {
+    "id": "c-cd_000568",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000568/images/G1.png",
+      "samples/c-cd_component_decomposition/000568/images/G2.png",
+      "samples/c-cd_component_decomposition/000568/images/G3.png",
+      "samples/c-cd_component_decomposition/000568/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E14",
+          "E15",
+          "E51"
+        ],
+        "edges": [
+          [
+            "E14",
+            "R3",
+            "E15"
+          ],
+          [
+            "E14",
+            "R4",
+            "E51"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E17",
+          "E20"
+        ],
+        "edges": [
+          [
+            "E17",
+            "R1",
+            "E20"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E41",
+          "E45",
+          "E79"
+        ],
+        "edges": [
+          [
+            "E41",
+            "R1",
+            "E79"
+          ],
+          [
+            "E45",
+            "R2",
+            "E79"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000568/sample.json"
+  },
+  {
+    "id": "c-cd_000596",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000596/images/G1.png",
+      "samples/c-cd_component_decomposition/000596/images/G2.png",
+      "samples/c-cd_component_decomposition/000596/images/G3.png",
+      "samples/c-cd_component_decomposition/000596/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E7",
+          "E41",
+          "E72"
+        ],
+        "edges": [
+          [
+            "E7",
+            "R2",
+            "E41"
+          ],
+          [
+            "E41",
+            "R1",
+            "E72"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E18",
+          "E53"
+        ],
+        "edges": [
+          [
+            "E18",
+            "R4",
+            "E53"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E36",
+          "E37",
+          "E75"
+        ],
+        "edges": [
+          [
+            "E36",
+            "R2",
+            "E75"
+          ],
+          [
+            "E37",
+            "R1",
+            "E75"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E42",
+          "E52"
+        ],
+        "edges": [
+          [
+            "E42",
+            "R3",
+            "E52"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000596/sample.json"
+  },
+  {
+    "id": "c-cd_000641",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000641/images/G1.png",
+      "samples/c-cd_component_decomposition/000641/images/G2.png",
+      "samples/c-cd_component_decomposition/000641/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E5",
+          "E21"
+        ],
+        "edges": [
+          [
+            "E5",
+            "R1",
+            "E21"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E15",
+          "E36",
+          "E37",
+          "E78"
+        ],
+        "edges": [
+          [
+            "E15",
+            "R2",
+            "E78"
+          ],
+          [
+            "E15",
+            "R3",
+            "E36"
+          ],
+          [
+            "E37",
+            "R1",
+            "E78"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E54",
+          "E74"
+        ],
+        "edges": [
+          [
+            "E54",
+            "R4",
+            "E74"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000641/sample.json"
+  },
+  {
+    "id": "c-cd_000700",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000700/images/G1.png",
+      "samples/c-cd_component_decomposition/000700/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E2",
+          "E25",
+          "E45",
+          "E48",
+          "E51"
+        ],
+        "edges": [
+          [
+            "E2",
+            "R1",
+            "E48"
+          ],
+          [
+            "E2",
+            "R2",
+            "E45"
+          ],
+          [
+            "E2",
+            "R3",
+            "E51"
+          ],
+          [
+            "E2",
+            "R4",
+            "E25"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E8",
+          "E32",
+          "E75"
+        ],
+        "edges": [
+          [
+            "E8",
+            "R1",
+            "E32"
+          ],
+          [
+            "E8",
+            "R2",
+            "E75"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000700/sample.json"
+  },
+  {
+    "id": "c-cd_000732",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000732/images/G1.png",
+      "samples/c-cd_component_decomposition/000732/images/G2.png",
+      "samples/c-cd_component_decomposition/000732/images/G3.png",
+      "samples/c-cd_component_decomposition/000732/images/G4.png",
+      "samples/c-cd_component_decomposition/000732/images/G5.png",
+      "samples/c-cd_component_decomposition/000732/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E2",
+          "E6",
+          "E14",
+          "E19",
+          "E20",
+          "E21",
+          "E22",
+          "E23",
+          "E26",
+          "E28",
+          "E40",
+          "E45",
+          "E49",
+          "E51",
+          "E53",
+          "E56",
+          "E57",
+          "E60",
+          "E61",
+          "E62",
+          "E63",
+          "E64",
+          "E65",
+          "E76",
+          "E78",
+          "E79",
+          "E80"
+        ],
+        "edges": [
+          [
+            "E2",
+            "R2",
+            "E40"
+          ],
+          [
+            "E6",
+            "R1",
+            "E78"
+          ],
+          [
+            "E6",
+            "R2",
+            "E22"
+          ],
+          [
+            "E14",
+            "R1",
+            "E78"
+          ],
+          [
+            "E19",
+            "R2",
+            "E78"
+          ],
+          [
+            "E20",
+            "R1",
+            "E40"
+          ],
+          [
+            "E20",
+            "R1",
+            "E53"
+          ],
+          [
+            "E20",
+            "R1",
+            "E62"
+          ],
+          [
+            "E20",
+            "R1",
+            "E79"
+          ],
+          [
+            "E20",
+            "R2",
+            "E23"
+          ],
+          [
+            "E20",
+            "R2",
+            "E78"
+          ],
+          [
+            "E21",
+            "R2",
+            "E62"
+          ],
+          [
+            "E26",
+            "R2",
+            "E78"
+          ],
+          [
+            "E28",
+            "R2",
+            "E64"
+          ],
+          [
+            "E45",
+            "R1",
+            "E62"
+          ],
+          [
+            "E49",
+            "R1",
+            "E78"
+          ],
+          [
+            "E51",
+            "R2",
+            "E62"
+          ],
+          [
+            "E53",
+            "R2",
+            "E64"
+          ],
+          [
+            "E56",
+            "R2",
+            "E62"
+          ],
+          [
+            "E57",
+            "R1",
+            "E62"
+          ],
+          [
+            "E60",
+            "R1",
+            "E62"
+          ],
+          [
+            "E61",
+            "R1",
+            "E62"
+          ],
+          [
+            "E62",
+            "R1",
+            "E80"
+          ],
+          [
+            "E62",
+            "R2",
+            "E65"
+          ],
+          [
+            "E63",
+            "R2",
+            "E78"
+          ],
+          [
+            "E64",
+            "R1",
+            "E76"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000732/sample.json"
+  },
+  {
+    "id": "c-cd_000796",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000796/images/G1.png",
+      "samples/c-cd_component_decomposition/000796/images/G2.png",
+      "samples/c-cd_component_decomposition/000796/images/G3.png",
+      "samples/c-cd_component_decomposition/000796/images/G4.png",
+      "samples/c-cd_component_decomposition/000796/images/G5.png",
+      "samples/c-cd_component_decomposition/000796/images/G6.png",
+      "samples/c-cd_component_decomposition/000796/images/G7.png",
+      "samples/c-cd_component_decomposition/000796/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E7",
+          "E58",
+          "E60"
+        ],
+        "edges": [
+          [
+            "E7",
+            "R4",
+            "E58"
+          ],
+          [
+            "E58",
+            "R1",
+            "E60"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E21",
+          "E24"
+        ],
+        "edges": [
+          [
+            "E21",
+            "R3",
+            "E24"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E22",
+          "E32",
+          "E47"
+        ],
+        "edges": [
+          [
+            "E22",
+            "R1",
+            "E47"
+          ],
+          [
+            "E32",
+            "R2",
+            "E47"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E40",
+          "E68"
+        ],
+        "edges": [
+          [
+            "E40",
+            "R2",
+            "E68"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000796/sample.json"
+  },
+  {
+    "id": "c-cd_000820",
+    "task_id": "C-CD",
+    "task_name": "component_decomposition",
+    "image_paths": [
+      "samples/c-cd_component_decomposition/000820/images/G1.png",
+      "samples/c-cd_component_decomposition/000820/images/G2.png",
+      "samples/c-cd_component_decomposition/000820/images/G3.png",
+      "samples/c-cd_component_decomposition/000820/images/G4.png",
+      "samples/c-cd_component_decomposition/000820/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+    "answer": [
+      {
+        "nodes": [
+          "E7",
+          "E25",
+          "E79"
+        ],
+        "edges": [
+          [
+            "E7",
+            "R4",
+            "E79"
+          ],
+          [
+            "E25",
+            "R1",
+            "E79"
+          ]
+        ]
+      },
+      {
+        "nodes": [
+          "E13",
+          "E29",
+          "E68",
+          "E75"
+        ],
+        "edges": [
+          [
+            "E13",
+            "R1",
+            "E68"
+          ],
+          [
+            "E13",
+            "R2",
+            "E75"
+          ],
+          [
+            "E29",
+            "R3",
+            "E75"
+          ]
+        ]
+      }
+    ],
+    "metadata_path": "samples/c-cd_component_decomposition/000820/sample.json"
+  },
+  {
+    "id": "c-ev_000159",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000159/images/G1.png",
+      "samples/c-ev_essential_views/000159/images/G2.png",
+      "samples/c-ev_essential_views/000159/images/G3.png",
+      "samples/c-ev_essential_views/000159/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich graph view(s) are necessary contributors to the merged-graph path from E59 to E44?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      4
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000159/sample.json"
+  },
+  {
+    "id": "c-ev_000328",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000328/images/G1.png",
+      "samples/c-ev_essential_views/000328/images/G2.png",
+      "samples/c-ev_essential_views/000328/images/G3.png",
+      "samples/c-ev_essential_views/000328/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) must be included so that E1 can reach E9 after merging?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000328/sample.json"
+  },
+  {
+    "id": "c-ev_000392",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000392/images/G1.png",
+      "samples/c-ev_essential_views/000392/images/G2.png",
+      "samples/c-ev_essential_views/000392/images/G3.png",
+      "samples/c-ev_essential_views/000392/images/G4.png",
+      "samples/c-ev_essential_views/000392/images/G5.png",
+      "samples/c-ev_essential_views/000392/images/G6.png",
+      "samples/c-ev_essential_views/000392/images/G7.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) cannot be omitted if E46 is to remain reachable from E10?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000392/sample.json"
+  },
+  {
+    "id": "c-ev_000410",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000410/images/G1.png",
+      "samples/c-ev_essential_views/000410/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) cannot be omitted if E21 is to remain reachable from E43?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000410/sample.json"
+  },
+  {
+    "id": "c-ev_000521",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000521/images/G1.png",
+      "samples/c-ev_essential_views/000521/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the graph view(s) whose removal would break reachability from E17 to E50.\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000521/sample.json"
+  },
+  {
+    "id": "c-ev_000587",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000587/images/G1.png",
+      "samples/c-ev_essential_views/000587/images/G2.png",
+      "samples/c-ev_essential_views/000587/images/G3.png",
+      "samples/c-ev_essential_views/000587/images/G4.png",
+      "samples/c-ev_essential_views/000587/images/G5.png",
+      "samples/c-ev_essential_views/000587/images/G6.png",
+      "samples/c-ev_essential_views/000587/images/G7.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich graph view(s) are necessary contributors to the merged-graph path from E16 to E38?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      4,
+      5
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000587/sample.json"
+  },
+  {
+    "id": "c-ev_000675",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000675/images/G1.png",
+      "samples/c-ev_essential_views/000675/images/G2.png",
+      "samples/c-ev_essential_views/000675/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) must be included so that E24 can reach E23 after merging?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      2,
+      3
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000675/sample.json"
+  },
+  {
+    "id": "c-ev_000881",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000881/images/G1.png",
+      "samples/c-ev_essential_views/000881/images/G2.png",
+      "samples/c-ev_essential_views/000881/images/G3.png",
+      "samples/c-ev_essential_views/000881/images/G4.png",
+      "samples/c-ev_essential_views/000881/images/G5.png",
+      "samples/c-ev_essential_views/000881/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) must be included so that E74 can reach E12 after merging?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      5
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000881/sample.json"
+  },
+  {
+    "id": "c-ev_000917",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000917/images/G1.png",
+      "samples/c-ev_essential_views/000917/images/G2.png",
+      "samples/c-ev_essential_views/000917/images/G3.png",
+      "samples/c-ev_essential_views/000917/images/G4.png",
+      "samples/c-ev_essential_views/000917/images/G5.png",
+      "samples/c-ev_essential_views/000917/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) cannot be omitted if E39 is to remain reachable from E38?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000917/sample.json"
+  },
+  {
+    "id": "c-ev_000977",
+    "task_id": "C-EV",
+    "task_name": "essential_views",
+    "image_paths": [
+      "samples/c-ev_essential_views/000977/images/G1.png",
+      "samples/c-ev_essential_views/000977/images/G2.png",
+      "samples/c-ev_essential_views/000977/images/G3.png",
+      "samples/c-ev_essential_views/000977/images/G4.png",
+      "samples/c-ev_essential_views/000977/images/G5.png",
+      "samples/c-ev_essential_views/000977/images/G6.png",
+      "samples/c-ev_essential_views/000977/images/G7.png",
+      "samples/c-ev_essential_views/000977/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich view(s) must be included so that E66 can reach E26 after merging?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "metadata_path": "samples/c-ev_essential_views/000977/sample.json"
+  },
+  {
+    "id": "c-mvs_000030",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000030/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000030/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000030/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat is the smallest set of graph views that must be merged so that E67 can reach E47?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000030/sample.json"
+  },
+  {
+    "id": "c-mvs_000083",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000083/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000083/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat is the smallest set of graph views that must be merged so that E76 can reach E1?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000083/sample.json"
+  },
+  {
+    "id": "c-mvs_000160",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000160/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000160/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000160/images/G3.png",
+      "samples/c-mvs_minimal_view_set/000160/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the smallest view subset whose union contains a path from E58 to E69.\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000160/sample.json"
+  },
+  {
+    "id": "c-mvs_000173",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000173/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000173/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000173/images/G3.png",
+      "samples/c-mvs_minimal_view_set/000173/images/G4.png",
+      "samples/c-mvs_minimal_view_set/000173/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich graph views form the smallest sufficient set for connecting E48 to E35?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      2,
+      3,
+      4
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000173/sample.json"
+  },
+  {
+    "id": "c-mvs_000174",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000174/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G3.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G4.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G5.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G6.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G7.png",
+      "samples/c-mvs_minimal_view_set/000174/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat is the minimal collection of graph views needed for reachability from E4 to E74?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      7
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000174/sample.json"
+  },
+  {
+    "id": "c-mvs_000182",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000182/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000182/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000182/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat is the smallest set of graph views that must be merged so that E14 can reach E40?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000182/sample.json"
+  },
+  {
+    "id": "c-mvs_000191",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000191/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000191/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000191/images/G3.png",
+      "samples/c-mvs_minimal_view_set/000191/images/G4.png",
+      "samples/c-mvs_minimal_view_set/000191/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the smallest view subset whose union contains a path from E4 to E52.\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000191/sample.json"
+  },
+  {
+    "id": "c-mvs_000215",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000215/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000215/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000215/images/G3.png",
+      "samples/c-mvs_minimal_view_set/000215/images/G4.png",
+      "samples/c-mvs_minimal_view_set/000215/images/G5.png",
+      "samples/c-mvs_minimal_view_set/000215/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat is the smallest set of graph views that must be merged so that E5 can reach E43?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000215/sample.json"
+  },
+  {
+    "id": "c-mvs_000400",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000400/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G3.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G4.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G5.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G6.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G7.png",
+      "samples/c-mvs_minimal_view_set/000400/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich graph views form the smallest sufficient set for connecting E55 to E35?\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      3,
+      7
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000400/sample.json"
+  },
+  {
+    "id": "c-mvs_000694",
+    "task_id": "C-MVS",
+    "task_name": "minimal_view_set",
+    "image_paths": [
+      "samples/c-mvs_minimal_view_set/000694/images/G1.png",
+      "samples/c-mvs_minimal_view_set/000694/images/G2.png",
+      "samples/c-mvs_minimal_view_set/000694/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the smallest view subset whose union contains a path from E27 to E6.\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/c-mvs_minimal_view_set/000694/sample.json"
+  },
+  {
+    "id": "c-pa_000020",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000020/images/G1.png",
+      "samples/c-pa_path_assembly/000020/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E51 to E56 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E51",
+        "R1",
+        "E37"
+      ],
+      [
+        "E37",
+        "R2",
+        "E56"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000020/sample.json"
+  },
+  {
+    "id": "c-pa_000095",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000095/images/G1.png",
+      "samples/c-pa_path_assembly/000095/images/G2.png",
+      "samples/c-pa_path_assembly/000095/images/G3.png",
+      "samples/c-pa_path_assembly/000095/images/G4.png",
+      "samples/c-pa_path_assembly/000095/images/G5.png",
+      "samples/c-pa_path_assembly/000095/images/G6.png",
+      "samples/c-pa_path_assembly/000095/images/G7.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E40 to E71 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E40",
+        "R1",
+        "E23"
+      ],
+      [
+        "E23",
+        "R2",
+        "E58"
+      ],
+      [
+        "E58",
+        "R3",
+        "E41"
+      ],
+      [
+        "E41",
+        "R4",
+        "E9"
+      ],
+      [
+        "E9",
+        "R1",
+        "E63"
+      ],
+      [
+        "E63",
+        "R2",
+        "E18"
+      ],
+      [
+        "E18",
+        "R3",
+        "E2"
+      ],
+      [
+        "E2",
+        "R4",
+        "E71"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000095/sample.json"
+  },
+  {
+    "id": "c-pa_000139",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000139/images/G1.png",
+      "samples/c-pa_path_assembly/000139/images/G2.png",
+      "samples/c-pa_path_assembly/000139/images/G3.png",
+      "samples/c-pa_path_assembly/000139/images/G4.png",
+      "samples/c-pa_path_assembly/000139/images/G5.png",
+      "samples/c-pa_path_assembly/000139/images/G6.png",
+      "samples/c-pa_path_assembly/000139/images/G7.png",
+      "samples/c-pa_path_assembly/000139/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E68 to E62 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E68",
+        "R1",
+        "E58"
+      ],
+      [
+        "E58",
+        "R2",
+        "E40"
+      ],
+      [
+        "E40",
+        "R3",
+        "E30"
+      ],
+      [
+        "E30",
+        "R4",
+        "E10"
+      ],
+      [
+        "E10",
+        "R1",
+        "E67"
+      ],
+      [
+        "E67",
+        "R2",
+        "E72"
+      ],
+      [
+        "E72",
+        "R3",
+        "E11"
+      ],
+      [
+        "E11",
+        "R4",
+        "E35"
+      ],
+      [
+        "E35",
+        "R1",
+        "E17"
+      ],
+      [
+        "E17",
+        "R2",
+        "E47"
+      ],
+      [
+        "E47",
+        "R3",
+        "E62"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000139/sample.json"
+  },
+  {
+    "id": "c-pa_000304",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000304/images/G1.png",
+      "samples/c-pa_path_assembly/000304/images/G2.png",
+      "samples/c-pa_path_assembly/000304/images/G3.png",
+      "samples/c-pa_path_assembly/000304/images/G4.png",
+      "samples/c-pa_path_assembly/000304/images/G5.png",
+      "samples/c-pa_path_assembly/000304/images/G6.png",
+      "samples/c-pa_path_assembly/000304/images/G7.png",
+      "samples/c-pa_path_assembly/000304/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E73 to E9 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E73",
+        "R1",
+        "E77"
+      ],
+      [
+        "E77",
+        "R2",
+        "E65"
+      ],
+      [
+        "E65",
+        "R3",
+        "E45"
+      ],
+      [
+        "E45",
+        "R4",
+        "E42"
+      ],
+      [
+        "E42",
+        "R1",
+        "E58"
+      ],
+      [
+        "E58",
+        "R2",
+        "E4"
+      ],
+      [
+        "E4",
+        "R3",
+        "E74"
+      ],
+      [
+        "E74",
+        "R4",
+        "E69"
+      ],
+      [
+        "E69",
+        "R1",
+        "E9"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000304/sample.json"
+  },
+  {
+    "id": "c-pa_000357",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000357/images/G1.png",
+      "samples/c-pa_path_assembly/000357/images/G2.png",
+      "samples/c-pa_path_assembly/000357/images/G3.png",
+      "samples/c-pa_path_assembly/000357/images/G4.png",
+      "samples/c-pa_path_assembly/000357/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E16 to E8 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E16",
+        "R1",
+        "E26"
+      ],
+      [
+        "E26",
+        "R2",
+        "E31"
+      ],
+      [
+        "E31",
+        "R3",
+        "E49"
+      ],
+      [
+        "E49",
+        "R4",
+        "E55"
+      ],
+      [
+        "E55",
+        "R1",
+        "E1"
+      ],
+      [
+        "E1",
+        "R2",
+        "E8"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000357/sample.json"
+  },
+  {
+    "id": "c-pa_000549",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000549/images/G1.png",
+      "samples/c-pa_path_assembly/000549/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E48 to E60 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E48",
+        "R1",
+        "E3"
+      ],
+      [
+        "E3",
+        "R2",
+        "E35"
+      ],
+      [
+        "E35",
+        "R3",
+        "E39"
+      ],
+      [
+        "E39",
+        "R4",
+        "E12"
+      ],
+      [
+        "E12",
+        "R1",
+        "E60"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000549/sample.json"
+  },
+  {
+    "id": "c-pa_000647",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000647/images/G1.png",
+      "samples/c-pa_path_assembly/000647/images/G2.png",
+      "samples/c-pa_path_assembly/000647/images/G3.png",
+      "samples/c-pa_path_assembly/000647/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E78 to E65 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E78",
+        "R1",
+        "E14"
+      ],
+      [
+        "E14",
+        "R2",
+        "E74"
+      ],
+      [
+        "E74",
+        "R3",
+        "E8"
+      ],
+      [
+        "E8",
+        "R4",
+        "E58"
+      ],
+      [
+        "E58",
+        "R1",
+        "E65"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000647/sample.json"
+  },
+  {
+    "id": "c-pa_000671",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000671/images/G1.png",
+      "samples/c-pa_path_assembly/000671/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E48 to E1 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E48",
+        "R1",
+        "E35"
+      ],
+      [
+        "E35",
+        "R2",
+        "E1"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000671/sample.json"
+  },
+  {
+    "id": "c-pa_000725",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000725/images/G1.png",
+      "samples/c-pa_path_assembly/000725/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E73 to E74 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E73",
+        "R1",
+        "E31"
+      ],
+      [
+        "E31",
+        "R2",
+        "E63"
+      ],
+      [
+        "E63",
+        "R3",
+        "E62"
+      ],
+      [
+        "E62",
+        "R4",
+        "E54"
+      ],
+      [
+        "E54",
+        "R1",
+        "E74"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000725/sample.json"
+  },
+  {
+    "id": "c-pa_000863",
+    "task_id": "C-PA",
+    "task_name": "path_assembly",
+    "image_paths": [
+      "samples/c-pa_path_assembly/000863/images/G1.png",
+      "samples/c-pa_path_assembly/000863/images/G2.png",
+      "samples/c-pa_path_assembly/000863/images/G3.png",
+      "samples/c-pa_path_assembly/000863/images/G4.png",
+      "samples/c-pa_path_assembly/000863/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E69 to E8 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E69",
+        "R1",
+        "E62"
+      ],
+      [
+        "E62",
+        "R2",
+        "E53"
+      ],
+      [
+        "E53",
+        "R3",
+        "E51"
+      ],
+      [
+        "E51",
+        "R4",
+        "E9"
+      ],
+      [
+        "E9",
+        "R1",
+        "E14"
+      ],
+      [
+        "E14",
+        "R2",
+        "E57"
+      ],
+      [
+        "E57",
+        "R3",
+        "E8"
+      ]
+    ],
+    "metadata_path": "samples/c-pa_path_assembly/000863/sample.json"
+  },
+  {
+    "id": "c-pp_000028",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000028/images/t1.png",
+      "samples/c-pp_persistent_path/000028/images/t2.png",
+      "samples/c-pp_persistent_path/000028/images/t3.png",
+      "samples/c-pp_persistent_path/000028/images/t4.png",
+      "samples/c-pp_persistent_path/000028/images/t5.png",
+      "samples/c-pp_persistent_path/000028/images/t6.png",
+      "samples/c-pp_persistent_path/000028/images/t7.png",
+      "samples/c-pp_persistent_path/000028/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E2 to E51 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E2",
+        "R1",
+        "E67"
+      ],
+      [
+        "E67",
+        "R2",
+        "E51"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000028/sample.json"
+  },
+  {
+    "id": "c-pp_000031",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000031/images/t1.png",
+      "samples/c-pp_persistent_path/000031/images/t2.png",
+      "samples/c-pp_persistent_path/000031/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E10 to E34 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E10",
+        "R1",
+        "E23"
+      ],
+      [
+        "E23",
+        "R2",
+        "E34"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000031/sample.json"
+  },
+  {
+    "id": "c-pp_000035",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000035/images/t1.png",
+      "samples/c-pp_persistent_path/000035/images/t2.png",
+      "samples/c-pp_persistent_path/000035/images/t3.png",
+      "samples/c-pp_persistent_path/000035/images/t4.png",
+      "samples/c-pp_persistent_path/000035/images/t5.png",
+      "samples/c-pp_persistent_path/000035/images/t6.png",
+      "samples/c-pp_persistent_path/000035/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E62 to E67 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E62",
+        "R1",
+        "E49"
+      ],
+      [
+        "E49",
+        "R2",
+        "E68"
+      ],
+      [
+        "E68",
+        "R3",
+        "E67"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000035/sample.json"
+  },
+  {
+    "id": "c-pp_000185",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000185/images/t1.png",
+      "samples/c-pp_persistent_path/000185/images/t2.png",
+      "samples/c-pp_persistent_path/000185/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E36 to E68 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E36",
+        "R1",
+        "E47"
+      ],
+      [
+        "E47",
+        "R2",
+        "E68"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000185/sample.json"
+  },
+  {
+    "id": "c-pp_000360",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000360/images/t1.png",
+      "samples/c-pp_persistent_path/000360/images/t2.png",
+      "samples/c-pp_persistent_path/000360/images/t3.png",
+      "samples/c-pp_persistent_path/000360/images/t4.png",
+      "samples/c-pp_persistent_path/000360/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E59 to E63 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E59",
+        "R1",
+        "E25"
+      ],
+      [
+        "E25",
+        "R2",
+        "E69"
+      ],
+      [
+        "E69",
+        "R3",
+        "E22"
+      ],
+      [
+        "E22",
+        "R4",
+        "E63"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000360/sample.json"
+  },
+  {
+    "id": "c-pp_000402",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000402/images/t1.png",
+      "samples/c-pp_persistent_path/000402/images/t2.png",
+      "samples/c-pp_persistent_path/000402/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E48 to E56 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E48",
+        "R1",
+        "E47"
+      ],
+      [
+        "E47",
+        "R2",
+        "E56"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000402/sample.json"
+  },
+  {
+    "id": "c-pp_000518",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000518/images/t1.png",
+      "samples/c-pp_persistent_path/000518/images/t2.png",
+      "samples/c-pp_persistent_path/000518/images/t3.png",
+      "samples/c-pp_persistent_path/000518/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E15 to E68 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E15",
+        "R1",
+        "E64"
+      ],
+      [
+        "E64",
+        "R2",
+        "E76"
+      ],
+      [
+        "E76",
+        "R3",
+        "E44"
+      ],
+      [
+        "E44",
+        "R4",
+        "E68"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000518/sample.json"
+  },
+  {
+    "id": "c-pp_000643",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000643/images/t1.png",
+      "samples/c-pp_persistent_path/000643/images/t2.png",
+      "samples/c-pp_persistent_path/000643/images/t3.png",
+      "samples/c-pp_persistent_path/000643/images/t4.png",
+      "samples/c-pp_persistent_path/000643/images/t5.png",
+      "samples/c-pp_persistent_path/000643/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E38 to E10 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E38",
+        "R1",
+        "E49"
+      ],
+      [
+        "E49",
+        "R2",
+        "E75"
+      ],
+      [
+        "E75",
+        "R3",
+        "E64"
+      ],
+      [
+        "E64",
+        "R4",
+        "E10"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000643/sample.json"
+  },
+  {
+    "id": "c-pp_000686",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000686/images/t1.png",
+      "samples/c-pp_persistent_path/000686/images/t2.png",
+      "samples/c-pp_persistent_path/000686/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E19 to E66 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E19",
+        "R1",
+        "E34"
+      ],
+      [
+        "E34",
+        "R2",
+        "E66"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000686/sample.json"
+  },
+  {
+    "id": "c-pp_000713",
+    "task_id": "C-PP",
+    "task_name": "persistent_path",
+    "image_paths": [
+      "samples/c-pp_persistent_path/000713/images/t1.png",
+      "samples/c-pp_persistent_path/000713/images/t2.png",
+      "samples/c-pp_persistent_path/000713/images/t3.png",
+      "samples/c-pp_persistent_path/000713/images/t4.png",
+      "samples/c-pp_persistent_path/000713/images/t5.png",
+      "samples/c-pp_persistent_path/000713/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E12 to E28 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E12",
+        "R1",
+        "E62"
+      ],
+      [
+        "E62",
+        "R2",
+        "E13"
+      ],
+      [
+        "E13",
+        "R3",
+        "E33"
+      ],
+      [
+        "E33",
+        "R4",
+        "E28"
+      ]
+    ],
+    "metadata_path": "samples/c-pp_persistent_path/000713/sample.json"
+  },
+  {
+    "id": "c-tpc_000264",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000264/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000264/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000264/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E28 and E75 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E28 to E75.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t1": {
+        "subgraph1": [
+          [
+            "E6",
+            "R1",
+            "E40"
+          ],
+          [
+            "E28",
+            "R1",
+            "E65"
+          ],
+          [
+            "E40",
+            "R2",
+            "E65"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E36",
+            "R3",
+            "E67"
+          ],
+          [
+            "E36",
+            "R3",
+            "E78"
+          ],
+          [
+            "E66",
+            "R1",
+            "E75"
+          ],
+          [
+            "E66",
+            "R4",
+            "E67"
+          ],
+          [
+            "E67",
+            "R4",
+            "E79"
+          ]
+        ]
+      },
+      "t2": {
+        "path": [
+          [
+            "E28",
+            "R1",
+            "E65"
+          ],
+          [
+            "E65",
+            "R2",
+            "E40"
+          ],
+          [
+            "E40",
+            "R2",
+            "E16"
+          ],
+          [
+            "E16",
+            "R3",
+            "E36"
+          ],
+          [
+            "E36",
+            "R3",
+            "E67"
+          ],
+          [
+            "E67",
+            "R4",
+            "E66"
+          ],
+          [
+            "E66",
+            "R1",
+            "E75"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000264/sample.json"
+  },
+  {
+    "id": "c-tpc_000299",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000299/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000299/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000299/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000299/images/t4.png",
+      "samples/c-tpc_temporal_path_composition/000299/images/t5.png",
+      "samples/c-tpc_temporal_path_composition/000299/images/t6.png",
+      "samples/c-tpc_temporal_path_composition/000299/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E63 and E12 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E63 to E12.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t6": {
+        "subgraph1": [
+          [
+            "E30",
+            "R4",
+            "E44"
+          ],
+          [
+            "E36",
+            "R2",
+            "E44"
+          ],
+          [
+            "E44",
+            "R1",
+            "E63"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E12",
+            "R1",
+            "E39"
+          ],
+          [
+            "E14",
+            "R1",
+            "E24"
+          ],
+          [
+            "E14",
+            "R3",
+            "E56"
+          ],
+          [
+            "E39",
+            "R4",
+            "E56"
+          ]
+        ]
+      },
+      "t7": {
+        "path": [
+          [
+            "E63",
+            "R1",
+            "E44"
+          ],
+          [
+            "E44",
+            "R2",
+            "E36"
+          ],
+          [
+            "E36",
+            "R2",
+            "E14"
+          ],
+          [
+            "E14",
+            "R3",
+            "E56"
+          ],
+          [
+            "E56",
+            "R4",
+            "E39"
+          ],
+          [
+            "E39",
+            "R1",
+            "E12"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000299/sample.json"
+  },
+  {
+    "id": "c-tpc_000348",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000348/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000348/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000348/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000348/images/t4.png",
+      "samples/c-tpc_temporal_path_composition/000348/images/t5.png",
+      "samples/c-tpc_temporal_path_composition/000348/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E62 and E55 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E62 to E55.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t3": {
+        "subgraph1": [
+          [
+            "E24",
+            "R2",
+            "E74"
+          ],
+          [
+            "E32",
+            "R2",
+            "E62"
+          ],
+          [
+            "E62",
+            "R1",
+            "E74"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E34",
+            "R3",
+            "E65"
+          ],
+          [
+            "E34",
+            "R4",
+            "E38"
+          ],
+          [
+            "E37",
+            "R4",
+            "E65"
+          ],
+          [
+            "E38",
+            "R1",
+            "E55"
+          ]
+        ]
+      },
+      "t4": {
+        "path": [
+          [
+            "E62",
+            "R1",
+            "E74"
+          ],
+          [
+            "E74",
+            "R2",
+            "E24"
+          ],
+          [
+            "E24",
+            "R2",
+            "E65"
+          ],
+          [
+            "E65",
+            "R3",
+            "E34"
+          ],
+          [
+            "E34",
+            "R4",
+            "E38"
+          ],
+          [
+            "E38",
+            "R1",
+            "E55"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000348/sample.json"
+  },
+  {
+    "id": "c-tpc_000456",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000456/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000456/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000456/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E9 and E53 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E9 to E53.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t2": {
+        "subgraph1": [
+          [
+            "E9",
+            "R1",
+            "E46"
+          ],
+          [
+            "E9",
+            "R1",
+            "E47"
+          ],
+          [
+            "E38",
+            "R3",
+            "E79"
+          ],
+          [
+            "E46",
+            "R2",
+            "E79"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E27",
+            "R4",
+            "E53"
+          ],
+          [
+            "E40",
+            "R4",
+            "E43"
+          ],
+          [
+            "E43",
+            "R1",
+            "E53"
+          ]
+        ]
+      },
+      "t3": {
+        "path": [
+          [
+            "E9",
+            "R1",
+            "E46"
+          ],
+          [
+            "E46",
+            "R2",
+            "E79"
+          ],
+          [
+            "E79",
+            "R3",
+            "E38"
+          ],
+          [
+            "E38",
+            "R2",
+            "E7"
+          ],
+          [
+            "E7",
+            "R3",
+            "E40"
+          ],
+          [
+            "E40",
+            "R4",
+            "E43"
+          ],
+          [
+            "E43",
+            "R1",
+            "E53"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000456/sample.json"
+  },
+  {
+    "id": "c-tpc_000521",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000521/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000521/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000521/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000521/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E49 and E11 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E49 to E11.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t1": {
+        "subgraph1": [
+          [
+            "E35",
+            "R2",
+            "E53"
+          ],
+          [
+            "E35",
+            "R3",
+            "E65"
+          ],
+          [
+            "E49",
+            "R1",
+            "E53"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E7",
+            "R3",
+            "E42"
+          ],
+          [
+            "E11",
+            "R2",
+            "E74"
+          ],
+          [
+            "E42",
+            "R1",
+            "E74"
+          ],
+          [
+            "E42",
+            "R4",
+            "E72"
+          ],
+          [
+            "E44",
+            "R2",
+            "E74"
+          ]
+        ]
+      },
+      "t2": {
+        "path": [
+          [
+            "E49",
+            "R1",
+            "E53"
+          ],
+          [
+            "E53",
+            "R2",
+            "E35"
+          ],
+          [
+            "E35",
+            "R3",
+            "E65"
+          ],
+          [
+            "E65",
+            "R3",
+            "E69"
+          ],
+          [
+            "E69",
+            "R4",
+            "E72"
+          ],
+          [
+            "E72",
+            "R4",
+            "E42"
+          ],
+          [
+            "E42",
+            "R1",
+            "E74"
+          ],
+          [
+            "E74",
+            "R2",
+            "E11"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000521/sample.json"
+  },
+  {
+    "id": "c-tpc_000531",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000531/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000531/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000531/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E25 and E34 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E25 to E34.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t2": {
+        "subgraph1": [
+          [
+            "E25",
+            "R1",
+            "E79"
+          ],
+          [
+            "E62",
+            "R2",
+            "E79"
+          ],
+          [
+            "E62",
+            "R4",
+            "E67"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E8",
+            "R3",
+            "E44"
+          ],
+          [
+            "E8",
+            "R3",
+            "E68"
+          ],
+          [
+            "E34",
+            "R1",
+            "E53"
+          ],
+          [
+            "E41",
+            "R2",
+            "E68"
+          ],
+          [
+            "E53",
+            "R4",
+            "E68"
+          ]
+        ]
+      },
+      "t3": {
+        "path": [
+          [
+            "E25",
+            "R1",
+            "E79"
+          ],
+          [
+            "E79",
+            "R2",
+            "E62"
+          ],
+          [
+            "E62",
+            "R2",
+            "E8"
+          ],
+          [
+            "E8",
+            "R3",
+            "E68"
+          ],
+          [
+            "E68",
+            "R4",
+            "E53"
+          ],
+          [
+            "E53",
+            "R1",
+            "E34"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000531/sample.json"
+  },
+  {
+    "id": "c-tpc_000752",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000752/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t4.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t5.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t6.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t7.png",
+      "samples/c-tpc_temporal_path_composition/000752/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E79 and E50 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E79 to E50.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t1": {
+        "subgraph1": [
+          [
+            "E2",
+            "R2",
+            "E68"
+          ],
+          [
+            "E2",
+            "R4",
+            "E21"
+          ],
+          [
+            "E39",
+            "R1",
+            "E79"
+          ],
+          [
+            "E68",
+            "R1",
+            "E79"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E4",
+            "R3",
+            "E60"
+          ],
+          [
+            "E5",
+            "R3",
+            "E23"
+          ],
+          [
+            "E23",
+            "R1",
+            "E50"
+          ],
+          [
+            "E23",
+            "R4",
+            "E60"
+          ]
+        ]
+      },
+      "t2": {
+        "path": [
+          [
+            "E79",
+            "R1",
+            "E68"
+          ],
+          [
+            "E68",
+            "R2",
+            "E2"
+          ],
+          [
+            "E2",
+            "R2",
+            "E4"
+          ],
+          [
+            "E4",
+            "R3",
+            "E60"
+          ],
+          [
+            "E60",
+            "R4",
+            "E23"
+          ],
+          [
+            "E23",
+            "R1",
+            "E50"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000752/sample.json"
+  },
+  {
+    "id": "c-tpc_000870",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000870/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000870/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000870/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000870/images/t4.png",
+      "samples/c-tpc_temporal_path_composition/000870/images/t5.png",
+      "samples/c-tpc_temporal_path_composition/000870/images/t6.png",
+      "samples/c-tpc_temporal_path_composition/000870/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E49 and E55 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E49 to E55.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t3": {
+        "subgraph1": [
+          [
+            "E11",
+            "R2",
+            "E37"
+          ],
+          [
+            "E33",
+            "R1",
+            "E49"
+          ],
+          [
+            "E33",
+            "R2",
+            "E37"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E9",
+            "R2",
+            "E55"
+          ],
+          [
+            "E26",
+            "R3",
+            "E32"
+          ],
+          [
+            "E26",
+            "R3",
+            "E53"
+          ],
+          [
+            "E26",
+            "R4",
+            "E55"
+          ]
+        ]
+      },
+      "t4": {
+        "path": [
+          [
+            "E49",
+            "R1",
+            "E33"
+          ],
+          [
+            "E33",
+            "R2",
+            "E37"
+          ],
+          [
+            "E37",
+            "R1",
+            "E32"
+          ],
+          [
+            "E32",
+            "R3",
+            "E26"
+          ],
+          [
+            "E26",
+            "R4",
+            "E55"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000870/sample.json"
+  },
+  {
+    "id": "c-tpc_000926",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000926/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000926/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000926/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000926/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E43 and E55 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E43 to E55.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t3": {
+        "subgraph1": [
+          [
+            "E17",
+            "R1",
+            "E43"
+          ],
+          [
+            "E17",
+            "R2",
+            "E20"
+          ],
+          [
+            "E17",
+            "R4",
+            "E67"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E13",
+            "R3",
+            "E16"
+          ],
+          [
+            "E13",
+            "R3",
+            "E74"
+          ],
+          [
+            "E13",
+            "R4",
+            "E55"
+          ]
+        ]
+      },
+      "t4": {
+        "path": [
+          [
+            "E43",
+            "R1",
+            "E17"
+          ],
+          [
+            "E17",
+            "R2",
+            "E20"
+          ],
+          [
+            "E20",
+            "R1",
+            "E42"
+          ],
+          [
+            "E42",
+            "R2",
+            "E16"
+          ],
+          [
+            "E16",
+            "R3",
+            "E13"
+          ],
+          [
+            "E13",
+            "R4",
+            "E55"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000926/sample.json"
+  },
+  {
+    "id": "c-tpc_000970",
+    "task_id": "C-TPC",
+    "task_name": "temporal_path_composition",
+    "image_paths": [
+      "samples/c-tpc_temporal_path_composition/000970/images/t1.png",
+      "samples/c-tpc_temporal_path_composition/000970/images/t2.png",
+      "samples/c-tpc_temporal_path_composition/000970/images/t3.png",
+      "samples/c-tpc_temporal_path_composition/000970/images/t4.png",
+      "samples/c-tpc_temporal_path_composition/000970/images/t5.png",
+      "samples/c-tpc_temporal_path_composition/000970/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E66 and E65 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E66 to E65.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+    "answer": {
+      "t1": {
+        "subgraph1": [
+          [
+            "E2",
+            "R1",
+            "E66"
+          ],
+          [
+            "E2",
+            "R2",
+            "E33"
+          ],
+          [
+            "E2",
+            "R4",
+            "E37"
+          ]
+        ],
+        "subgraph2": [
+          [
+            "E7",
+            "R3",
+            "E51"
+          ],
+          [
+            "E7",
+            "R4",
+            "E68"
+          ],
+          [
+            "E50",
+            "R4",
+            "E65"
+          ],
+          [
+            "E65",
+            "R1",
+            "E68"
+          ]
+        ]
+      },
+      "t2": {
+        "path": [
+          [
+            "E66",
+            "R1",
+            "E2"
+          ],
+          [
+            "E2",
+            "R2",
+            "E33"
+          ],
+          [
+            "E33",
+            "R2",
+            "E51"
+          ],
+          [
+            "E51",
+            "R3",
+            "E7"
+          ],
+          [
+            "E7",
+            "R4",
+            "E68"
+          ],
+          [
+            "E68",
+            "R1",
+            "E65"
+          ]
+        ]
+      }
+    },
+    "metadata_path": "samples/c-tpc_temporal_path_composition/000970/sample.json"
+  },
+  {
+    "id": "c-ue_000067",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000067/images/G1.png",
+      "samples/c-ue_union_edge_count/000067/images/G2.png",
+      "samples/c-ue_union_edge_count/000067/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique edge triples appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 28,
+    "metadata_path": "samples/c-ue_union_edge_count/000067/sample.json"
+  },
+  {
+    "id": "c-ue_000076",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000076/images/G1.png",
+      "samples/c-ue_union_edge_count/000076/images/G2.png",
+      "samples/c-ue_union_edge_count/000076/images/G3.png",
+      "samples/c-ue_union_edge_count/000076/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nCount the distinct edge triples after taking the union of all graph views.\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 31,
+    "metadata_path": "samples/c-ue_union_edge_count/000076/sample.json"
+  },
+  {
+    "id": "c-ue_000083",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000083/images/G1.png",
+      "samples/c-ue_union_edge_count/000083/images/G2.png",
+      "samples/c-ue_union_edge_count/000083/images/G3.png",
+      "samples/c-ue_union_edge_count/000083/images/G4.png",
+      "samples/c-ue_union_edge_count/000083/images/G5.png",
+      "samples/c-ue_union_edge_count/000083/images/G6.png",
+      "samples/c-ue_union_edge_count/000083/images/G7.png",
+      "samples/c-ue_union_edge_count/000083/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAcross all graph views together, how many different edge triples are shown?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 78,
+    "metadata_path": "samples/c-ue_union_edge_count/000083/sample.json"
+  },
+  {
+    "id": "c-ue_000433",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000433/images/G1.png",
+      "samples/c-ue_union_edge_count/000433/images/G2.png",
+      "samples/c-ue_union_edge_count/000433/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique edge triples appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 28,
+    "metadata_path": "samples/c-ue_union_edge_count/000433/sample.json"
+  },
+  {
+    "id": "c-ue_000453",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000453/images/G1.png",
+      "samples/c-ue_union_edge_count/000453/images/G2.png",
+      "samples/c-ue_union_edge_count/000453/images/G3.png",
+      "samples/c-ue_union_edge_count/000453/images/G4.png",
+      "samples/c-ue_union_edge_count/000453/images/G5.png",
+      "samples/c-ue_union_edge_count/000453/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAcross all graph views together, how many different edge triples are shown?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 53,
+    "metadata_path": "samples/c-ue_union_edge_count/000453/sample.json"
+  },
+  {
+    "id": "c-ue_000559",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000559/images/G1.png",
+      "samples/c-ue_union_edge_count/000559/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique edge triples appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 14,
+    "metadata_path": "samples/c-ue_union_edge_count/000559/sample.json"
+  },
+  {
+    "id": "c-ue_000693",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000693/images/G1.png",
+      "samples/c-ue_union_edge_count/000693/images/G2.png",
+      "samples/c-ue_union_edge_count/000693/images/G3.png",
+      "samples/c-ue_union_edge_count/000693/images/G4.png",
+      "samples/c-ue_union_edge_count/000693/images/G5.png",
+      "samples/c-ue_union_edge_count/000693/images/G6.png",
+      "samples/c-ue_union_edge_count/000693/images/G7.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAcross all graph views together, how many different edge triples are shown?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 58,
+    "metadata_path": "samples/c-ue_union_edge_count/000693/sample.json"
+  },
+  {
+    "id": "c-ue_000748",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000748/images/G1.png",
+      "samples/c-ue_union_edge_count/000748/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nCount the distinct edge triples after taking the union of all graph views.\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 18,
+    "metadata_path": "samples/c-ue_union_edge_count/000748/sample.json"
+  },
+  {
+    "id": "c-ue_000931",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000931/images/G1.png",
+      "samples/c-ue_union_edge_count/000931/images/G2.png",
+      "samples/c-ue_union_edge_count/000931/images/G3.png",
+      "samples/c-ue_union_edge_count/000931/images/G4.png",
+      "samples/c-ue_union_edge_count/000931/images/G5.png",
+      "samples/c-ue_union_edge_count/000931/images/G6.png",
+      "samples/c-ue_union_edge_count/000931/images/G7.png",
+      "samples/c-ue_union_edge_count/000931/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nCount the distinct edge triples after taking the union of all graph views.\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 70,
+    "metadata_path": "samples/c-ue_union_edge_count/000931/sample.json"
+  },
+  {
+    "id": "c-ue_000978",
+    "task_id": "C-UE",
+    "task_name": "union_edge_count",
+    "image_paths": [
+      "samples/c-ue_union_edge_count/000978/images/G1.png",
+      "samples/c-ue_union_edge_count/000978/images/G2.png",
+      "samples/c-ue_union_edge_count/000978/images/G3.png",
+      "samples/c-ue_union_edge_count/000978/images/G4.png",
+      "samples/c-ue_union_edge_count/000978/images/G5.png",
+      "samples/c-ue_union_edge_count/000978/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique edge triples appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 48,
+    "metadata_path": "samples/c-ue_union_edge_count/000978/sample.json"
+  },
+  {
+    "id": "c-un_000106",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000106/images/G1.png",
+      "samples/c-un_union_node_count/000106/images/G2.png",
+      "samples/c-un_union_node_count/000106/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique node labels appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 20,
+    "metadata_path": "samples/c-un_union_node_count/000106/sample.json"
+  },
+  {
+    "id": "c-un_000130",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000130/images/G1.png",
+      "samples/c-un_union_node_count/000130/images/G2.png",
+      "samples/c-un_union_node_count/000130/images/G3.png",
+      "samples/c-un_union_node_count/000130/images/G4.png",
+      "samples/c-un_union_node_count/000130/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique node labels appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 37,
+    "metadata_path": "samples/c-un_union_node_count/000130/sample.json"
+  },
+  {
+    "id": "c-un_000143",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000143/images/G1.png",
+      "samples/c-un_union_node_count/000143/images/G2.png",
+      "samples/c-un_union_node_count/000143/images/G3.png",
+      "samples/c-un_union_node_count/000143/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAcross all graph views together, how many different nodes are shown?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 24,
+    "metadata_path": "samples/c-un_union_node_count/000143/sample.json"
+  },
+  {
+    "id": "c-un_000364",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000364/images/G1.png",
+      "samples/c-un_union_node_count/000364/images/G2.png",
+      "samples/c-un_union_node_count/000364/images/G3.png",
+      "samples/c-un_union_node_count/000364/images/G4.png",
+      "samples/c-un_union_node_count/000364/images/G5.png",
+      "samples/c-un_union_node_count/000364/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nCount the distinct nodes after taking the union of all graph views.\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 34,
+    "metadata_path": "samples/c-un_union_node_count/000364/sample.json"
+  },
+  {
+    "id": "c-un_000481",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000481/images/G1.png",
+      "samples/c-un_union_node_count/000481/images/G2.png",
+      "samples/c-un_union_node_count/000481/images/G3.png",
+      "samples/c-un_union_node_count/000481/images/G4.png",
+      "samples/c-un_union_node_count/000481/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nCount the distinct nodes after taking the union of all graph views.\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 34,
+    "metadata_path": "samples/c-un_union_node_count/000481/sample.json"
+  },
+  {
+    "id": "c-un_000531",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000531/images/G1.png",
+      "samples/c-un_union_node_count/000531/images/G2.png",
+      "samples/c-un_union_node_count/000531/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAcross all graph views together, how many different nodes are shown?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 23,
+    "metadata_path": "samples/c-un_union_node_count/000531/sample.json"
+  },
+  {
+    "id": "c-un_000658",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000658/images/G1.png",
+      "samples/c-un_union_node_count/000658/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nCount the distinct nodes after taking the union of all graph views.\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 12,
+    "metadata_path": "samples/c-un_union_node_count/000658/sample.json"
+  },
+  {
+    "id": "c-un_000661",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000661/images/G1.png",
+      "samples/c-un_union_node_count/000661/images/G2.png",
+      "samples/c-un_union_node_count/000661/images/G3.png",
+      "samples/c-un_union_node_count/000661/images/G4.png",
+      "samples/c-un_union_node_count/000661/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAcross all graph views together, how many different nodes are shown?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 37,
+    "metadata_path": "samples/c-un_union_node_count/000661/sample.json"
+  },
+  {
+    "id": "c-un_000673",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000673/images/G1.png",
+      "samples/c-un_union_node_count/000673/images/G2.png",
+      "samples/c-un_union_node_count/000673/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique node labels appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 25,
+    "metadata_path": "samples/c-un_union_node_count/000673/sample.json"
+  },
+  {
+    "id": "c-un_000800",
+    "task_id": "C-UN",
+    "task_name": "union_node_count",
+    "image_paths": [
+      "samples/c-un_union_node_count/000800/images/G1.png",
+      "samples/c-un_union_node_count/000800/images/G2.png",
+      "samples/c-un_union_node_count/000800/images/G3.png",
+      "samples/c-un_union_node_count/000800/images/G4.png",
+      "samples/c-un_union_node_count/000800/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nHow many unique node labels appear in the union of all graph views?\nReturn only a valid JSON object in the form {\"answer\": <INTEGER>}. The value of \"answer\" must be an integer. Do not include any explanation or extra text.",
+    "answer": 24,
+    "metadata_path": "samples/c-un_union_node_count/000800/sample.json"
+  }
+]

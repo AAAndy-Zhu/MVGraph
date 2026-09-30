@@ -1,0 +1,15 @@
+{
+  "total_samples": 100,
+  "task_sample_counts": {
+    "R-BM": 10,
+    "R-BN": 10,
+    "R-CE": 10,
+    "R-HP": 10,
+    "R-MF": 10,
+    "R-MFC": 10,
+    "R-SBM": 10,
+    "R-STS": 10,
+    "R-THP": 10,
+    "R-TS": 10
+  }
+}

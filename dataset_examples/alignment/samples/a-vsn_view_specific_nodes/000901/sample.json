@@ -1,0 +1,297 @@
+{
+  "sample_id": "a-vsn_000901",
+  "sample_index": 901,
+  "task_id": "A-VSN",
+  "task_name": "view_specific_nodes",
+  "task_english_name": "View-Specific Nodes",
+  "task_dir": "a-vsn_view_specific_nodes",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/a-vsn_view_specific_nodes/000901/images/G1.png",
+    "samples/a-vsn_view_specific_nodes/000901/images/G2.png"
+  ],
+  "graphs": [
+    "samples/a-vsn_view_specific_nodes/000901/graphs/G1.json",
+    "samples/a-vsn_view_specific_nodes/000901/graphs/G2.json"
+  ],
+  "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node labels occur in Graph 2 but not in any other view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E1"
+  ],
+  "answer_type": "node_list",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": null,
+  "target": null,
+  "reasoning_program": [],
+  "graph_generator": "custom_perception_motif",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 15,
+    "num_unique_edges": 16,
+    "per_graph_node_counts": {
+      "G1": 14,
+      "G2": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 6,
+      "G2": 10
+    },
+    "answer_list_length": 1,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E1"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": null,
+        "answer_changed": true,
+        "error": "IndexError",
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": null,
+        "answer_changed": true,
+        "error": "IndexError",
+        "underdetermined_without_image": true,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "note": "Perception tasks are validated by direct set/count recomputation."
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "Basic programmatic shortcut check for perception samples."
+    }
+  },
+  "layout": {
+    "G1": {
+      "E5": [
+        -0.6700120994924551,
+        0.007981155618987892
+      ],
+      "E66": [
+        0.18736463838594375,
+        -0.3840778138487432
+      ],
+      "E55": [
+        -0.058974281023769504,
+        -0.17793643244277862
+      ],
+      "E46": [
+        -0.3496966183895257,
+        0.3907575554558114
+      ],
+      "E75": [
+        -0.34714257454931524,
+        0.06320868893648167
+      ],
+      "E2": [
+        0.5169847668168874,
+        -0.7731964698450706
+      ],
+      "E27": [
+        -0.3403919710615114,
+        -0.7731965073221981
+      ],
+      "E57": [
+        1.0,
+        -0.22311521764584308
+      ],
+      "E18": [
+        0.14262326212160098,
+        -0.22311525512297056
+      ],
+      "E15": [
+        0.38333049142829195,
+        0.45480242765333045
+      ],
+      "E22": [
+        -0.2048258335604426,
+        0.7731965073221981
+      ],
+      "E39": [
+        -0.8204658194061843,
+        0.5118728374790433
+      ],
+      "E67": [
+        -1.0,
+        -0.13238652845283527
+      ],
+      "E74": [
+        -0.6082354755248744,
+        -0.6744411474306815
+      ]
+    },
+    "G2": {
+      "E22": [
+        0.09369675811110044,
+        -1.0
+      ],
+      "E15": [
+        0.011029153309847701,
+        -0.1646208950489053
+      ],
+      "E67": [
+        0.24098273293629108,
+        0.9744685506409155
+      ],
+      "E75": [
+        -0.4703154946408172,
+        1.0
+      ],
+      "E57": [
+        -0.6347689459706747,
+        0.2948162198636159
+      ],
+      "E1": [
+        -0.18348711184889238,
+        0.5258046429791777
+      ],
+      "E39": [
+        0.6347689459706747,
+        0.34382581026380493
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E2",
+        "E5",
+        "E15",
+        "E18",
+        "E22",
+        "E27",
+        "E39",
+        "E46",
+        "E55",
+        "E57",
+        "E66",
+        "E67",
+        "E74",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E2",
+          "R4",
+          "E27"
+        ],
+        [
+          "E5",
+          "R1",
+          "E75"
+        ],
+        [
+          "E18",
+          "R1",
+          "E57"
+        ],
+        [
+          "E46",
+          "R3",
+          "E75"
+        ],
+        [
+          "E55",
+          "R2",
+          "E66"
+        ],
+        [
+          "E55",
+          "R2",
+          "E75"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E1",
+        "E15",
+        "E22",
+        "E39",
+        "E57",
+        "E67",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E1",
+          "R4",
+          "E15"
+        ],
+        [
+          "E1",
+          "R1",
+          "E57"
+        ],
+        [
+          "E1",
+          "R3",
+          "E67"
+        ],
+        [
+          "E1",
+          "R3",
+          "E75"
+        ],
+        [
+          "E15",
+          "R4",
+          "E22"
+        ],
+        [
+          "E15",
+          "R4",
+          "E39"
+        ],
+        [
+          "E15",
+          "R1",
+          "E57"
+        ],
+        [
+          "E39",
+          "R2",
+          "E67"
+        ],
+        [
+          "E57",
+          "R2",
+          "E75"
+        ],
+        [
+          "E67",
+          "R3",
+          "E75"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "graph_view": "Graph 2",
+  "target_graph_view": 2
+}

@@ -1,0 +1,125 @@
+{
+  "graph_id": "G1",
+  "title": "Graph 1",
+  "nodes": [
+    "E2",
+    "E6",
+    "E9",
+    "E12",
+    "E35",
+    "E51",
+    "E52",
+    "E61",
+    "E71",
+    "E80"
+  ],
+  "edges": [
+    {
+      "source": "E6",
+      "target": "E12",
+      "relation": "R1"
+    },
+    {
+      "source": "E12",
+      "target": "E80",
+      "relation": "R2"
+    },
+    {
+      "source": "E2",
+      "target": "E9",
+      "relation": "R3"
+    },
+    {
+      "source": "E35",
+      "target": "E51",
+      "relation": "R4"
+    },
+    {
+      "source": "E35",
+      "target": "E71",
+      "relation": "R1"
+    },
+    {
+      "source": "E35",
+      "target": "E80",
+      "relation": "R2"
+    },
+    {
+      "source": "E51",
+      "target": "E52",
+      "relation": "R3"
+    },
+    {
+      "source": "E61",
+      "target": "E71",
+      "relation": "R4"
+    }
+  ],
+  "directed": false,
+  "partitions": {
+    "applicants": [
+      "E73",
+      "E29",
+      "E52",
+      "E60",
+      "E38",
+      "E61",
+      "E2",
+      "E35",
+      "E12"
+    ],
+    "jobs": [
+      "E5",
+      "E51",
+      "E17",
+      "E9",
+      "E53",
+      "E71",
+      "E80",
+      "E24",
+      "E6"
+    ]
+  },
+  "triples": [
+    [
+      "E6",
+      "R1",
+      "E12"
+    ],
+    [
+      "E12",
+      "R2",
+      "E80"
+    ],
+    [
+      "E2",
+      "R3",
+      "E9"
+    ],
+    [
+      "E35",
+      "R4",
+      "E51"
+    ],
+    [
+      "E35",
+      "R1",
+      "E71"
+    ],
+    [
+      "E35",
+      "R2",
+      "E80"
+    ],
+    [
+      "E51",
+      "R3",
+      "E52"
+    ],
+    [
+      "E61",
+      "R4",
+      "E71"
+    ]
+  ]
+}

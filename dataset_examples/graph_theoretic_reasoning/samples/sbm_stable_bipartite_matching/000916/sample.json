@@ -1,0 +1,1288 @@
+{
+  "sample_id": "sbm_000916",
+  "sample_index": 916,
+  "task_id": "SBM",
+  "task_name": "stable_bipartite_matching",
+  "task_english_name": "Stable Bipartite Matching",
+  "task_dir": "sbm_stable_bipartite_matching",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [
+    "samples/sbm_stable_bipartite_matching/000916/images/t1.png",
+    "samples/sbm_stable_bipartite_matching/000916/images/t2.png",
+    "samples/sbm_stable_bipartite_matching/000916/images/t3.png"
+  ],
+  "graphs": [
+    "samples/sbm_stable_bipartite_matching/000916/graphs/t1.json",
+    "samples/sbm_stable_bipartite_matching/000916/graphs/t2.json",
+    "samples/sbm_stable_bipartite_matching/000916/graphs/t3.json"
+  ],
+  "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E48\", \"E24\", \"E3\", \"E40\", \"E25\", \"E36\", \"E58\", \"E68\"], [\"E48\", \"E24\", \"E3\", \"E40\", \"E25\", \"E36\", \"E58\", \"E57\"], [\"E48\", \"E24\", \"E3\", \"E40\", \"E25\", \"E36\", \"E58\", \"E33\"]], and the job partitions are [[\"E50\", \"E23\", \"E64\", \"E45\", \"E51\", \"E60\", \"E28\", \"E47\"], [\"E50\", \"E23\", \"E64\", \"E45\", \"E51\", \"E60\", \"E28\", \"E1\"], [\"E50\", \"E23\", \"E64\", \"E45\", \"E51\", \"E60\", \"E28\", \"E70\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+  "answer": [
+    [
+      [
+        "E48",
+        "E50"
+      ],
+      [
+        "E24",
+        "E64"
+      ],
+      [
+        "E3",
+        "E23"
+      ],
+      [
+        "E40",
+        "E47"
+      ],
+      [
+        "E25",
+        "E60"
+      ],
+      [
+        "E36",
+        "E45"
+      ],
+      [
+        "E58",
+        "E51"
+      ],
+      [
+        "E68",
+        "E28"
+      ]
+    ],
+    [
+      [
+        "E48",
+        "E50"
+      ],
+      [
+        "E24",
+        "E64"
+      ],
+      [
+        "E3",
+        "E51"
+      ],
+      [
+        "E40",
+        "E1"
+      ],
+      [
+        "E25",
+        "E28"
+      ],
+      [
+        "E36",
+        "E45"
+      ],
+      [
+        "E58",
+        "E60"
+      ],
+      [
+        "E57",
+        "E23"
+      ]
+    ],
+    [
+      [
+        "E48",
+        "E28"
+      ],
+      [
+        "E24",
+        "E70"
+      ],
+      [
+        "E3",
+        "E51"
+      ],
+      [
+        "E40",
+        "E60"
+      ],
+      [
+        "E25",
+        "E64"
+      ],
+      [
+        "E36",
+        "E45"
+      ],
+      [
+        "E58",
+        "E50"
+      ],
+      [
+        "E33",
+        "E23"
+      ]
+    ]
+  ],
+  "answer_type": "temporal_matchings",
+  "required_images": [
+    1,
+    2,
+    3
+  ],
+  "source": null,
+  "target": null,
+  "graph_generator": "filtered_random_high_level",
+  "difficulty": {
+    "num_images": 3,
+    "num_unique_nodes": 20,
+    "num_unique_edges": 51,
+    "per_graph_node_counts": {
+      "t1": 16,
+      "t2": 16,
+      "t3": 16
+    },
+    "per_graph_edge_counts": {
+      "t1": 22,
+      "t2": 23,
+      "t3": 23
+    },
+    "num_time_steps": 3,
+    "visual_level": 1
+  },
+  "checks": {
+    "semantic_gold_valid": true,
+    "multi_image": true,
+    "all_images_required_by_task_contract": true
+  },
+  "layout": {
+    "t1": {
+      "E3": [
+        -0.11901017179048153,
+        0.4229559315130968
+      ],
+      "E48": [
+        -0.18655462456131466,
+        0.7363104015910629
+      ],
+      "E23": [
+        -0.5302102555016294,
+        0.4615107202041143
+      ],
+      "E50": [
+        0.27101051858232345,
+        1.0
+      ],
+      "E47": [
+        -0.11691340459318016,
+        -0.7286703846595176
+      ],
+      "E36": [
+        -0.34356466404197517,
+        -1.0
+      ],
+      "E24": [
+        0.5945447104632682,
+        0.6261967205243135
+      ],
+      "E40": [
+        0.32028860811699145,
+        -0.3249616059192419
+      ],
+      "E51": [
+        -0.7948699183349982,
+        -0.5448419706589738
+      ],
+      "E25": [
+        0.8712043497981984,
+        0.3436107218472838
+      ],
+      "E58": [
+        -0.6480933256500057,
+        -0.9366857972563605
+      ],
+      "E68": [
+        -0.8712043497981984,
+        0.11091243781748959
+      ],
+      "E45": [
+        0.16061086891782617,
+        -0.8523393791180826
+      ],
+      "E64": [
+        0.7095342324849295,
+        0.09474870432493275
+      ],
+      "E28": [
+        -0.7722679333123156,
+        0.6377914521946614
+      ],
+      "E60": [
+        0.3121408723522119,
+        0.3367143413117703
+      ]
+    },
+    "t2": {
+      "E1": [
+        0.8458669012481352,
+        -0.3952894108747085
+      ],
+      "E3": [
+        -0.2547537204402583,
+        0.40559195166607165
+      ],
+      "E48": [
+        0.5056405918009714,
+        -0.06547867005404702
+      ],
+      "E23": [
+        -0.07201442205222433,
+        0.7745736647614846
+      ],
+      "E50": [
+        0.00522189101021011,
+        0.1491229247083796
+      ],
+      "E36": [
+        -0.7552049260765805,
+        -0.16954526712536874
+      ],
+      "E24": [
+        1.0,
+        -0.6197645984598413
+      ],
+      "E40": [
+        0.8182997069259476,
+        -0.7745736647614846
+      ],
+      "E51": [
+        -0.5926066494726254,
+        0.4972801031591147
+      ],
+      "E25": [
+        0.1045319748404118,
+        -0.2584792309483949
+      ],
+      "E57": [
+        0.14139404282140228,
+        0.5706915653906047
+      ],
+      "E58": [
+        -0.5856366851485804,
+        0.13375084617942537
+      ],
+      "E45": [
+        -0.9637294521655964,
+        0.12069445727724713
+      ],
+      "E64": [
+        0.5598931683131676,
+        -0.5814089786351236
+      ],
+      "E28": [
+        -0.34674723152317694,
+        -0.03680167504851424
+      ],
+      "E60": [
+        -1.0,
+        -0.12017749876868526
+      ]
+    },
+    "t3": {
+      "E33": [
+        0.400067643815575,
+        0.9086859803393114
+      ],
+      "E3": [
+        -0.3057267925958559,
+        -0.4217157334019886
+      ],
+      "E48": [
+        0.3034775559046164,
+        0.2642432054980077
+      ],
+      "E23": [
+        0.48893120508228555,
+        0.4776090659307162
+      ],
+      "E50": [
+        0.06247861905797164,
+        1.0
+      ],
+      "E70": [
+        0.59957228062289,
+        -0.40442440676633656
+      ],
+      "E36": [
+        0.507091655987568,
+        0.042140922829786806
+      ],
+      "E24": [
+        0.3134574753712512,
+        -0.6196638663904093
+      ],
+      "E40": [
+        -0.4511723648758114,
+        -1.0
+      ],
+      "E51": [
+        -0.59957228062289,
+        -0.7303381239104865
+      ],
+      "E25": [
+        -0.2832907197296714,
+        0.043627478389911115
+      ],
+      "E58": [
+        -0.09543043690852047,
+        0.6325497735573297
+      ],
+      "E45": [
+        0.12190140767055199,
+        -0.09695813343251672
+      ],
+      "E64": [
+        -0.04030859840097171,
+        0.16992612576346514
+      ],
+      "E28": [
+        0.3779335417668264,
+        -0.25459914823293595
+      ],
+      "E60": [
+        -0.1264586902351518,
+        -0.7848170134932065
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "title": "t1",
+      "nodes": [
+        "E3",
+        "E23",
+        "E24",
+        "E25",
+        "E28",
+        "E36",
+        "E40",
+        "E45",
+        "E47",
+        "E48",
+        "E50",
+        "E51",
+        "E58",
+        "E60",
+        "E64",
+        "E68"
+      ],
+      "edges": [
+        {
+          "source": "E24",
+          "target": "E50",
+          "relation": "R1"
+        },
+        {
+          "source": "E24",
+          "target": "E60",
+          "relation": "R2"
+        },
+        {
+          "source": "E24",
+          "target": "E64",
+          "relation": "R3"
+        },
+        {
+          "source": "E25",
+          "target": "E60",
+          "relation": "R4"
+        },
+        {
+          "source": "E25",
+          "target": "E64",
+          "relation": "R1"
+        },
+        {
+          "source": "E3",
+          "target": "E23",
+          "relation": "R2"
+        },
+        {
+          "source": "E3",
+          "target": "E60",
+          "relation": "R3"
+        },
+        {
+          "source": "E36",
+          "target": "E45",
+          "relation": "R4"
+        },
+        {
+          "source": "E36",
+          "target": "E51",
+          "relation": "R1"
+        },
+        {
+          "source": "E40",
+          "target": "E45",
+          "relation": "R2"
+        },
+        {
+          "source": "E40",
+          "target": "E47",
+          "relation": "R3"
+        },
+        {
+          "source": "E40",
+          "target": "E60",
+          "relation": "R4"
+        },
+        {
+          "source": "E40",
+          "target": "E64",
+          "relation": "R1"
+        },
+        {
+          "source": "E23",
+          "target": "E48",
+          "relation": "R2"
+        },
+        {
+          "source": "E28",
+          "target": "E48",
+          "relation": "R3"
+        },
+        {
+          "source": "E48",
+          "target": "E50",
+          "relation": "R4"
+        },
+        {
+          "source": "E48",
+          "target": "E60",
+          "relation": "R1"
+        },
+        {
+          "source": "E47",
+          "target": "E58",
+          "relation": "R2"
+        },
+        {
+          "source": "E51",
+          "target": "E58",
+          "relation": "R3"
+        },
+        {
+          "source": "E23",
+          "target": "E68",
+          "relation": "R4"
+        },
+        {
+          "source": "E28",
+          "target": "E68",
+          "relation": "R1"
+        },
+        {
+          "source": "E51",
+          "target": "E68",
+          "relation": "R2"
+        }
+      ],
+      "directed": false,
+      "partitions": {
+        "applicants": [
+          "E48",
+          "E24",
+          "E3",
+          "E40",
+          "E25",
+          "E36",
+          "E58",
+          "E68"
+        ],
+        "jobs": [
+          "E50",
+          "E23",
+          "E64",
+          "E45",
+          "E51",
+          "E60",
+          "E28",
+          "E47"
+        ]
+      },
+      "triples": [
+        [
+          "E24",
+          "R1",
+          "E50"
+        ],
+        [
+          "E24",
+          "R2",
+          "E60"
+        ],
+        [
+          "E24",
+          "R3",
+          "E64"
+        ],
+        [
+          "E25",
+          "R4",
+          "E60"
+        ],
+        [
+          "E25",
+          "R1",
+          "E64"
+        ],
+        [
+          "E3",
+          "R2",
+          "E23"
+        ],
+        [
+          "E3",
+          "R3",
+          "E60"
+        ],
+        [
+          "E36",
+          "R4",
+          "E45"
+        ],
+        [
+          "E36",
+          "R1",
+          "E51"
+        ],
+        [
+          "E40",
+          "R2",
+          "E45"
+        ],
+        [
+          "E40",
+          "R3",
+          "E47"
+        ],
+        [
+          "E40",
+          "R4",
+          "E60"
+        ],
+        [
+          "E40",
+          "R1",
+          "E64"
+        ],
+        [
+          "E23",
+          "R2",
+          "E48"
+        ],
+        [
+          "E28",
+          "R3",
+          "E48"
+        ],
+        [
+          "E48",
+          "R4",
+          "E50"
+        ],
+        [
+          "E48",
+          "R1",
+          "E60"
+        ],
+        [
+          "E47",
+          "R2",
+          "E58"
+        ],
+        [
+          "E51",
+          "R3",
+          "E58"
+        ],
+        [
+          "E23",
+          "R4",
+          "E68"
+        ],
+        [
+          "E28",
+          "R1",
+          "E68"
+        ],
+        [
+          "E51",
+          "R2",
+          "E68"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t2",
+      "title": "t2",
+      "nodes": [
+        "E1",
+        "E3",
+        "E23",
+        "E24",
+        "E25",
+        "E28",
+        "E36",
+        "E40",
+        "E45",
+        "E48",
+        "E50",
+        "E51",
+        "E57",
+        "E58",
+        "E60",
+        "E64"
+      ],
+      "edges": [
+        {
+          "source": "E1",
+          "target": "E24",
+          "relation": "R3"
+        },
+        {
+          "source": "E24",
+          "target": "E64",
+          "relation": "R3"
+        },
+        {
+          "source": "E25",
+          "target": "E28",
+          "relation": "R4"
+        },
+        {
+          "source": "E25",
+          "target": "E50",
+          "relation": "R1"
+        },
+        {
+          "source": "E25",
+          "target": "E64",
+          "relation": "R1"
+        },
+        {
+          "source": "E3",
+          "target": "E23",
+          "relation": "R2"
+        },
+        {
+          "source": "E3",
+          "target": "E28",
+          "relation": "R2"
+        },
+        {
+          "source": "E3",
+          "target": "E50",
+          "relation": "R3"
+        },
+        {
+          "source": "E3",
+          "target": "E51",
+          "relation": "R4"
+        },
+        {
+          "source": "E28",
+          "target": "E36",
+          "relation": "R1"
+        },
+        {
+          "source": "E36",
+          "target": "E45",
+          "relation": "R4"
+        },
+        {
+          "source": "E36",
+          "target": "E60",
+          "relation": "R2"
+        },
+        {
+          "source": "E1",
+          "target": "E40",
+          "relation": "R3"
+        },
+        {
+          "source": "E40",
+          "target": "E64",
+          "relation": "R1"
+        },
+        {
+          "source": "E1",
+          "target": "E48",
+          "relation": "R4"
+        },
+        {
+          "source": "E48",
+          "target": "E50",
+          "relation": "R4"
+        },
+        {
+          "source": "E23",
+          "target": "E57",
+          "relation": "R1"
+        },
+        {
+          "source": "E50",
+          "target": "E57",
+          "relation": "R2"
+        },
+        {
+          "source": "E28",
+          "target": "E58",
+          "relation": "R3"
+        },
+        {
+          "source": "E45",
+          "target": "E58",
+          "relation": "R4"
+        },
+        {
+          "source": "E50",
+          "target": "E58",
+          "relation": "R1"
+        },
+        {
+          "source": "E51",
+          "target": "E58",
+          "relation": "R3"
+        },
+        {
+          "source": "E58",
+          "target": "E60",
+          "relation": "R2"
+        }
+      ],
+      "directed": false,
+      "partitions": {
+        "applicants": [
+          "E48",
+          "E24",
+          "E3",
+          "E40",
+          "E25",
+          "E36",
+          "E58",
+          "E57"
+        ],
+        "jobs": [
+          "E50",
+          "E23",
+          "E64",
+          "E45",
+          "E51",
+          "E60",
+          "E28",
+          "E1"
+        ]
+      },
+      "triples": [
+        [
+          "E1",
+          "R3",
+          "E24"
+        ],
+        [
+          "E24",
+          "R3",
+          "E64"
+        ],
+        [
+          "E25",
+          "R4",
+          "E28"
+        ],
+        [
+          "E25",
+          "R1",
+          "E50"
+        ],
+        [
+          "E25",
+          "R1",
+          "E64"
+        ],
+        [
+          "E3",
+          "R2",
+          "E23"
+        ],
+        [
+          "E3",
+          "R2",
+          "E28"
+        ],
+        [
+          "E3",
+          "R3",
+          "E50"
+        ],
+        [
+          "E3",
+          "R4",
+          "E51"
+        ],
+        [
+          "E28",
+          "R1",
+          "E36"
+        ],
+        [
+          "E36",
+          "R4",
+          "E45"
+        ],
+        [
+          "E36",
+          "R2",
+          "E60"
+        ],
+        [
+          "E1",
+          "R3",
+          "E40"
+        ],
+        [
+          "E40",
+          "R1",
+          "E64"
+        ],
+        [
+          "E1",
+          "R4",
+          "E48"
+        ],
+        [
+          "E48",
+          "R4",
+          "E50"
+        ],
+        [
+          "E23",
+          "R1",
+          "E57"
+        ],
+        [
+          "E50",
+          "R2",
+          "E57"
+        ],
+        [
+          "E28",
+          "R3",
+          "E58"
+        ],
+        [
+          "E45",
+          "R4",
+          "E58"
+        ],
+        [
+          "E50",
+          "R1",
+          "E58"
+        ],
+        [
+          "E51",
+          "R3",
+          "E58"
+        ],
+        [
+          "E58",
+          "R2",
+          "E60"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t3",
+      "title": "t3",
+      "nodes": [
+        "E3",
+        "E23",
+        "E24",
+        "E25",
+        "E28",
+        "E33",
+        "E36",
+        "E40",
+        "E45",
+        "E48",
+        "E50",
+        "E51",
+        "E58",
+        "E60",
+        "E64",
+        "E70"
+      ],
+      "edges": [
+        {
+          "source": "E24",
+          "target": "E28",
+          "relation": "R3"
+        },
+        {
+          "source": "E24",
+          "target": "E60",
+          "relation": "R2"
+        },
+        {
+          "source": "E24",
+          "target": "E70",
+          "relation": "R4"
+        },
+        {
+          "source": "E25",
+          "target": "E45",
+          "relation": "R1"
+        },
+        {
+          "source": "E25",
+          "target": "E64",
+          "relation": "R1"
+        },
+        {
+          "source": "E3",
+          "target": "E51",
+          "relation": "R4"
+        },
+        {
+          "source": "E3",
+          "target": "E60",
+          "relation": "R3"
+        },
+        {
+          "source": "E3",
+          "target": "E64",
+          "relation": "R2"
+        },
+        {
+          "source": "E23",
+          "target": "E33",
+          "relation": "R3"
+        },
+        {
+          "source": "E33",
+          "target": "E50",
+          "relation": "R4"
+        },
+        {
+          "source": "E23",
+          "target": "E36",
+          "relation": "R1"
+        },
+        {
+          "source": "E28",
+          "target": "E36",
+          "relation": "R1"
+        },
+        {
+          "source": "E36",
+          "target": "E45",
+          "relation": "R4"
+        },
+        {
+          "source": "E36",
+          "target": "E64",
+          "relation": "R2"
+        },
+        {
+          "source": "E36",
+          "target": "E70",
+          "relation": "R3"
+        },
+        {
+          "source": "E40",
+          "target": "E51",
+          "relation": "R4"
+        },
+        {
+          "source": "E40",
+          "target": "E60",
+          "relation": "R4"
+        },
+        {
+          "source": "E23",
+          "target": "E48",
+          "relation": "R2"
+        },
+        {
+          "source": "E28",
+          "target": "E48",
+          "relation": "R3"
+        },
+        {
+          "source": "E45",
+          "target": "E48",
+          "relation": "R1"
+        },
+        {
+          "source": "E48",
+          "target": "E64",
+          "relation": "R2"
+        },
+        {
+          "source": "E50",
+          "target": "E58",
+          "relation": "R1"
+        },
+        {
+          "source": "E58",
+          "target": "E64",
+          "relation": "R3"
+        }
+      ],
+      "directed": false,
+      "partitions": {
+        "applicants": [
+          "E48",
+          "E24",
+          "E3",
+          "E40",
+          "E25",
+          "E36",
+          "E58",
+          "E33"
+        ],
+        "jobs": [
+          "E50",
+          "E23",
+          "E64",
+          "E45",
+          "E51",
+          "E60",
+          "E28",
+          "E70"
+        ]
+      },
+      "triples": [
+        [
+          "E24",
+          "R3",
+          "E28"
+        ],
+        [
+          "E24",
+          "R2",
+          "E60"
+        ],
+        [
+          "E24",
+          "R4",
+          "E70"
+        ],
+        [
+          "E25",
+          "R1",
+          "E45"
+        ],
+        [
+          "E25",
+          "R1",
+          "E64"
+        ],
+        [
+          "E3",
+          "R4",
+          "E51"
+        ],
+        [
+          "E3",
+          "R3",
+          "E60"
+        ],
+        [
+          "E3",
+          "R2",
+          "E64"
+        ],
+        [
+          "E23",
+          "R3",
+          "E33"
+        ],
+        [
+          "E33",
+          "R4",
+          "E50"
+        ],
+        [
+          "E23",
+          "R1",
+          "E36"
+        ],
+        [
+          "E28",
+          "R1",
+          "E36"
+        ],
+        [
+          "E36",
+          "R4",
+          "E45"
+        ],
+        [
+          "E36",
+          "R2",
+          "E64"
+        ],
+        [
+          "E36",
+          "R3",
+          "E70"
+        ],
+        [
+          "E40",
+          "R4",
+          "E51"
+        ],
+        [
+          "E40",
+          "R4",
+          "E60"
+        ],
+        [
+          "E23",
+          "R2",
+          "E48"
+        ],
+        [
+          "E28",
+          "R3",
+          "E48"
+        ],
+        [
+          "E45",
+          "R1",
+          "E48"
+        ],
+        [
+          "E48",
+          "R2",
+          "E64"
+        ],
+        [
+          "E50",
+          "R1",
+          "E58"
+        ],
+        [
+          "E58",
+          "R3",
+          "E64"
+        ]
+      ]
+    }
+  ],
+  "validation_context": {
+    "applicants_by_time": [
+      [
+        "E48",
+        "E24",
+        "E3",
+        "E40",
+        "E25",
+        "E36",
+        "E58",
+        "E68"
+      ],
+      [
+        "E48",
+        "E24",
+        "E3",
+        "E40",
+        "E25",
+        "E36",
+        "E58",
+        "E57"
+      ],
+      [
+        "E48",
+        "E24",
+        "E3",
+        "E40",
+        "E25",
+        "E36",
+        "E58",
+        "E33"
+      ]
+    ],
+    "jobs_by_time": [
+      [
+        "E50",
+        "E23",
+        "E64",
+        "E45",
+        "E51",
+        "E60",
+        "E28",
+        "E47"
+      ],
+      [
+        "E50",
+        "E23",
+        "E64",
+        "E45",
+        "E51",
+        "E60",
+        "E28",
+        "E1"
+      ],
+      [
+        "E50",
+        "E23",
+        "E64",
+        "E45",
+        "E51",
+        "E60",
+        "E28",
+        "E70"
+      ]
+    ],
+    "stable_applicants": [
+      "E48",
+      "E24",
+      "E3",
+      "E40",
+      "E25",
+      "E36",
+      "E58"
+    ],
+    "stable_jobs": [
+      "E50",
+      "E23",
+      "E64",
+      "E45",
+      "E51",
+      "E60",
+      "E28"
+    ],
+    "maximum_matching_sizes": [
+      8,
+      8,
+      8
+    ],
+    "maximum_matching_counts": [
+      12,
+      4,
+      19
+    ],
+    "minimum_reassignments": 9,
+    "optimal_transition_reassignments": [
+      4,
+      5
+    ],
+    "view_node_sets_are_distinct": true
+  },
+  "generation": {
+    "generator": "sample_gen_high_level",
+    "version": 29
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "graph_id": "G1",
+  "title": "Graph 1",
+  "nodes": [
+    "E2",
+    "E10",
+    "E27",
+    "E31",
+    "E35",
+    "E51",
+    "E56",
+    "E62",
+    "E64",
+    "E71",
+    "E76"
+  ],
+  "edges": [
+    {
+      "source": "E10",
+      "target": "E64",
+      "capacity": 11,
+      "relation": "R1"
+    },
+    {
+      "source": "E2",
+      "target": "E62",
+      "capacity": 12,
+      "relation": "R2"
+    },
+    {
+      "source": "E31",
+      "target": "E64",
+      "capacity": 7,
+      "relation": "R3"
+    },
+    {
+      "source": "E35",
+      "target": "E31",
+      "capacity": 12,
+      "relation": "R4"
+    },
+    {
+      "source": "E51",
+      "target": "E64",
+      "capacity": 15,
+      "relation": "R1"
+    },
+    {
+      "source": "E56",
+      "target": "E10",
+      "capacity": 8,
+      "relation": "R2"
+    },
+    {
+      "source": "E56",
+      "target": "E31",
+      "capacity": 4,
+      "relation": "R3"
+    },
+    {
+      "source": "E62",
+      "target": "E64",
+      "capacity": 11,
+      "relation": "R4"
+    },
+    {
+      "source": "E71",
+      "target": "E31",
+      "capacity": 10,
+      "relation": "R1"
+    },
+    {
+      "source": "E76",
+      "target": "E27",
+      "capacity": 9,
+      "relation": "R2"
+    },
+    {
+      "source": "E76",
+      "target": "E71",
+      "capacity": 5,
+      "relation": "R3"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E10",
+      "R1",
+      "E64"
+    ],
+    [
+      "E2",
+      "R2",
+      "E62"
+    ],
+    [
+      "E31",
+      "R3",
+      "E64"
+    ],
+    [
+      "E35",
+      "R4",
+      "E31"
+    ],
+    [
+      "E51",
+      "R1",
+      "E64"
+    ],
+    [
+      "E56",
+      "R2",
+      "E10"
+    ],
+    [
+      "E56",
+      "R3",
+      "E31"
+    ],
+    [
+      "E62",
+      "R4",
+      "E64"
+    ],
+    [
+      "E71",
+      "R1",
+      "E31"
+    ],
+    [
+      "E76",
+      "R2",
+      "E27"
+    ],
+    [
+      "E76",
+      "R3",
+      "E71"
+    ]
+  ]
+}

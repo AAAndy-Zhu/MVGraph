@@ -1,0 +1,15 @@
+{
+  "total_samples": 100,
+  "task_sample_counts": {
+    "A-AE": 10,
+    "A-AN": 10,
+    "A-PE": 10,
+    "A-PN": 10,
+    "A-RE": 10,
+    "A-RN": 10,
+    "A-SE": 10,
+    "A-SN": 10,
+    "A-VSE": 10,
+    "A-VSN": 10
+  }
+}

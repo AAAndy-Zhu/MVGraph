@@ -1,0 +1,322 @@
+{
+  "sample_id": "r-ce_000862",
+  "sample_index": 862,
+  "task_id": "R-CE",
+  "task_name": "causal_edge_identification",
+  "task_english_name": "Causal Edge Identification",
+  "task_dir": "r-ce_causal_edge_identification",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Each Graph block is one time step of an undirected graph; the same node label denotes the same node across time.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- Each CSV row contains an edge triple; isolated nodes are not listed.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nGraph t1\nsrc,relation,dst\nE9,R2,E62\nE21,R4,E29\nE21,R1,E46\nE29,R3,E64\nE37,R2,E62\nE50,R4,E64\nE62,R1,E65\n\nGraph t2\nsrc,relation,dst\nE9,R2,E62\nE21,R4,E29\nE21,R1,E46\nE29,R3,E64\nE31,R4,E65\nE37,R2,E62\nE62,R1,E65\n\nGraph t3\nsrc,relation,dst\nE9,R2,E62\nE20,R1,E37\nE20,R2,E64\nE21,R4,E29\nE21,R1,E46\nE29,R3,E41\nE29,R3,E64\nE37,R2,E62\nE50,R4,E64\nE62,R1,E65\n\nQuestion:\nComposition evidence CSV:\nt2: subgraph1\nsrc,relation,dst\nE9,R2,E62\nE31,R4,E65\nE37,R2,E62\nE62,R1,E65\n\nt2: subgraph2\nsrc,relation,dst\nE21,R1,E46\nE21,R4,E29\nE29,R3,E64\n\nt3: path\nsrc,relation,dst\nE65,R1,E62\nE62,R2,E37\nE37,R1,E20\nE20,R2,E64\nE64,R3,E29\nE29,R4,E21\n\nAt the earlier time, subgraph1 and subgraph2 contain the edge triples of the complete source-side and target-side subgraphs. At the later time, path gives one simple path from E65 to E21.\nWhich newly added edge triples in the transition shown by the evidence are individually necessary for E65 to reach E21? An edge is necessary if removing only that edge from the later graph makes E65 and E21 disconnected.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Do not include explanation or extra text.",
+  "answer": [
+    [
+      "E20",
+      "R1",
+      "E37"
+    ],
+    [
+      "E20",
+      "R2",
+      "E64"
+    ]
+  ],
+  "answer_type": "edge_triple_list",
+  "required_images": [],
+  "source": "E65",
+  "target": "E21",
+  "reasoning_program": [
+    {
+      "op": "compare_path_with_preceding_components"
+    },
+    {
+      "op": "remove_each_new_path_edge_and_test_reachability"
+    }
+  ],
+  "difficulty": {
+    "num_time_steps": 3,
+    "per_graph_node_counts": {
+      "t1": 13,
+      "t2": 13,
+      "t3": 13
+    },
+    "per_graph_edge_counts": {
+      "t1": 7,
+      "t2": 7,
+      "t3": 10
+    },
+    "path_length": 6,
+    "causal_edge_count": 2
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "nodes": [
+        "E9",
+        "E20",
+        "E21",
+        "E29",
+        "E31",
+        "E37",
+        "E41",
+        "E46",
+        "E50",
+        "E62",
+        "E64",
+        "E65",
+        "E74"
+      ],
+      "triples": [
+        [
+          "E9",
+          "R2",
+          "E62"
+        ],
+        [
+          "E21",
+          "R4",
+          "E29"
+        ],
+        [
+          "E21",
+          "R1",
+          "E46"
+        ],
+        [
+          "E29",
+          "R3",
+          "E64"
+        ],
+        [
+          "E37",
+          "R2",
+          "E62"
+        ],
+        [
+          "E50",
+          "R4",
+          "E64"
+        ],
+        [
+          "E62",
+          "R1",
+          "E65"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t2",
+      "nodes": [
+        "E9",
+        "E20",
+        "E21",
+        "E29",
+        "E31",
+        "E37",
+        "E41",
+        "E46",
+        "E50",
+        "E62",
+        "E64",
+        "E65",
+        "E74"
+      ],
+      "triples": [
+        [
+          "E9",
+          "R2",
+          "E62"
+        ],
+        [
+          "E21",
+          "R4",
+          "E29"
+        ],
+        [
+          "E21",
+          "R1",
+          "E46"
+        ],
+        [
+          "E29",
+          "R3",
+          "E64"
+        ],
+        [
+          "E31",
+          "R4",
+          "E65"
+        ],
+        [
+          "E37",
+          "R2",
+          "E62"
+        ],
+        [
+          "E62",
+          "R1",
+          "E65"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t3",
+      "nodes": [
+        "E9",
+        "E20",
+        "E21",
+        "E29",
+        "E31",
+        "E37",
+        "E41",
+        "E46",
+        "E50",
+        "E62",
+        "E64",
+        "E65",
+        "E74"
+      ],
+      "triples": [
+        [
+          "E9",
+          "R2",
+          "E62"
+        ],
+        [
+          "E20",
+          "R1",
+          "E37"
+        ],
+        [
+          "E20",
+          "R2",
+          "E64"
+        ],
+        [
+          "E21",
+          "R4",
+          "E29"
+        ],
+        [
+          "E21",
+          "R1",
+          "E46"
+        ],
+        [
+          "E29",
+          "R3",
+          "E41"
+        ],
+        [
+          "E29",
+          "R3",
+          "E64"
+        ],
+        [
+          "E37",
+          "R2",
+          "E62"
+        ],
+        [
+          "E50",
+          "R4",
+          "E64"
+        ],
+        [
+          "E62",
+          "R1",
+          "E65"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "original_graph_text": "Graph t1\nsrc,relation,dst\nE9,R2,E62\nE21,R4,E29\nE21,R1,E46\nE29,R3,E64\nE37,R2,E62\nE50,R4,E64\nE62,R1,E65\n\nGraph t2\nsrc,relation,dst\nE9,R2,E62\nE21,R4,E29\nE21,R1,E46\nE29,R3,E64\nE31,R4,E65\nE37,R2,E62\nE62,R1,E65\n\nGraph t3\nsrc,relation,dst\nE9,R2,E62\nE20,R1,E37\nE20,R2,E64\nE21,R4,E29\nE21,R1,E46\nE29,R3,E41\nE29,R3,E64\nE37,R2,E62\nE50,R4,E64\nE62,R1,E65",
+  "generation_seed": 42,
+  "generation_attempt": 0,
+  "first_connectivity_transition": [
+    "t2",
+    "t3"
+  ],
+  "composition_evidence_csv": "t2: subgraph1\nsrc,relation,dst\nE9,R2,E62\nE31,R4,E65\nE37,R2,E62\nE62,R1,E65\n\nt2: subgraph2\nsrc,relation,dst\nE21,R1,E46\nE21,R4,E29\nE29,R3,E64\n\nt3: path\nsrc,relation,dst\nE65,R1,E62\nE62,R2,E37\nE37,R1,E20\nE20,R2,E64\nE64,R3,E29\nE29,R4,E21",
+  "composition_evidence": {
+    "t2": {
+      "subgraph1": [
+        [
+          "E9",
+          "R2",
+          "E62"
+        ],
+        [
+          "E31",
+          "R4",
+          "E65"
+        ],
+        [
+          "E37",
+          "R2",
+          "E62"
+        ],
+        [
+          "E62",
+          "R1",
+          "E65"
+        ]
+      ],
+      "subgraph2": [
+        [
+          "E21",
+          "R1",
+          "E46"
+        ],
+        [
+          "E21",
+          "R4",
+          "E29"
+        ],
+        [
+          "E29",
+          "R3",
+          "E64"
+        ]
+      ]
+    },
+    "t3": {
+      "path": [
+        [
+          "E65",
+          "R1",
+          "E62"
+        ],
+        [
+          "E62",
+          "R2",
+          "E37"
+        ],
+        [
+          "E37",
+          "R1",
+          "E20"
+        ],
+        [
+          "E20",
+          "R2",
+          "E64"
+        ],
+        [
+          "E64",
+          "R3",
+          "E29"
+        ],
+        [
+          "E29",
+          "R4",
+          "E21"
+        ]
+      ]
+    }
+  }
+}

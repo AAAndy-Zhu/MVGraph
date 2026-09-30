@@ -1,0 +1,540 @@
+{
+  "sample_id": "c-tpc_000264",
+  "sample_index": 264,
+  "task_id": "C-TPC",
+  "task_name": "temporal_path_composition",
+  "task_english_name": "Temporal Path Composition",
+  "task_dir": "c-tpc_temporal_path_composition",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [
+    "samples/c-tpc_temporal_path_composition/000264/images/t1.png",
+    "samples/c-tpc_temporal_path_composition/000264/images/t2.png",
+    "samples/c-tpc_temporal_path_composition/000264/images/t3.png"
+  ],
+  "graphs": [
+    "samples/c-tpc_temporal_path_composition/000264/graphs/t1.json",
+    "samples/c-tpc_temporal_path_composition/000264/graphs/t2.json",
+    "samples/c-tpc_temporal_path_composition/000264/graphs/t3.json"
+  ],
+  "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind the adjacent time steps where E28 and E75 change from disconnected to connected. At the earlier time, output the edge triples of the complete source-side subgraph as subgraph1 and the complete target-side subgraph as subgraph2. At the later time, output one simple path from E28 to E75.\nReturn only a valid JSON object with this shape, replacing t2 and t3 with the actual adjacent time labels: {\"t2\": {\"subgraph1\": [[\"E1\", \"R1\", \"E2\"], ...], \"subgraph2\": [[\"E3\", \"R2\", \"E4\"], ...]}, \"t3\": {\"path\": [[\"E1\", \"R1\", \"E2\"], ...]}}. The subgraphs and path contain edge triples only; use [] when a subgraph has no edges. Do not include explanation or extra text.",
+  "answer": {
+    "t1": {
+      "subgraph1": [
+        [
+          "E6",
+          "R1",
+          "E40"
+        ],
+        [
+          "E28",
+          "R1",
+          "E65"
+        ],
+        [
+          "E40",
+          "R2",
+          "E65"
+        ]
+      ],
+      "subgraph2": [
+        [
+          "E36",
+          "R3",
+          "E67"
+        ],
+        [
+          "E36",
+          "R3",
+          "E78"
+        ],
+        [
+          "E66",
+          "R1",
+          "E75"
+        ],
+        [
+          "E66",
+          "R4",
+          "E67"
+        ],
+        [
+          "E67",
+          "R4",
+          "E79"
+        ]
+      ]
+    },
+    "t2": {
+      "path": [
+        [
+          "E28",
+          "R1",
+          "E65"
+        ],
+        [
+          "E65",
+          "R2",
+          "E40"
+        ],
+        [
+          "E40",
+          "R2",
+          "E16"
+        ],
+        [
+          "E16",
+          "R3",
+          "E36"
+        ],
+        [
+          "E36",
+          "R3",
+          "E67"
+        ],
+        [
+          "E67",
+          "R4",
+          "E66"
+        ],
+        [
+          "E66",
+          "R1",
+          "E75"
+        ]
+      ]
+    }
+  },
+  "answer_type": "temporal_first_path_and_prior_components",
+  "required_images": [
+    1,
+    2,
+    3
+  ],
+  "source": "E28",
+  "target": "E75",
+  "reasoning_program": [
+    {
+      "op": "find_first_connectivity_transition",
+      "source": "E28",
+      "target": "E75"
+    },
+    {
+      "op": "find_one_path_and_preceding_terminal_components"
+    }
+  ],
+  "difficulty": {
+    "num_time_steps": 3,
+    "per_graph_node_counts": {
+      "t1": 14,
+      "t2": 14,
+      "t3": 14
+    },
+    "per_graph_edge_counts": {
+      "t1": 8,
+      "t2": 11,
+      "t3": 11
+    },
+    "path_length": 7,
+    "causal_edge_count": 2
+  },
+  "layout": {
+    "t1": {
+      "E66": [
+        -0.474448756580965,
+        -0.24400127031578409
+      ],
+      "E75": [
+        -0.6986849656232823,
+        -0.38297250955399353
+      ],
+      "E78": [
+        0.014297793196458616,
+        0.4543501226268531
+      ],
+      "E79": [
+        -0.0020955353982243987,
+        -0.25374840170062063
+      ],
+      "E36": [
+        -0.0871079229530592,
+        0.21089613597017606
+      ],
+      "E67": [
+        -0.20305012214218326,
+        -0.0827828385193672
+      ],
+      "E65": [
+        0.432660950804176,
+        0.00273338247422237
+      ],
+      "E6": [
+        1.0,
+        -0.4296754581308319
+      ],
+      "E28": [
+        0.1626773678191533,
+        0.20850678775353493
+      ],
+      "E40": [
+        0.7300164168720494,
+        -0.223902052742584
+      ],
+      "E14": [
+        -0.007024477548482346,
+        0.6934952203230172
+      ],
+      "E16": [
+        -0.8642317119389249,
+        0.557726932261944
+      ],
+      "E29": [
+        -1.0,
+        -0.2994803021284987
+      ],
+      "E52": [
+        -0.22670218222568764,
+        -0.6934952203230172
+      ]
+    },
+    "t2": {
+      "E14": [
+        -0.09225316284594137,
+        0.6707184056538373
+      ],
+      "E66": [
+        -0.11402152746266504,
+        -0.4742249675114559
+      ],
+      "E16": [
+        0.3055265180148927,
+        0.05232517452115161
+      ],
+      "E52": [
+        -0.5766048875028381,
+        -0.42042420881193177
+      ],
+      "E75": [
+        -0.3640356525916097,
+        -0.4062945777750914
+      ],
+      "E78": [
+        0.5766048875028382,
+        -0.2558999938789455
+      ],
+      "E79": [
+        0.2407483094559072,
+        -0.6707184056538373
+      ],
+      "E36": [
+        0.35227249331632954,
+        -0.22724742949397975
+      ],
+      "E40": [
+        0.17830455932272032,
+        0.29313438019599103
+      ],
+      "E67": [
+        0.16537918818067132,
+        -0.4591456866424086
+      ],
+      "E65": [
+        -0.02484300120760264,
+        0.45629322000786693
+      ],
+      "E28": [
+        -0.18409522704217623,
+        0.2949760477432971
+      ],
+      "E6": [
+        1.0,
+        -0.1763269807084659
+      ],
+      "E29": [
+        -1.0,
+        0.17632698070846511
+      ]
+    },
+    "t3": {
+      "E14": [
+        0.47712941122724367,
+        -0.5409224894102612
+      ],
+      "E66": [
+        -0.46994015696142266,
+        0.20532477492651763
+      ],
+      "E16": [
+        -0.007553677375330543,
+        -0.19101207526007652
+      ],
+      "E52": [
+        -0.346383845469062,
+        0.5409224894102612
+      ],
+      "E6": [
+        0.2400049024040839,
+        -0.03554285825386982
+      ],
+      "E75": [
+        -0.4032646560485443,
+        0.3838012900842439
+      ],
+      "E79": [
+        -0.6247125697755695,
+        -0.0696165528041093
+      ],
+      "E36": [
+        -0.23857583893033202,
+        -0.11872150868660987
+      ],
+      "E40": [
+        0.23465476510158864,
+        -0.22481012452561253
+      ],
+      "E67": [
+        -0.448483336321375,
+        -0.005358221466975057
+      ],
+      "E65": [
+        0.43817534822018406,
+        -0.37160242630430884
+      ],
+      "E28": [
+        0.6247125697755695,
+        -0.3921506359273373
+      ],
+      "E29": [
+        1.0,
+        -0.1943803091377183
+      ],
+      "E78": [
+        -1.0,
+        0.19438030913771756
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "nodes": [
+        "E6",
+        "E14",
+        "E16",
+        "E28",
+        "E29",
+        "E36",
+        "E40",
+        "E52",
+        "E65",
+        "E66",
+        "E67",
+        "E75",
+        "E78",
+        "E79"
+      ],
+      "triples": [
+        [
+          "E6",
+          "R1",
+          "E40"
+        ],
+        [
+          "E28",
+          "R1",
+          "E65"
+        ],
+        [
+          "E36",
+          "R3",
+          "E67"
+        ],
+        [
+          "E36",
+          "R3",
+          "E78"
+        ],
+        [
+          "E40",
+          "R2",
+          "E65"
+        ],
+        [
+          "E66",
+          "R4",
+          "E67"
+        ],
+        [
+          "E66",
+          "R1",
+          "E75"
+        ],
+        [
+          "E67",
+          "R4",
+          "E79"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t2",
+      "nodes": [
+        "E6",
+        "E14",
+        "E16",
+        "E28",
+        "E29",
+        "E36",
+        "E40",
+        "E52",
+        "E65",
+        "E66",
+        "E67",
+        "E75",
+        "E78",
+        "E79"
+      ],
+      "triples": [
+        [
+          "E14",
+          "R1",
+          "E65"
+        ],
+        [
+          "E16",
+          "R3",
+          "E36"
+        ],
+        [
+          "E16",
+          "R2",
+          "E40"
+        ],
+        [
+          "E28",
+          "R1",
+          "E65"
+        ],
+        [
+          "E36",
+          "R3",
+          "E67"
+        ],
+        [
+          "E36",
+          "R3",
+          "E78"
+        ],
+        [
+          "E40",
+          "R2",
+          "E65"
+        ],
+        [
+          "E52",
+          "R4",
+          "E75"
+        ],
+        [
+          "E66",
+          "R4",
+          "E67"
+        ],
+        [
+          "E66",
+          "R1",
+          "E75"
+        ],
+        [
+          "E67",
+          "R4",
+          "E79"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t3",
+      "nodes": [
+        "E6",
+        "E14",
+        "E16",
+        "E28",
+        "E29",
+        "E36",
+        "E40",
+        "E52",
+        "E65",
+        "E66",
+        "E67",
+        "E75",
+        "E78",
+        "E79"
+      ],
+      "triples": [
+        [
+          "E6",
+          "R1",
+          "E40"
+        ],
+        [
+          "E14",
+          "R1",
+          "E65"
+        ],
+        [
+          "E16",
+          "R3",
+          "E36"
+        ],
+        [
+          "E16",
+          "R2",
+          "E40"
+        ],
+        [
+          "E28",
+          "R1",
+          "E65"
+        ],
+        [
+          "E36",
+          "R3",
+          "E67"
+        ],
+        [
+          "E40",
+          "R2",
+          "E65"
+        ],
+        [
+          "E52",
+          "R4",
+          "E75"
+        ],
+        [
+          "E66",
+          "R4",
+          "E67"
+        ],
+        [
+          "E66",
+          "R1",
+          "E75"
+        ],
+        [
+          "E67",
+          "R4",
+          "E79"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "generation_seed": 42,
+  "generation_attempt": 0,
+  "first_connectivity_transition": [
+    "t1",
+    "t2"
+  ]
+}

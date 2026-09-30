@@ -1,0 +1,468 @@
+{
+  "sample_id": "r-ce_000767",
+  "sample_index": 767,
+  "task_id": "R-CE",
+  "task_name": "causal_edge_identification",
+  "task_english_name": "Causal Edge Identification",
+  "task_dir": "r-ce_causal_edge_identification",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Each Graph block is one time step of an undirected graph; the same node label denotes the same node across time.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- Each CSV row contains an edge triple; isolated nodes are not listed.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nGraph t1\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE13,R2,E28\nE21,R1,E56\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t2\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE10,R4,E13\nE13,R2,E28\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t3\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE13,R2,E28\nE21,R1,E56\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t4\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE5,R3,E73\nE6,R3,E36\nE13,R2,E28\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t5\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE10,R4,E13\nE13,R2,E28\nE21,R1,E56\nE22,R1,E28\nE25,R3,E36\nE25,R4,E58\nE28,R1,E58\n\nQuestion:\nComposition evidence CSV:\nt4: subgraph1\nsrc,relation,dst\nE5,R1,E21\nE5,R2,E6\nE5,R3,E73\nE6,R3,E36\n\nt4: subgraph2\nsrc,relation,dst\nE13,R2,E28\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nt5: path\nsrc,relation,dst\nE21,R1,E5\nE5,R2,E6\nE6,R3,E36\nE36,R3,E25\nE25,R4,E58\nE58,R1,E28\nE28,R2,E13\n\nAt the earlier time, subgraph1 and subgraph2 contain the edge triples of the complete source-side and target-side subgraphs. At the later time, path gives one simple path from E21 to E13.\nWhich newly added edge triples in the transition shown by the evidence are individually necessary for E21 to reach E13? An edge is necessary if removing only that edge from the later graph makes E21 and E13 disconnected.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Do not include explanation or extra text.",
+  "answer": [
+    [
+      "E25",
+      "R3",
+      "E36"
+    ]
+  ],
+  "answer_type": "edge_triple_list",
+  "required_images": [],
+  "source": "E21",
+  "target": "E13",
+  "reasoning_program": [
+    {
+      "op": "compare_path_with_preceding_components"
+    },
+    {
+      "op": "remove_each_new_path_edge_and_test_reachability"
+    }
+  ],
+  "difficulty": {
+    "num_time_steps": 5,
+    "per_graph_node_counts": {
+      "t1": 14,
+      "t2": 14,
+      "t3": 14,
+      "t4": 14,
+      "t5": 14
+    },
+    "per_graph_edge_counts": {
+      "t1": 8,
+      "t2": 8,
+      "t3": 8,
+      "t4": 8,
+      "t5": 10
+    },
+    "path_length": 7,
+    "causal_edge_count": 1
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "nodes": [
+        "E1",
+        "E2",
+        "E5",
+        "E6",
+        "E10",
+        "E13",
+        "E21",
+        "E22",
+        "E25",
+        "E28",
+        "E36",
+        "E56",
+        "E58",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E5",
+          "R1",
+          "E21"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ],
+        [
+          "E13",
+          "R2",
+          "E28"
+        ],
+        [
+          "E21",
+          "R1",
+          "E56"
+        ],
+        [
+          "E22",
+          "R1",
+          "E28"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E28",
+          "R1",
+          "E58"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t2",
+      "nodes": [
+        "E1",
+        "E2",
+        "E5",
+        "E6",
+        "E10",
+        "E13",
+        "E21",
+        "E22",
+        "E25",
+        "E28",
+        "E36",
+        "E56",
+        "E58",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E5",
+          "R1",
+          "E21"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ],
+        [
+          "E10",
+          "R4",
+          "E13"
+        ],
+        [
+          "E13",
+          "R2",
+          "E28"
+        ],
+        [
+          "E22",
+          "R1",
+          "E28"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E28",
+          "R1",
+          "E58"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t3",
+      "nodes": [
+        "E1",
+        "E2",
+        "E5",
+        "E6",
+        "E10",
+        "E13",
+        "E21",
+        "E22",
+        "E25",
+        "E28",
+        "E36",
+        "E56",
+        "E58",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E5",
+          "R1",
+          "E21"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ],
+        [
+          "E13",
+          "R2",
+          "E28"
+        ],
+        [
+          "E21",
+          "R1",
+          "E56"
+        ],
+        [
+          "E22",
+          "R1",
+          "E28"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E28",
+          "R1",
+          "E58"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t4",
+      "nodes": [
+        "E1",
+        "E2",
+        "E5",
+        "E6",
+        "E10",
+        "E13",
+        "E21",
+        "E22",
+        "E25",
+        "E28",
+        "E36",
+        "E56",
+        "E58",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E5",
+          "R1",
+          "E21"
+        ],
+        [
+          "E5",
+          "R3",
+          "E73"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ],
+        [
+          "E13",
+          "R2",
+          "E28"
+        ],
+        [
+          "E22",
+          "R1",
+          "E28"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E28",
+          "R1",
+          "E58"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t5",
+      "nodes": [
+        "E1",
+        "E2",
+        "E5",
+        "E6",
+        "E10",
+        "E13",
+        "E21",
+        "E22",
+        "E25",
+        "E28",
+        "E36",
+        "E56",
+        "E58",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E5",
+          "R1",
+          "E21"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ],
+        [
+          "E10",
+          "R4",
+          "E13"
+        ],
+        [
+          "E13",
+          "R2",
+          "E28"
+        ],
+        [
+          "E21",
+          "R1",
+          "E56"
+        ],
+        [
+          "E22",
+          "R1",
+          "E28"
+        ],
+        [
+          "E25",
+          "R3",
+          "E36"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E28",
+          "R1",
+          "E58"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "original_graph_text": "Graph t1\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE13,R2,E28\nE21,R1,E56\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t2\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE10,R4,E13\nE13,R2,E28\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t3\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE13,R2,E28\nE21,R1,E56\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t4\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE5,R3,E73\nE6,R3,E36\nE13,R2,E28\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nGraph t5\nsrc,relation,dst\nE5,R2,E6\nE5,R1,E21\nE6,R3,E36\nE10,R4,E13\nE13,R2,E28\nE21,R1,E56\nE22,R1,E28\nE25,R3,E36\nE25,R4,E58\nE28,R1,E58",
+  "generation_seed": 42,
+  "generation_attempt": 0,
+  "first_connectivity_transition": [
+    "t4",
+    "t5"
+  ],
+  "composition_evidence_csv": "t4: subgraph1\nsrc,relation,dst\nE5,R1,E21\nE5,R2,E6\nE5,R3,E73\nE6,R3,E36\n\nt4: subgraph2\nsrc,relation,dst\nE13,R2,E28\nE22,R1,E28\nE25,R4,E58\nE28,R1,E58\n\nt5: path\nsrc,relation,dst\nE21,R1,E5\nE5,R2,E6\nE6,R3,E36\nE36,R3,E25\nE25,R4,E58\nE58,R1,E28\nE28,R2,E13",
+  "composition_evidence": {
+    "t4": {
+      "subgraph1": [
+        [
+          "E5",
+          "R1",
+          "E21"
+        ],
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E5",
+          "R3",
+          "E73"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ]
+      ],
+      "subgraph2": [
+        [
+          "E13",
+          "R2",
+          "E28"
+        ],
+        [
+          "E22",
+          "R1",
+          "E28"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E28",
+          "R1",
+          "E58"
+        ]
+      ]
+    },
+    "t5": {
+      "path": [
+        [
+          "E21",
+          "R1",
+          "E5"
+        ],
+        [
+          "E5",
+          "R2",
+          "E6"
+        ],
+        [
+          "E6",
+          "R3",
+          "E36"
+        ],
+        [
+          "E36",
+          "R3",
+          "E25"
+        ],
+        [
+          "E25",
+          "R4",
+          "E58"
+        ],
+        [
+          "E58",
+          "R1",
+          "E28"
+        ],
+        [
+          "E28",
+          "R2",
+          "E13"
+        ]
+      ]
+    }
+  }
+}

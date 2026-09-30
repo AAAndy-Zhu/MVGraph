@@ -1,0 +1,3511 @@
+[
+  {
+    "id": "bm_000021",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000021/images/G1.png",
+      "samples/bm_bipartite_matching/000021/images/G2.png",
+      "samples/bm_bipartite_matching/000021/images/G3.png",
+      "samples/bm_bipartite_matching/000021/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E79\", \"E51\", \"E14\", \"E64\", \"E44\", \"E36\", \"E42\", \"E59\", \"E33\"], and the job partition is [\"E72\", \"E68\", \"E70\", \"E3\", \"E46\", \"E40\", \"E58\", \"E37\", \"E16\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E14",
+        "E37"
+      ],
+      [
+        "E36",
+        "E70"
+      ],
+      [
+        "E44",
+        "E72"
+      ],
+      [
+        "E51",
+        "E16"
+      ],
+      [
+        "E59",
+        "E68"
+      ],
+      [
+        "E64",
+        "E3"
+      ],
+      [
+        "E79",
+        "E46"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000021/sample.json"
+  },
+  {
+    "id": "bm_000030",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000030/images/G1.png",
+      "samples/bm_bipartite_matching/000030/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E57\", \"E62\", \"E15\", \"E44\", \"E25\", \"E16\", \"E78\", \"E70\", \"E22\", \"E18\"], and the job partition is [\"E71\", \"E64\", \"E33\", \"E74\", \"E7\", \"E24\", \"E26\", \"E76\", \"E66\", \"E5\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E16",
+        "E7"
+      ],
+      [
+        "E18",
+        "E76"
+      ],
+      [
+        "E22",
+        "E24"
+      ],
+      [
+        "E25",
+        "E64"
+      ],
+      [
+        "E44",
+        "E66"
+      ],
+      [
+        "E57",
+        "E33"
+      ],
+      [
+        "E62",
+        "E5"
+      ],
+      [
+        "E78",
+        "E26"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000030/sample.json"
+  },
+  {
+    "id": "bm_000049",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000049/images/G1.png",
+      "samples/bm_bipartite_matching/000049/images/G2.png",
+      "samples/bm_bipartite_matching/000049/images/G3.png",
+      "samples/bm_bipartite_matching/000049/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E73\", \"E29\", \"E52\", \"E60\", \"E38\", \"E61\", \"E2\", \"E35\", \"E12\"], and the job partition is [\"E5\", \"E51\", \"E17\", \"E9\", \"E53\", \"E71\", \"E80\", \"E24\", \"E6\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E12",
+        "E24"
+      ],
+      [
+        "E29",
+        "E9"
+      ],
+      [
+        "E35",
+        "E17"
+      ],
+      [
+        "E38",
+        "E51"
+      ],
+      [
+        "E52",
+        "E5"
+      ],
+      [
+        "E60",
+        "E6"
+      ],
+      [
+        "E61",
+        "E53"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000049/sample.json"
+  },
+  {
+    "id": "bm_000278",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000278/images/G1.png",
+      "samples/bm_bipartite_matching/000278/images/G2.png",
+      "samples/bm_bipartite_matching/000278/images/G3.png",
+      "samples/bm_bipartite_matching/000278/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E28\", \"E3\", \"E62\", \"E57\", \"E1\", \"E26\", \"E67\", \"E16\"], and the job partition is [\"E14\", \"E20\", \"E8\", \"E12\", \"E24\", \"E47\", \"E51\", \"E35\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E1",
+        "E51"
+      ],
+      [
+        "E16",
+        "E20"
+      ],
+      [
+        "E26",
+        "E14"
+      ],
+      [
+        "E57",
+        "E12"
+      ],
+      [
+        "E62",
+        "E47"
+      ],
+      [
+        "E67",
+        "E24"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000278/sample.json"
+  },
+  {
+    "id": "bm_000723",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000723/images/G1.png",
+      "samples/bm_bipartite_matching/000723/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E67\", \"E54\", \"E58\", \"E50\", \"E76\", \"E34\", \"E40\", \"E36\", \"E78\", \"E70\"], and the job partition is [\"E20\", \"E18\", \"E80\", \"E10\", \"E41\", \"E62\", \"E59\", \"E21\", \"E79\", \"E31\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E34",
+        "E79"
+      ],
+      [
+        "E36",
+        "E31"
+      ],
+      [
+        "E40",
+        "E41"
+      ],
+      [
+        "E50",
+        "E20"
+      ],
+      [
+        "E54",
+        "E62"
+      ],
+      [
+        "E67",
+        "E18"
+      ],
+      [
+        "E76",
+        "E21"
+      ],
+      [
+        "E78",
+        "E10"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000723/sample.json"
+  },
+  {
+    "id": "bm_000730",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000730/images/G1.png",
+      "samples/bm_bipartite_matching/000730/images/G2.png",
+      "samples/bm_bipartite_matching/000730/images/G3.png",
+      "samples/bm_bipartite_matching/000730/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E68\", \"E45\", \"E12\", \"E49\", \"E18\", \"E16\", \"E47\", \"E23\", \"E76\", \"E27\"], and the job partition is [\"E56\", \"E25\", \"E74\", \"E67\", \"E3\", \"E35\", \"E61\", \"E58\", \"E22\", \"E66\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E12",
+        "E66"
+      ],
+      [
+        "E18",
+        "E22"
+      ],
+      [
+        "E23",
+        "E67"
+      ],
+      [
+        "E45",
+        "E56"
+      ],
+      [
+        "E47",
+        "E35"
+      ],
+      [
+        "E49",
+        "E61"
+      ],
+      [
+        "E68",
+        "E25"
+      ],
+      [
+        "E76",
+        "E3"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000730/sample.json"
+  },
+  {
+    "id": "bm_000854",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000854/images/G1.png",
+      "samples/bm_bipartite_matching/000854/images/G2.png",
+      "samples/bm_bipartite_matching/000854/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E64\", \"E10\", \"E79\", \"E68\", \"E31\", \"E49\", \"E63\", \"E56\", \"E28\", \"E16\"], and the job partition is [\"E51\", \"E32\", \"E7\", \"E72\", \"E2\", \"E66\", \"E58\", \"E46\", \"E55\", \"E13\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E10",
+        "E32"
+      ],
+      [
+        "E31",
+        "E58"
+      ],
+      [
+        "E49",
+        "E13"
+      ],
+      [
+        "E56",
+        "E72"
+      ],
+      [
+        "E63",
+        "E55"
+      ],
+      [
+        "E64",
+        "E51"
+      ],
+      [
+        "E68",
+        "E46"
+      ],
+      [
+        "E79",
+        "E2"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000854/sample.json"
+  },
+  {
+    "id": "bm_000898",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000898/images/G1.png",
+      "samples/bm_bipartite_matching/000898/images/G2.png",
+      "samples/bm_bipartite_matching/000898/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E39\", \"E5\", \"E51\", \"E66\", \"E18\", \"E24\", \"E63\", \"E76\", \"E62\", \"E15\"], and the job partition is [\"E6\", \"E35\", \"E28\", \"E11\", \"E47\", \"E3\", \"E38\", \"E17\", \"E44\", \"E61\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E24",
+        "E11"
+      ],
+      [
+        "E39",
+        "E3"
+      ],
+      [
+        "E5",
+        "E6"
+      ],
+      [
+        "E51",
+        "E17"
+      ],
+      [
+        "E62",
+        "E35"
+      ],
+      [
+        "E63",
+        "E47"
+      ],
+      [
+        "E66",
+        "E28"
+      ],
+      [
+        "E76",
+        "E38"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000898/sample.json"
+  },
+  {
+    "id": "bm_000938",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000938/images/G1.png",
+      "samples/bm_bipartite_matching/000938/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E11\", \"E48\", \"E50\", \"E6\", \"E23\", \"E66\", \"E43\", \"E60\", \"E10\", \"E73\"], and the job partition is [\"E40\", \"E63\", \"E13\", \"E68\", \"E5\", \"E79\", \"E67\", \"E70\", \"E14\", \"E39\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E10",
+        "E63"
+      ],
+      [
+        "E11",
+        "E70"
+      ],
+      [
+        "E43",
+        "E68"
+      ],
+      [
+        "E48",
+        "E40"
+      ],
+      [
+        "E50",
+        "E13"
+      ],
+      [
+        "E6",
+        "E5"
+      ],
+      [
+        "E60",
+        "E39"
+      ],
+      [
+        "E66",
+        "E14"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000938/sample.json"
+  },
+  {
+    "id": "bm_000986",
+    "task_id": "BM",
+    "task_name": "bipartite_matching",
+    "image_paths": [
+      "samples/bm_bipartite_matching/000986/images/G1.png",
+      "samples/bm_bipartite_matching/000986/images/G2.png",
+      "samples/bm_bipartite_matching/000986/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partition is [\"E15\", \"E7\", \"E25\", \"E12\", \"E31\", \"E10\", \"E73\", \"E4\", \"E77\", \"E55\"], and the job partition is [\"E60\", \"E64\", \"E16\", \"E79\", \"E68\", \"E23\", \"E26\", \"E80\", \"E44\", \"E57\"]. Find a maximum-cardinality assignment in the merged graph. Return applicant-job pairs.\nReturn only a valid JSON object of the form {\"answer\": [[\"E1\", \"E10\"], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E10",
+        "E79"
+      ],
+      [
+        "E25",
+        "E16"
+      ],
+      [
+        "E31",
+        "E60"
+      ],
+      [
+        "E4",
+        "E64"
+      ],
+      [
+        "E55",
+        "E57"
+      ],
+      [
+        "E7",
+        "E44"
+      ],
+      [
+        "E73",
+        "E23"
+      ],
+      [
+        "E77",
+        "E26"
+      ]
+    ],
+    "metadata_path": "samples/bm_bipartite_matching/000986/sample.json"
+  },
+  {
+    "id": "hp_000009",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000009/images/G1.png",
+      "samples/hp_hamiltonian_path/000009/images/G2.png",
+      "samples/hp_hamiltonian_path/000009/images/G3.png",
+      "samples/hp_hamiltonian_path/000009/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E26",
+      "E49",
+      "E32",
+      "E77",
+      "E63",
+      "E29",
+      "E79",
+      "E18",
+      "E21",
+      "E54",
+      "E51",
+      "E46",
+      "E47",
+      "E61"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000009/sample.json"
+  },
+  {
+    "id": "hp_000038",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000038/images/G1.png",
+      "samples/hp_hamiltonian_path/000038/images/G2.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E55",
+      "E39",
+      "E60",
+      "E72",
+      "E14",
+      "E78",
+      "E19",
+      "E57",
+      "E2",
+      "E69",
+      "E66",
+      "E80",
+      "E26",
+      "E48"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000038/sample.json"
+  },
+  {
+    "id": "hp_000411",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000411/images/G1.png",
+      "samples/hp_hamiltonian_path/000411/images/G2.png",
+      "samples/hp_hamiltonian_path/000411/images/G3.png",
+      "samples/hp_hamiltonian_path/000411/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E27",
+      "E52",
+      "E30",
+      "E79",
+      "E47",
+      "E36",
+      "E70",
+      "E75",
+      "E64",
+      "E20",
+      "E15",
+      "E26",
+      "E65",
+      "E31",
+      "E50",
+      "E45",
+      "E49"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000411/sample.json"
+  },
+  {
+    "id": "hp_000565",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000565/images/G1.png",
+      "samples/hp_hamiltonian_path/000565/images/G2.png",
+      "samples/hp_hamiltonian_path/000565/images/G3.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E79",
+      "E4",
+      "E47",
+      "E80",
+      "E43",
+      "E72",
+      "E17",
+      "E29",
+      "E21",
+      "E3",
+      "E30",
+      "E24",
+      "E12",
+      "E16",
+      "E22"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000565/sample.json"
+  },
+  {
+    "id": "hp_000569",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000569/images/G1.png",
+      "samples/hp_hamiltonian_path/000569/images/G2.png",
+      "samples/hp_hamiltonian_path/000569/images/G3.png",
+      "samples/hp_hamiltonian_path/000569/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E22",
+      "E74",
+      "E66",
+      "E59",
+      "E21",
+      "E73",
+      "E16",
+      "E69",
+      "E39",
+      "E61",
+      "E27",
+      "E78",
+      "E47",
+      "E72",
+      "E64",
+      "E43",
+      "E36"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000569/sample.json"
+  },
+  {
+    "id": "hp_000605",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000605/images/G1.png",
+      "samples/hp_hamiltonian_path/000605/images/G2.png",
+      "samples/hp_hamiltonian_path/000605/images/G3.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E26",
+      "E62",
+      "E80",
+      "E14",
+      "E59",
+      "E47",
+      "E38",
+      "E54",
+      "E7",
+      "E12",
+      "E72",
+      "E61",
+      "E50",
+      "E53",
+      "E48"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000605/sample.json"
+  },
+  {
+    "id": "hp_000611",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000611/images/G1.png",
+      "samples/hp_hamiltonian_path/000611/images/G2.png",
+      "samples/hp_hamiltonian_path/000611/images/G3.png",
+      "samples/hp_hamiltonian_path/000611/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E10",
+      "E21",
+      "E18",
+      "E20",
+      "E71",
+      "E24",
+      "E39",
+      "E66",
+      "E59",
+      "E78",
+      "E1",
+      "E69",
+      "E26",
+      "E76",
+      "E43",
+      "E54"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000611/sample.json"
+  },
+  {
+    "id": "hp_000773",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000773/images/G1.png",
+      "samples/hp_hamiltonian_path/000773/images/G2.png",
+      "samples/hp_hamiltonian_path/000773/images/G3.png",
+      "samples/hp_hamiltonian_path/000773/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E56",
+      "E52",
+      "E64",
+      "E44",
+      "E78",
+      "E16",
+      "E76",
+      "E57",
+      "E34",
+      "E68",
+      "E48",
+      "E41",
+      "E55",
+      "E38",
+      "E28",
+      "E37",
+      "E47"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000773/sample.json"
+  },
+  {
+    "id": "hp_000824",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000824/images/G1.png",
+      "samples/hp_hamiltonian_path/000824/images/G2.png",
+      "samples/hp_hamiltonian_path/000824/images/G3.png",
+      "samples/hp_hamiltonian_path/000824/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E54",
+      "E53",
+      "E23",
+      "E28",
+      "E75",
+      "E8",
+      "E41",
+      "E1",
+      "E46",
+      "E51",
+      "E34",
+      "E33",
+      "E73",
+      "E60",
+      "E10"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000824/sample.json"
+  },
+  {
+    "id": "hp_000896",
+    "task_id": "HP",
+    "task_name": "hamiltonian_path",
+    "image_paths": [
+      "samples/hp_hamiltonian_path/000896/images/G1.png",
+      "samples/hp_hamiltonian_path/000896/images/G2.png",
+      "samples/hp_hamiltonian_path/000896/images/G3.png",
+      "samples/hp_hamiltonian_path/000896/images/G4.png"
+    ],
+    "question": "The images show partial views of a related undirected graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one undirected graph. Give a Hamiltonian path that visits every node in the merged graph exactly once.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E27",
+      "E67",
+      "E25",
+      "E35",
+      "E53",
+      "E26",
+      "E44",
+      "E16",
+      "E57",
+      "E9",
+      "E47",
+      "E38",
+      "E36",
+      "E59"
+    ],
+    "metadata_path": "samples/hp_hamiltonian_path/000896/sample.json"
+  },
+  {
+    "id": "mf_000086",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000086/images/G1.png",
+      "samples/mf_maximum_flow/000086/images/G2.png",
+      "samples/mf_maximum_flow/000086/images/G3.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E56 and the sink is E58. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 45,
+    "metadata_path": "samples/mf_maximum_flow/000086/sample.json"
+  },
+  {
+    "id": "mf_000365",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000365/images/G1.png",
+      "samples/mf_maximum_flow/000365/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E3 and the sink is E33. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 43,
+    "metadata_path": "samples/mf_maximum_flow/000365/sample.json"
+  },
+  {
+    "id": "mf_000540",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000540/images/G1.png",
+      "samples/mf_maximum_flow/000540/images/G2.png",
+      "samples/mf_maximum_flow/000540/images/G3.png",
+      "samples/mf_maximum_flow/000540/images/G4.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E70 and the sink is E79. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 54,
+    "metadata_path": "samples/mf_maximum_flow/000540/sample.json"
+  },
+  {
+    "id": "mf_000554",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000554/images/G1.png",
+      "samples/mf_maximum_flow/000554/images/G2.png",
+      "samples/mf_maximum_flow/000554/images/G3.png",
+      "samples/mf_maximum_flow/000554/images/G4.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E22 and the sink is E76. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 51,
+    "metadata_path": "samples/mf_maximum_flow/000554/sample.json"
+  },
+  {
+    "id": "mf_000576",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000576/images/G1.png",
+      "samples/mf_maximum_flow/000576/images/G2.png",
+      "samples/mf_maximum_flow/000576/images/G3.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E30 and the sink is E10. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 41,
+    "metadata_path": "samples/mf_maximum_flow/000576/sample.json"
+  },
+  {
+    "id": "mf_000751",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000751/images/G1.png",
+      "samples/mf_maximum_flow/000751/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E76 and the sink is E64. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 45,
+    "metadata_path": "samples/mf_maximum_flow/000751/sample.json"
+  },
+  {
+    "id": "mf_000782",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000782/images/G1.png",
+      "samples/mf_maximum_flow/000782/images/G2.png",
+      "samples/mf_maximum_flow/000782/images/G3.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E42 and the sink is E54. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 58,
+    "metadata_path": "samples/mf_maximum_flow/000782/sample.json"
+  },
+  {
+    "id": "mf_000867",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000867/images/G1.png",
+      "samples/mf_maximum_flow/000867/images/G2.png",
+      "samples/mf_maximum_flow/000867/images/G3.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E47 and the sink is E35. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 47,
+    "metadata_path": "samples/mf_maximum_flow/000867/sample.json"
+  },
+  {
+    "id": "mf_000938",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000938/images/G1.png",
+      "samples/mf_maximum_flow/000938/images/G2.png",
+      "samples/mf_maximum_flow/000938/images/G3.png",
+      "samples/mf_maximum_flow/000938/images/G4.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E78 and the sink is E80. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 54,
+    "metadata_path": "samples/mf_maximum_flow/000938/sample.json"
+  },
+  {
+    "id": "mf_000978",
+    "task_id": "MF",
+    "task_name": "maximum_flow",
+    "image_paths": [
+      "samples/mf_maximum_flow/000978/images/G1.png",
+      "samples/mf_maximum_flow/000978/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E80 and the sink is E8. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+    "answer": 46,
+    "metadata_path": "samples/mf_maximum_flow/000978/sample.json"
+  },
+  {
+    "id": "mfc_000002",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000002/images/t1.png",
+      "samples/mfc_maximum_flow_change/000002/images/t2.png",
+      "samples/mfc_maximum_flow_change/000002/images/t3.png",
+      "samples/mfc_maximum_flow_change/000002/images/t4.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E63 and the sink is E17. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000002/sample.json"
+  },
+  {
+    "id": "mfc_000082",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000082/images/t1.png",
+      "samples/mfc_maximum_flow_change/000082/images/t2.png",
+      "samples/mfc_maximum_flow_change/000082/images/t3.png",
+      "samples/mfc_maximum_flow_change/000082/images/t4.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E11 and the sink is E5. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000082/sample.json"
+  },
+  {
+    "id": "mfc_000115",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000115/images/t1.png",
+      "samples/mfc_maximum_flow_change/000115/images/t2.png",
+      "samples/mfc_maximum_flow_change/000115/images/t3.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E70 and the sink is E23. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      2,
+      3
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000115/sample.json"
+  },
+  {
+    "id": "mfc_000354",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000354/images/t1.png",
+      "samples/mfc_maximum_flow_change/000354/images/t2.png",
+      "samples/mfc_maximum_flow_change/000354/images/t3.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E55 and the sink is E53. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      2,
+      3
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000354/sample.json"
+  },
+  {
+    "id": "mfc_000409",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000409/images/t1.png",
+      "samples/mfc_maximum_flow_change/000409/images/t2.png",
+      "samples/mfc_maximum_flow_change/000409/images/t3.png",
+      "samples/mfc_maximum_flow_change/000409/images/t4.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E72 and the sink is E58. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      3,
+      4
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000409/sample.json"
+  },
+  {
+    "id": "mfc_000478",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000478/images/t1.png",
+      "samples/mfc_maximum_flow_change/000478/images/t2.png",
+      "samples/mfc_maximum_flow_change/000478/images/t3.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E61 and the sink is E14. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000478/sample.json"
+  },
+  {
+    "id": "mfc_000565",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000565/images/t1.png",
+      "samples/mfc_maximum_flow_change/000565/images/t2.png",
+      "samples/mfc_maximum_flow_change/000565/images/t3.png",
+      "samples/mfc_maximum_flow_change/000565/images/t4.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E63 and the sink is E27. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      3,
+      4
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000565/sample.json"
+  },
+  {
+    "id": "mfc_000617",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000617/images/t1.png",
+      "samples/mfc_maximum_flow_change/000617/images/t2.png",
+      "samples/mfc_maximum_flow_change/000617/images/t3.png",
+      "samples/mfc_maximum_flow_change/000617/images/t4.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E22 and the sink is E16. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      3,
+      4
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000617/sample.json"
+  },
+  {
+    "id": "mfc_000646",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000646/images/t1.png",
+      "samples/mfc_maximum_flow_change/000646/images/t2.png",
+      "samples/mfc_maximum_flow_change/000646/images/t3.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E57 and the sink is E42. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000646/sample.json"
+  },
+  {
+    "id": "mfc_000930",
+    "task_id": "MFC",
+    "task_name": "maximum_flow_change",
+    "image_paths": [
+      "samples/mfc_maximum_flow_change/000930/images/t1.png",
+      "samples/mfc_maximum_flow_change/000930/images/t2.png",
+      "samples/mfc_maximum_flow_change/000930/images/t3.png"
+    ],
+    "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E46 and the sink is E56. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+    "answer": [
+      1,
+      2
+    ],
+    "metadata_path": "samples/mfc_maximum_flow_change/000930/sample.json"
+  },
+  {
+    "id": "sbm_000015",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000015/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000015/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000015/images/t3.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E31\", \"E18\", \"E55\", \"E50\", \"E27\", \"E47\", \"E69\", \"E28\"], [\"E31\", \"E18\", \"E55\", \"E50\", \"E27\", \"E47\", \"E69\", \"E21\"], [\"E31\", \"E18\", \"E55\", \"E50\", \"E27\", \"E47\", \"E69\", \"E34\"]], and the job partitions are [[\"E60\", \"E7\", \"E66\", \"E70\", \"E32\", \"E1\", \"E68\", \"E10\"], [\"E60\", \"E7\", \"E66\", \"E70\", \"E32\", \"E1\", \"E68\", \"E59\"], [\"E60\", \"E7\", \"E66\", \"E70\", \"E32\", \"E1\", \"E68\", \"E49\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E31",
+          "E1"
+        ],
+        [
+          "E18",
+          "E68"
+        ],
+        [
+          "E55",
+          "E7"
+        ],
+        [
+          "E50",
+          "E66"
+        ],
+        [
+          "E27",
+          "E60"
+        ],
+        [
+          "E47",
+          "E10"
+        ],
+        [
+          "E69",
+          "E70"
+        ],
+        [
+          "E28",
+          "E32"
+        ]
+      ],
+      [
+        [
+          "E31",
+          "E59"
+        ],
+        [
+          "E18",
+          "E32"
+        ],
+        [
+          "E55",
+          "E7"
+        ],
+        [
+          "E50",
+          "E68"
+        ],
+        [
+          "E27",
+          "E60"
+        ],
+        [
+          "E47",
+          "E66"
+        ],
+        [
+          "E69",
+          "E70"
+        ],
+        [
+          "E21",
+          "E1"
+        ]
+      ],
+      [
+        [
+          "E31",
+          "E49"
+        ],
+        [
+          "E18",
+          "E1"
+        ],
+        [
+          "E55",
+          "E7"
+        ],
+        [
+          "E50",
+          "E32"
+        ],
+        [
+          "E27",
+          "E66"
+        ],
+        [
+          "E47",
+          "E60"
+        ],
+        [
+          "E69",
+          "E68"
+        ],
+        [
+          "E34",
+          "E70"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000015/sample.json"
+  },
+  {
+    "id": "sbm_000193",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000193/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000193/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000193/images/t3.png",
+      "samples/sbm_stable_bipartite_matching/000193/images/t4.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E63\", \"E3\", \"E16\", \"E43\", \"E79\", \"E14\", \"E28\", \"E53\"], [\"E63\", \"E3\", \"E16\", \"E43\", \"E79\", \"E14\", \"E28\", \"E78\"], [\"E63\", \"E3\", \"E16\", \"E43\", \"E79\", \"E14\", \"E28\", \"E18\"], [\"E63\", \"E3\", \"E16\", \"E43\", \"E79\", \"E14\", \"E28\", \"E52\"]], and the job partitions are [[\"E2\", \"E41\", \"E6\", \"E73\", \"E34\", \"E32\", \"E39\", \"E48\"], [\"E2\", \"E41\", \"E6\", \"E73\", \"E34\", \"E32\", \"E39\", \"E61\"], [\"E2\", \"E41\", \"E6\", \"E73\", \"E34\", \"E32\", \"E39\", \"E76\"], [\"E2\", \"E41\", \"E6\", \"E73\", \"E34\", \"E32\", \"E39\", \"E10\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E63",
+          "E39"
+        ],
+        [
+          "E3",
+          "E6"
+        ],
+        [
+          "E16",
+          "E2"
+        ],
+        [
+          "E43",
+          "E32"
+        ],
+        [
+          "E79",
+          "E41"
+        ],
+        [
+          "E14",
+          "E48"
+        ],
+        [
+          "E28",
+          "E73"
+        ],
+        [
+          "E53",
+          "E34"
+        ]
+      ],
+      [
+        [
+          "E63",
+          "E32"
+        ],
+        [
+          "E3",
+          "E6"
+        ],
+        [
+          "E16",
+          "E61"
+        ],
+        [
+          "E43",
+          "E34"
+        ],
+        [
+          "E79",
+          "E2"
+        ],
+        [
+          "E14",
+          "E39"
+        ],
+        [
+          "E28",
+          "E73"
+        ],
+        [
+          "E78",
+          "E41"
+        ]
+      ],
+      [
+        [
+          "E63",
+          "E32"
+        ],
+        [
+          "E3",
+          "E6"
+        ],
+        [
+          "E16",
+          "E34"
+        ],
+        [
+          "E43",
+          "E41"
+        ],
+        [
+          "E79",
+          "E2"
+        ],
+        [
+          "E14",
+          "E39"
+        ],
+        [
+          "E28",
+          "E73"
+        ],
+        [
+          "E18",
+          "E76"
+        ]
+      ],
+      [
+        [
+          "E63",
+          "E73"
+        ],
+        [
+          "E3",
+          "E10"
+        ],
+        [
+          "E16",
+          "E39"
+        ],
+        [
+          "E43",
+          "E6"
+        ],
+        [
+          "E79",
+          "E2"
+        ],
+        [
+          "E14",
+          "E32"
+        ],
+        [
+          "E28",
+          "E34"
+        ],
+        [
+          "E52",
+          "E41"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000193/sample.json"
+  },
+  {
+    "id": "sbm_000523",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000523/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000523/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000523/images/t3.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E54\", \"E32\", \"E18\", \"E58\", \"E65\", \"E24\", \"E80\", \"E68\"], [\"E54\", \"E32\", \"E18\", \"E58\", \"E65\", \"E24\", \"E80\", \"E22\"], [\"E54\", \"E32\", \"E18\", \"E58\", \"E65\", \"E24\", \"E80\", \"E45\"]], and the job partitions are [[\"E28\", \"E27\", \"E57\", \"E4\", \"E53\", \"E6\", \"E41\", \"E9\"], [\"E28\", \"E27\", \"E57\", \"E4\", \"E53\", \"E6\", \"E41\", \"E46\"], [\"E28\", \"E27\", \"E57\", \"E4\", \"E53\", \"E6\", \"E41\", \"E17\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E54",
+          "E9"
+        ],
+        [
+          "E32",
+          "E6"
+        ],
+        [
+          "E18",
+          "E27"
+        ],
+        [
+          "E58",
+          "E57"
+        ],
+        [
+          "E65",
+          "E4"
+        ],
+        [
+          "E24",
+          "E53"
+        ],
+        [
+          "E80",
+          "E41"
+        ],
+        [
+          "E68",
+          "E28"
+        ]
+      ],
+      [
+        [
+          "E54",
+          "E4"
+        ],
+        [
+          "E32",
+          "E6"
+        ],
+        [
+          "E18",
+          "E41"
+        ],
+        [
+          "E58",
+          "E28"
+        ],
+        [
+          "E65",
+          "E27"
+        ],
+        [
+          "E24",
+          "E57"
+        ],
+        [
+          "E80",
+          "E46"
+        ],
+        [
+          "E22",
+          "E53"
+        ]
+      ],
+      [
+        [
+          "E54",
+          "E4"
+        ],
+        [
+          "E32",
+          "E17"
+        ],
+        [
+          "E18",
+          "E41"
+        ],
+        [
+          "E58",
+          "E28"
+        ],
+        [
+          "E65",
+          "E57"
+        ],
+        [
+          "E24",
+          "E27"
+        ],
+        [
+          "E80",
+          "E53"
+        ],
+        [
+          "E45",
+          "E6"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000523/sample.json"
+  },
+  {
+    "id": "sbm_000604",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000604/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000604/images/t2.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E75\", \"E37\", \"E39\", \"E79\", \"E16\", \"E55\", \"E71\", \"E28\"], [\"E75\", \"E37\", \"E39\", \"E79\", \"E16\", \"E55\", \"E71\", \"E25\"]], and the job partitions are [[\"E22\", \"E80\", \"E30\", \"E11\", \"E35\", \"E65\", \"E66\", \"E70\"], [\"E22\", \"E80\", \"E30\", \"E11\", \"E35\", \"E65\", \"E66\", \"E51\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E75",
+          "E22"
+        ],
+        [
+          "E37",
+          "E65"
+        ],
+        [
+          "E39",
+          "E11"
+        ],
+        [
+          "E79",
+          "E66"
+        ],
+        [
+          "E16",
+          "E35"
+        ],
+        [
+          "E55",
+          "E30"
+        ],
+        [
+          "E71",
+          "E70"
+        ],
+        [
+          "E28",
+          "E80"
+        ]
+      ],
+      [
+        [
+          "E75",
+          "E51"
+        ],
+        [
+          "E37",
+          "E65"
+        ],
+        [
+          "E39",
+          "E11"
+        ],
+        [
+          "E79",
+          "E66"
+        ],
+        [
+          "E16",
+          "E35"
+        ],
+        [
+          "E55",
+          "E30"
+        ],
+        [
+          "E71",
+          "E22"
+        ],
+        [
+          "E25",
+          "E80"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000604/sample.json"
+  },
+  {
+    "id": "sbm_000796",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000796/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000796/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000796/images/t3.png",
+      "samples/sbm_stable_bipartite_matching/000796/images/t4.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E25\", \"E46\", \"E63\", \"E39\", \"E60\", \"E64\", \"E32\", \"E52\"], [\"E25\", \"E46\", \"E63\", \"E39\", \"E60\", \"E64\", \"E32\", \"E55\"], [\"E25\", \"E46\", \"E63\", \"E39\", \"E60\", \"E64\", \"E32\", \"E43\"], [\"E25\", \"E46\", \"E63\", \"E39\", \"E60\", \"E64\", \"E32\", \"E36\"]], and the job partitions are [[\"E74\", \"E23\", \"E40\", \"E73\", \"E24\", \"E4\", \"E65\", \"E80\"], [\"E74\", \"E23\", \"E40\", \"E73\", \"E24\", \"E4\", \"E65\", \"E9\"], [\"E74\", \"E23\", \"E40\", \"E73\", \"E24\", \"E4\", \"E65\", \"E28\"], [\"E74\", \"E23\", \"E40\", \"E73\", \"E24\", \"E4\", \"E65\", \"E78\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E25",
+          "E23"
+        ],
+        [
+          "E46",
+          "E40"
+        ],
+        [
+          "E63",
+          "E73"
+        ],
+        [
+          "E39",
+          "E24"
+        ],
+        [
+          "E60",
+          "E4"
+        ],
+        [
+          "E64",
+          "E74"
+        ],
+        [
+          "E32",
+          "E65"
+        ],
+        [
+          "E52",
+          "E80"
+        ]
+      ],
+      [
+        [
+          "E25",
+          "E9"
+        ],
+        [
+          "E46",
+          "E40"
+        ],
+        [
+          "E63",
+          "E65"
+        ],
+        [
+          "E39",
+          "E24"
+        ],
+        [
+          "E60",
+          "E4"
+        ],
+        [
+          "E64",
+          "E73"
+        ],
+        [
+          "E32",
+          "E23"
+        ],
+        [
+          "E55",
+          "E74"
+        ]
+      ],
+      [
+        [
+          "E25",
+          "E28"
+        ],
+        [
+          "E46",
+          "E40"
+        ],
+        [
+          "E63",
+          "E65"
+        ],
+        [
+          "E39",
+          "E73"
+        ],
+        [
+          "E60",
+          "E74"
+        ],
+        [
+          "E64",
+          "E24"
+        ],
+        [
+          "E32",
+          "E23"
+        ],
+        [
+          "E43",
+          "E4"
+        ]
+      ],
+      [
+        [
+          "E25",
+          "E78"
+        ],
+        [
+          "E46",
+          "E40"
+        ],
+        [
+          "E63",
+          "E23"
+        ],
+        [
+          "E39",
+          "E73"
+        ],
+        [
+          "E60",
+          "E4"
+        ],
+        [
+          "E64",
+          "E74"
+        ],
+        [
+          "E32",
+          "E24"
+        ],
+        [
+          "E36",
+          "E65"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000796/sample.json"
+  },
+  {
+    "id": "sbm_000848",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000848/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000848/images/t2.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E44\", \"E37\", \"E76\", \"E54\", \"E14\", \"E69\", \"E15\", \"E58\"], [\"E44\", \"E37\", \"E76\", \"E54\", \"E14\", \"E69\", \"E15\", \"E23\"]], and the job partitions are [[\"E26\", \"E5\", \"E33\", \"E53\", \"E63\", \"E12\", \"E62\", \"E41\"], [\"E26\", \"E5\", \"E33\", \"E53\", \"E63\", \"E12\", \"E62\", \"E66\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E44",
+          "E41"
+        ],
+        [
+          "E37",
+          "E33"
+        ],
+        [
+          "E76",
+          "E26"
+        ],
+        [
+          "E54",
+          "E53"
+        ],
+        [
+          "E14",
+          "E12"
+        ],
+        [
+          "E69",
+          "E62"
+        ],
+        [
+          "E15",
+          "E5"
+        ],
+        [
+          "E58",
+          "E63"
+        ]
+      ],
+      [
+        [
+          "E44",
+          "E66"
+        ],
+        [
+          "E37",
+          "E5"
+        ],
+        [
+          "E76",
+          "E33"
+        ],
+        [
+          "E54",
+          "E53"
+        ],
+        [
+          "E14",
+          "E12"
+        ],
+        [
+          "E69",
+          "E63"
+        ],
+        [
+          "E15",
+          "E26"
+        ],
+        [
+          "E23",
+          "E62"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000848/sample.json"
+  },
+  {
+    "id": "sbm_000916",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000916/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000916/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000916/images/t3.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E48\", \"E24\", \"E3\", \"E40\", \"E25\", \"E36\", \"E58\", \"E68\"], [\"E48\", \"E24\", \"E3\", \"E40\", \"E25\", \"E36\", \"E58\", \"E57\"], [\"E48\", \"E24\", \"E3\", \"E40\", \"E25\", \"E36\", \"E58\", \"E33\"]], and the job partitions are [[\"E50\", \"E23\", \"E64\", \"E45\", \"E51\", \"E60\", \"E28\", \"E47\"], [\"E50\", \"E23\", \"E64\", \"E45\", \"E51\", \"E60\", \"E28\", \"E1\"], [\"E50\", \"E23\", \"E64\", \"E45\", \"E51\", \"E60\", \"E28\", \"E70\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E48",
+          "E50"
+        ],
+        [
+          "E24",
+          "E64"
+        ],
+        [
+          "E3",
+          "E23"
+        ],
+        [
+          "E40",
+          "E47"
+        ],
+        [
+          "E25",
+          "E60"
+        ],
+        [
+          "E36",
+          "E45"
+        ],
+        [
+          "E58",
+          "E51"
+        ],
+        [
+          "E68",
+          "E28"
+        ]
+      ],
+      [
+        [
+          "E48",
+          "E50"
+        ],
+        [
+          "E24",
+          "E64"
+        ],
+        [
+          "E3",
+          "E51"
+        ],
+        [
+          "E40",
+          "E1"
+        ],
+        [
+          "E25",
+          "E28"
+        ],
+        [
+          "E36",
+          "E45"
+        ],
+        [
+          "E58",
+          "E60"
+        ],
+        [
+          "E57",
+          "E23"
+        ]
+      ],
+      [
+        [
+          "E48",
+          "E28"
+        ],
+        [
+          "E24",
+          "E70"
+        ],
+        [
+          "E3",
+          "E51"
+        ],
+        [
+          "E40",
+          "E60"
+        ],
+        [
+          "E25",
+          "E64"
+        ],
+        [
+          "E36",
+          "E45"
+        ],
+        [
+          "E58",
+          "E50"
+        ],
+        [
+          "E33",
+          "E23"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000916/sample.json"
+  },
+  {
+    "id": "sbm_000921",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000921/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000921/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000921/images/t3.png",
+      "samples/sbm_stable_bipartite_matching/000921/images/t4.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E45\", \"E77\", \"E43\", \"E44\", \"E74\", \"E73\", \"E33\", \"E59\"], [\"E45\", \"E77\", \"E43\", \"E44\", \"E74\", \"E73\", \"E33\", \"E46\"], [\"E45\", \"E77\", \"E43\", \"E44\", \"E74\", \"E73\", \"E33\", \"E39\"], [\"E45\", \"E77\", \"E43\", \"E44\", \"E74\", \"E73\", \"E33\", \"E35\"]], and the job partitions are [[\"E23\", \"E66\", \"E30\", \"E60\", \"E80\", \"E31\", \"E5\", \"E7\"], [\"E23\", \"E66\", \"E30\", \"E60\", \"E80\", \"E31\", \"E5\", \"E41\"], [\"E23\", \"E66\", \"E30\", \"E60\", \"E80\", \"E31\", \"E5\", \"E24\"], [\"E23\", \"E66\", \"E30\", \"E60\", \"E80\", \"E31\", \"E5\", \"E38\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E45",
+          "E30"
+        ],
+        [
+          "E77",
+          "E5"
+        ],
+        [
+          "E43",
+          "E80"
+        ],
+        [
+          "E44",
+          "E66"
+        ],
+        [
+          "E74",
+          "E23"
+        ],
+        [
+          "E73",
+          "E7"
+        ],
+        [
+          "E33",
+          "E31"
+        ],
+        [
+          "E59",
+          "E60"
+        ]
+      ],
+      [
+        [
+          "E45",
+          "E60"
+        ],
+        [
+          "E77",
+          "E31"
+        ],
+        [
+          "E43",
+          "E30"
+        ],
+        [
+          "E44",
+          "E66"
+        ],
+        [
+          "E74",
+          "E41"
+        ],
+        [
+          "E73",
+          "E5"
+        ],
+        [
+          "E33",
+          "E23"
+        ],
+        [
+          "E46",
+          "E80"
+        ]
+      ],
+      [
+        [
+          "E45",
+          "E80"
+        ],
+        [
+          "E77",
+          "E24"
+        ],
+        [
+          "E43",
+          "E30"
+        ],
+        [
+          "E44",
+          "E23"
+        ],
+        [
+          "E74",
+          "E66"
+        ],
+        [
+          "E73",
+          "E5"
+        ],
+        [
+          "E33",
+          "E31"
+        ],
+        [
+          "E39",
+          "E60"
+        ]
+      ],
+      [
+        [
+          "E45",
+          "E31"
+        ],
+        [
+          "E77",
+          "E66"
+        ],
+        [
+          "E43",
+          "E38"
+        ],
+        [
+          "E44",
+          "E23"
+        ],
+        [
+          "E74",
+          "E5"
+        ],
+        [
+          "E73",
+          "E60"
+        ],
+        [
+          "E33",
+          "E30"
+        ],
+        [
+          "E35",
+          "E80"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000921/sample.json"
+  },
+  {
+    "id": "sbm_000983",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000983/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000983/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000983/images/t3.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E63\", \"E27\", \"E76\", \"E32\", \"E3\", \"E47\", \"E64\", \"E41\"], [\"E63\", \"E27\", \"E76\", \"E32\", \"E3\", \"E47\", \"E64\", \"E70\"], [\"E63\", \"E27\", \"E76\", \"E32\", \"E3\", \"E47\", \"E64\", \"E43\"]], and the job partitions are [[\"E65\", \"E79\", \"E42\", \"E17\", \"E55\", \"E72\", \"E71\", \"E21\"], [\"E65\", \"E79\", \"E42\", \"E17\", \"E55\", \"E72\", \"E71\", \"E46\"], [\"E65\", \"E79\", \"E42\", \"E17\", \"E55\", \"E72\", \"E71\", \"E33\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E63",
+          "E55"
+        ],
+        [
+          "E27",
+          "E21"
+        ],
+        [
+          "E76",
+          "E17"
+        ],
+        [
+          "E32",
+          "E71"
+        ],
+        [
+          "E3",
+          "E65"
+        ],
+        [
+          "E47",
+          "E42"
+        ],
+        [
+          "E64",
+          "E79"
+        ],
+        [
+          "E41",
+          "E72"
+        ]
+      ],
+      [
+        [
+          "E63",
+          "E55"
+        ],
+        [
+          "E27",
+          "E65"
+        ],
+        [
+          "E76",
+          "E17"
+        ],
+        [
+          "E32",
+          "E46"
+        ],
+        [
+          "E3",
+          "E71"
+        ],
+        [
+          "E47",
+          "E72"
+        ],
+        [
+          "E64",
+          "E79"
+        ],
+        [
+          "E70",
+          "E42"
+        ]
+      ],
+      [
+        [
+          "E63",
+          "E79"
+        ],
+        [
+          "E27",
+          "E33"
+        ],
+        [
+          "E76",
+          "E55"
+        ],
+        [
+          "E32",
+          "E17"
+        ],
+        [
+          "E3",
+          "E71"
+        ],
+        [
+          "E47",
+          "E72"
+        ],
+        [
+          "E64",
+          "E42"
+        ],
+        [
+          "E43",
+          "E65"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000983/sample.json"
+  },
+  {
+    "id": "sbm_000988",
+    "task_id": "SBM",
+    "task_name": "stable_bipartite_matching",
+    "image_paths": [
+      "samples/sbm_stable_bipartite_matching/000988/images/t1.png",
+      "samples/sbm_stable_bipartite_matching/000988/images/t2.png",
+      "samples/sbm_stable_bipartite_matching/000988/images/t3.png",
+      "samples/sbm_stable_bipartite_matching/000988/images/t4.png"
+    ],
+    "question": "The images show an undirected bipartite graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nThe applicant partitions in image order are [[\"E67\", \"E48\", \"E35\", \"E17\", \"E36\", \"E57\", \"E63\", \"E18\"], [\"E67\", \"E48\", \"E35\", \"E17\", \"E36\", \"E57\", \"E63\", \"E33\"], [\"E67\", \"E48\", \"E35\", \"E17\", \"E36\", \"E57\", \"E63\", \"E70\"], [\"E67\", \"E48\", \"E35\", \"E17\", \"E36\", \"E57\", \"E63\", \"E41\"]], and the job partitions are [[\"E56\", \"E58\", \"E72\", \"E22\", \"E32\", \"E12\", \"E1\", \"E40\"], [\"E56\", \"E58\", \"E72\", \"E22\", \"E32\", \"E12\", \"E1\", \"E62\"], [\"E56\", \"E58\", \"E72\", \"E22\", \"E32\", \"E12\", \"E1\", \"E43\"], [\"E56\", \"E58\", \"E72\", \"E22\", \"E32\", \"E12\", \"E1\", \"E37\"]]. Return a maximum-cardinality matching for every time step. Among all such sequences, minimize how many stable applicants change their assigned job between consecutive images.\nReturn only a valid JSON object of the form {\"answer\": [[[\"<APPLICANT_AT_T1>\", \"<JOB_AT_T1>\"], ...], [[\"<APPLICANT_AT_T2>\", \"<JOB_AT_T2>\"], ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        [
+          "E67",
+          "E12"
+        ],
+        [
+          "E48",
+          "E40"
+        ],
+        [
+          "E35",
+          "E1"
+        ],
+        [
+          "E17",
+          "E56"
+        ],
+        [
+          "E36",
+          "E22"
+        ],
+        [
+          "E57",
+          "E32"
+        ],
+        [
+          "E63",
+          "E72"
+        ],
+        [
+          "E18",
+          "E58"
+        ]
+      ],
+      [
+        [
+          "E67",
+          "E12"
+        ],
+        [
+          "E48",
+          "E1"
+        ],
+        [
+          "E35",
+          "E56"
+        ],
+        [
+          "E17",
+          "E58"
+        ],
+        [
+          "E36",
+          "E22"
+        ],
+        [
+          "E57",
+          "E62"
+        ],
+        [
+          "E63",
+          "E32"
+        ],
+        [
+          "E33",
+          "E72"
+        ]
+      ],
+      [
+        [
+          "E67",
+          "E12"
+        ],
+        [
+          "E48",
+          "E1"
+        ],
+        [
+          "E35",
+          "E56"
+        ],
+        [
+          "E17",
+          "E58"
+        ],
+        [
+          "E36",
+          "E22"
+        ],
+        [
+          "E57",
+          "E72"
+        ],
+        [
+          "E63",
+          "E32"
+        ],
+        [
+          "E70",
+          "E43"
+        ]
+      ],
+      [
+        [
+          "E67",
+          "E1"
+        ],
+        [
+          "E48",
+          "E37"
+        ],
+        [
+          "E35",
+          "E56"
+        ],
+        [
+          "E17",
+          "E32"
+        ],
+        [
+          "E36",
+          "E22"
+        ],
+        [
+          "E57",
+          "E72"
+        ],
+        [
+          "E63",
+          "E58"
+        ],
+        [
+          "E41",
+          "E12"
+        ]
+      ]
+    ],
+    "metadata_path": "samples/sbm_stable_bipartite_matching/000988/sample.json"
+  },
+  {
+    "id": "sts_000053",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000053/images/t1.png",
+      "samples/sts_stable_topological_sorting/000053/images/t2.png",
+      "samples/sts_stable_topological_sorting/000053/images/t3.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E61",
+        "E71",
+        "E58",
+        "E68",
+        "E48",
+        "E72",
+        "E28",
+        "E57"
+      ],
+      [
+        "E58",
+        "E68",
+        "E48",
+        "E72",
+        "E77",
+        "E61",
+        "E71",
+        "E28"
+      ],
+      [
+        "E48",
+        "E71",
+        "E4",
+        "E58",
+        "E68",
+        "E72",
+        "E61",
+        "E28"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000053/sample.json"
+  },
+  {
+    "id": "sts_000063",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000063/images/t1.png",
+      "samples/sts_stable_topological_sorting/000063/images/t2.png",
+      "samples/sts_stable_topological_sorting/000063/images/t3.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E71",
+        "E15",
+        "E8",
+        "E42",
+        "E52",
+        "E80",
+        "E40",
+        "E70"
+      ],
+      [
+        "E71",
+        "E15",
+        "E8",
+        "E42",
+        "E70",
+        "E45",
+        "E40",
+        "E52"
+      ],
+      [
+        "E2",
+        "E42",
+        "E40",
+        "E15",
+        "E71",
+        "E8",
+        "E52",
+        "E70"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000063/sample.json"
+  },
+  {
+    "id": "sts_000083",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000083/images/t1.png",
+      "samples/sts_stable_topological_sorting/000083/images/t2.png",
+      "samples/sts_stable_topological_sorting/000083/images/t3.png",
+      "samples/sts_stable_topological_sorting/000083/images/t4.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E76",
+        "E69",
+        "E45",
+        "E11",
+        "E75",
+        "E66",
+        "E19",
+        "E77"
+      ],
+      [
+        "E75",
+        "E76",
+        "E66",
+        "E77",
+        "E69",
+        "E45",
+        "E54",
+        "E19"
+      ],
+      [
+        "E75",
+        "E76",
+        "E77",
+        "E1",
+        "E66",
+        "E69",
+        "E45",
+        "E19"
+      ],
+      [
+        "E77",
+        "E76",
+        "E45",
+        "E19",
+        "E66",
+        "E69",
+        "E75",
+        "E35"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000083/sample.json"
+  },
+  {
+    "id": "sts_000153",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000153/images/t1.png",
+      "samples/sts_stable_topological_sorting/000153/images/t2.png",
+      "samples/sts_stable_topological_sorting/000153/images/t3.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E23",
+        "E4",
+        "E11",
+        "E26",
+        "E7",
+        "E79",
+        "E27",
+        "E67"
+      ],
+      [
+        "E74",
+        "E11",
+        "E7",
+        "E27",
+        "E23",
+        "E79",
+        "E26",
+        "E67"
+      ],
+      [
+        "E27",
+        "E79",
+        "E34",
+        "E23",
+        "E11",
+        "E67",
+        "E7",
+        "E26"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000153/sample.json"
+  },
+  {
+    "id": "sts_000471",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000471/images/t1.png",
+      "samples/sts_stable_topological_sorting/000471/images/t2.png",
+      "samples/sts_stable_topological_sorting/000471/images/t3.png",
+      "samples/sts_stable_topological_sorting/000471/images/t4.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E24",
+        "E52",
+        "E35",
+        "E51",
+        "E29",
+        "E6",
+        "E42",
+        "E67"
+      ],
+      [
+        "E52",
+        "E35",
+        "E51",
+        "E29",
+        "E64",
+        "E67",
+        "E6",
+        "E42"
+      ],
+      [
+        "E11",
+        "E52",
+        "E29",
+        "E67",
+        "E6",
+        "E42",
+        "E35",
+        "E51"
+      ],
+      [
+        "E52",
+        "E35",
+        "E67",
+        "E42",
+        "E6",
+        "E29",
+        "E51",
+        "E74"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000471/sample.json"
+  },
+  {
+    "id": "sts_000583",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000583/images/t1.png",
+      "samples/sts_stable_topological_sorting/000583/images/t2.png",
+      "samples/sts_stable_topological_sorting/000583/images/t3.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E73",
+        "E45",
+        "E47",
+        "E9",
+        "E79",
+        "E68",
+        "E8",
+        "E16"
+      ],
+      [
+        "E45",
+        "E47",
+        "E67",
+        "E9",
+        "E8",
+        "E16",
+        "E73",
+        "E79"
+      ],
+      [
+        "E73",
+        "E16",
+        "E52",
+        "E8",
+        "E45",
+        "E79",
+        "E47",
+        "E9"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000583/sample.json"
+  },
+  {
+    "id": "sts_000860",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000860/images/t1.png",
+      "samples/sts_stable_topological_sorting/000860/images/t2.png",
+      "samples/sts_stable_topological_sorting/000860/images/t3.png",
+      "samples/sts_stable_topological_sorting/000860/images/t4.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E41",
+        "E75",
+        "E65",
+        "E34",
+        "E73",
+        "E38",
+        "E37",
+        "E55"
+      ],
+      [
+        "E55",
+        "E24",
+        "E75",
+        "E41",
+        "E65",
+        "E34",
+        "E73",
+        "E38"
+      ],
+      [
+        "E17",
+        "E34",
+        "E73",
+        "E55",
+        "E38",
+        "E41",
+        "E75",
+        "E65"
+      ],
+      [
+        "E73",
+        "E55",
+        "E41",
+        "E30",
+        "E38",
+        "E75",
+        "E34",
+        "E65"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000860/sample.json"
+  },
+  {
+    "id": "sts_000881",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000881/images/t1.png",
+      "samples/sts_stable_topological_sorting/000881/images/t2.png",
+      "samples/sts_stable_topological_sorting/000881/images/t3.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E3",
+        "E14",
+        "E40",
+        "E12",
+        "E22",
+        "E61",
+        "E72",
+        "E78"
+      ],
+      [
+        "E78",
+        "E3",
+        "E14",
+        "E72",
+        "E12",
+        "E22",
+        "E33",
+        "E61"
+      ],
+      [
+        "E78",
+        "E3",
+        "E14",
+        "E72",
+        "E61",
+        "E12",
+        "E34",
+        "E22"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000881/sample.json"
+  },
+  {
+    "id": "sts_000940",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000940/images/t1.png",
+      "samples/sts_stable_topological_sorting/000940/images/t2.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E20",
+        "E1",
+        "E36",
+        "E42",
+        "E59",
+        "E26",
+        "E28",
+        "E22"
+      ],
+      [
+        "E28",
+        "E36",
+        "E20",
+        "E52",
+        "E1",
+        "E26",
+        "E22",
+        "E59"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000940/sample.json"
+  },
+  {
+    "id": "sts_000973",
+    "task_id": "STS",
+    "task_name": "stable_topological_sorting",
+    "image_paths": [
+      "samples/sts_stable_topological_sorting/000973/images/t1.png",
+      "samples/sts_stable_topological_sorting/000973/images/t2.png",
+      "samples/sts_stable_topological_sorting/000973/images/t3.png",
+      "samples/sts_stable_topological_sorting/000973/images/t4.png"
+    ],
+    "question": "The images show a directed graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+    "answer": [
+      [
+        "E57",
+        "E32",
+        "E44",
+        "E74",
+        "E45",
+        "E28",
+        "E53",
+        "E13"
+      ],
+      [
+        "E53",
+        "E32",
+        "E13",
+        "E18",
+        "E44",
+        "E57",
+        "E45",
+        "E28"
+      ],
+      [
+        "E53",
+        "E32",
+        "E13",
+        "E57",
+        "E44",
+        "E45",
+        "E28",
+        "E78"
+      ],
+      [
+        "E32",
+        "E28",
+        "E21",
+        "E13",
+        "E44",
+        "E57",
+        "E53",
+        "E45"
+      ]
+    ],
+    "metadata_path": "samples/sts_stable_topological_sorting/000973/sample.json"
+  },
+  {
+    "id": "thp_000138",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000138/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000138/images/t2.png",
+      "samples/thp_time_respecting_hamiltonian_path/000138/images/t3.png",
+      "samples/thp_time_respecting_hamiltonian_path/000138/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E16",
+        "E50",
+        "E75",
+        "E18",
+        "E2",
+        "E5",
+        "E11",
+        "E53",
+        "E56",
+        "E54",
+        "E41",
+        "E76",
+        "E13",
+        "E74",
+        "E20",
+        "E17",
+        "E72"
+      ],
+      "images": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000138/sample.json"
+  },
+  {
+    "id": "thp_000485",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000485/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000485/images/t2.png",
+      "samples/thp_time_respecting_hamiltonian_path/000485/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E9",
+        "E35",
+        "E18",
+        "E34",
+        "E73",
+        "E4",
+        "E54",
+        "E49",
+        "E80",
+        "E69",
+        "E74",
+        "E16",
+        "E23",
+        "E14",
+        "E28",
+        "E71"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000485/sample.json"
+  },
+  {
+    "id": "thp_000531",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000531/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000531/images/t2.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E61",
+        "E75",
+        "E66",
+        "E73",
+        "E79",
+        "E45",
+        "E13",
+        "E1",
+        "E34",
+        "E44",
+        "E24",
+        "E28",
+        "E76",
+        "E18",
+        "E29",
+        "E71",
+        "E51"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000531/sample.json"
+  },
+  {
+    "id": "thp_000547",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000547/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000547/images/t2.png",
+      "samples/thp_time_respecting_hamiltonian_path/000547/images/t3.png",
+      "samples/thp_time_respecting_hamiltonian_path/000547/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E10",
+        "E52",
+        "E4",
+        "E18",
+        "E5",
+        "E61",
+        "E48",
+        "E77",
+        "E72",
+        "E41",
+        "E34",
+        "E42",
+        "E3",
+        "E40",
+        "E79",
+        "E2",
+        "E47"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000547/sample.json"
+  },
+  {
+    "id": "thp_000843",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000843/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000843/images/t2.png",
+      "samples/thp_time_respecting_hamiltonian_path/000843/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E34",
+        "E17",
+        "E79",
+        "E15",
+        "E38",
+        "E33",
+        "E77",
+        "E52",
+        "E67",
+        "E44",
+        "E5",
+        "E22",
+        "E28",
+        "E1",
+        "E43",
+        "E75",
+        "E61"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000843/sample.json"
+  },
+  {
+    "id": "thp_000856",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000856/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000856/images/t2.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E8",
+        "E49",
+        "E53",
+        "E66",
+        "E33",
+        "E20",
+        "E42",
+        "E39",
+        "E76",
+        "E47",
+        "E57",
+        "E26",
+        "E77",
+        "E61",
+        "E17"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000856/sample.json"
+  },
+  {
+    "id": "thp_000861",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000861/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000861/images/t2.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E69",
+        "E49",
+        "E76",
+        "E80",
+        "E20",
+        "E35",
+        "E28",
+        "E18",
+        "E25",
+        "E54",
+        "E48",
+        "E7",
+        "E47",
+        "E60",
+        "E57",
+        "E75"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000861/sample.json"
+  },
+  {
+    "id": "thp_000866",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000866/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000866/images/t2.png",
+      "samples/thp_time_respecting_hamiltonian_path/000866/images/t3.png",
+      "samples/thp_time_respecting_hamiltonian_path/000866/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E63",
+        "E78",
+        "E46",
+        "E32",
+        "E73",
+        "E11",
+        "E72",
+        "E60",
+        "E30",
+        "E16",
+        "E55",
+        "E27",
+        "E2",
+        "E12",
+        "E70",
+        "E8",
+        "E38"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000866/sample.json"
+  },
+  {
+    "id": "thp_000926",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000926/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000926/images/t2.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E22",
+        "E46",
+        "E25",
+        "E9",
+        "E30",
+        "E80",
+        "E40",
+        "E19",
+        "E57",
+        "E41",
+        "E1",
+        "E52",
+        "E75",
+        "E53",
+        "E7",
+        "E64"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000926/sample.json"
+  },
+  {
+    "id": "thp_000991",
+    "task_id": "THP",
+    "task_name": "time_respecting_hamiltonian_path",
+    "image_paths": [
+      "samples/thp_time_respecting_hamiltonian_path/000991/images/t1.png",
+      "samples/thp_time_respecting_hamiltonian_path/000991/images/t2.png",
+      "samples/thp_time_respecting_hamiltonian_path/000991/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFind a time-respecting Hamiltonian path that visits every node exactly once. For each path edge, give the graph image in which that edge is used. Image numbers must be nondecreasing, and every time step must be used.\nReturn only a valid JSON object of the form {\"answer\": {\"path\": [\"<NODE>\", ...], \"images\": [<GRAPH_IMAGE_NUMBER>, ...]}}. Do not include explanation or extra fields.",
+    "answer": {
+      "path": [
+        "E31",
+        "E20",
+        "E73",
+        "E43",
+        "E68",
+        "E66",
+        "E42",
+        "E71",
+        "E4",
+        "E29",
+        "E21",
+        "E24",
+        "E72",
+        "E34",
+        "E28",
+        "E17",
+        "E52"
+      ],
+      "images": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ]
+    },
+    "metadata_path": "samples/thp_time_respecting_hamiltonian_path/000991/sample.json"
+  },
+  {
+    "id": "ts_000145",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000145/images/G1.png",
+      "samples/ts_topological_sorting/000145/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E63",
+      "E62",
+      "E75",
+      "E77",
+      "E71",
+      "E78",
+      "E53",
+      "E41",
+      "E51",
+      "E49",
+      "E13",
+      "E45"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000145/sample.json"
+  },
+  {
+    "id": "ts_000180",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000180/images/G1.png",
+      "samples/ts_topological_sorting/000180/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E28",
+      "E69",
+      "E53",
+      "E39",
+      "E50",
+      "E70",
+      "E9",
+      "E74",
+      "E65",
+      "E13",
+      "E11",
+      "E71",
+      "E6"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000180/sample.json"
+  },
+  {
+    "id": "ts_000202",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000202/images/G1.png",
+      "samples/ts_topological_sorting/000202/images/G2.png",
+      "samples/ts_topological_sorting/000202/images/G3.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E62",
+      "E22",
+      "E68",
+      "E56",
+      "E32",
+      "E51",
+      "E61",
+      "E21",
+      "E17",
+      "E46",
+      "E34",
+      "E33"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000202/sample.json"
+  },
+  {
+    "id": "ts_000236",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000236/images/G1.png",
+      "samples/ts_topological_sorting/000236/images/G2.png",
+      "samples/ts_topological_sorting/000236/images/G3.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E10",
+      "E52",
+      "E11",
+      "E30",
+      "E38",
+      "E9",
+      "E40",
+      "E4",
+      "E78",
+      "E36",
+      "E1",
+      "E7",
+      "E2"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000236/sample.json"
+  },
+  {
+    "id": "ts_000290",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000290/images/G1.png",
+      "samples/ts_topological_sorting/000290/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E18",
+      "E11",
+      "E57",
+      "E48",
+      "E78",
+      "E15",
+      "E69",
+      "E6",
+      "E20",
+      "E62",
+      "E19",
+      "E8",
+      "E59"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000290/sample.json"
+  },
+  {
+    "id": "ts_000555",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000555/images/G1.png",
+      "samples/ts_topological_sorting/000555/images/G2.png",
+      "samples/ts_topological_sorting/000555/images/G3.png",
+      "samples/ts_topological_sorting/000555/images/G4.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E57",
+      "E32",
+      "E56",
+      "E42",
+      "E20",
+      "E1",
+      "E14",
+      "E11",
+      "E8",
+      "E61",
+      "E52",
+      "E38",
+      "E79",
+      "E29"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000555/sample.json"
+  },
+  {
+    "id": "ts_000569",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000569/images/G1.png",
+      "samples/ts_topological_sorting/000569/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E12",
+      "E4",
+      "E75",
+      "E76",
+      "E39",
+      "E46",
+      "E8",
+      "E37",
+      "E72",
+      "E65",
+      "E57",
+      "E19",
+      "E38",
+      "E33"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000569/sample.json"
+  },
+  {
+    "id": "ts_000697",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000697/images/G1.png",
+      "samples/ts_topological_sorting/000697/images/G2.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E6",
+      "E65",
+      "E77",
+      "E4",
+      "E54",
+      "E69",
+      "E16",
+      "E42",
+      "E56",
+      "E52",
+      "E36",
+      "E68",
+      "E15"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000697/sample.json"
+  },
+  {
+    "id": "ts_000717",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000717/images/G1.png",
+      "samples/ts_topological_sorting/000717/images/G2.png",
+      "samples/ts_topological_sorting/000717/images/G3.png",
+      "samples/ts_topological_sorting/000717/images/G4.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E3",
+      "E37",
+      "E14",
+      "E24",
+      "E46",
+      "E8",
+      "E20",
+      "E28",
+      "E70",
+      "E65",
+      "E52",
+      "E47",
+      "E35"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000717/sample.json"
+  },
+  {
+    "id": "ts_000764",
+    "task_id": "TS",
+    "task_name": "topological_sorting",
+    "image_paths": [
+      "samples/ts_topological_sorting/000764/images/G1.png",
+      "samples/ts_topological_sorting/000764/images/G2.png",
+      "samples/ts_topological_sorting/000764/images/G3.png",
+      "samples/ts_topological_sorting/000764/images/G4.png"
+    ],
+    "question": "The images show partial views of a related directed graph. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nMerge all views into one directed acyclic graph. Give a valid topological ordering of every node in the merged graph.\nReturn only a valid JSON object of the form {\"answer\": [\"<NODE>\", ...]}. Include every node exactly once and do not include explanation or extra fields.",
+    "answer": [
+      "E36",
+      "E20",
+      "E41",
+      "E10",
+      "E76",
+      "E24",
+      "E39",
+      "E35",
+      "E38",
+      "E62",
+      "E14",
+      "E75"
+    ],
+    "metadata_path": "samples/ts_topological_sorting/000764/sample.json"
+  }
+]

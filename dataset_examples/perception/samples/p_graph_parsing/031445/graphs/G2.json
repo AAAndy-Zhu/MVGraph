@@ -1,0 +1,143 @@
+{
+  "graph_id": "G2",
+  "title": "Graph 2",
+  "nodes": [
+    "E14",
+    "E16",
+    "E31",
+    "E32",
+    "E35",
+    "E56",
+    "E59",
+    "E63",
+    "E75",
+    "E77",
+    "E80"
+  ],
+  "edges": [
+    {
+      "source": "E16",
+      "target": "E31",
+      "capacity": 15,
+      "relation": "R4"
+    },
+    {
+      "source": "E16",
+      "target": "E32",
+      "capacity": 7,
+      "relation": "R1"
+    },
+    {
+      "source": "E16",
+      "target": "E59",
+      "capacity": 11,
+      "relation": "R2"
+    },
+    {
+      "source": "E16",
+      "target": "E80",
+      "capacity": 13,
+      "relation": "R3"
+    },
+    {
+      "source": "E31",
+      "target": "E35",
+      "capacity": 10,
+      "relation": "R4"
+    },
+    {
+      "source": "E32",
+      "target": "E75",
+      "capacity": 7,
+      "relation": "R1"
+    },
+    {
+      "source": "E59",
+      "target": "E35",
+      "capacity": 14,
+      "relation": "R2"
+    },
+    {
+      "source": "E63",
+      "target": "E56",
+      "capacity": 4,
+      "relation": "R3"
+    },
+    {
+      "source": "E75",
+      "target": "E56",
+      "capacity": 13,
+      "relation": "R4"
+    },
+    {
+      "source": "E77",
+      "target": "E56",
+      "capacity": 12,
+      "relation": "R1"
+    },
+    {
+      "source": "E80",
+      "target": "E14",
+      "capacity": 6,
+      "relation": "R2"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E16",
+      "R4",
+      "E31"
+    ],
+    [
+      "E16",
+      "R1",
+      "E32"
+    ],
+    [
+      "E16",
+      "R2",
+      "E59"
+    ],
+    [
+      "E16",
+      "R3",
+      "E80"
+    ],
+    [
+      "E31",
+      "R4",
+      "E35"
+    ],
+    [
+      "E32",
+      "R1",
+      "E75"
+    ],
+    [
+      "E59",
+      "R2",
+      "E35"
+    ],
+    [
+      "E63",
+      "R3",
+      "E56"
+    ],
+    [
+      "E75",
+      "R4",
+      "E56"
+    ],
+    [
+      "E77",
+      "R1",
+      "E56"
+    ],
+    [
+      "E80",
+      "R2",
+      "E14"
+    ]
+  ]
+}

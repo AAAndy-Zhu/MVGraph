@@ -1,0 +1,1027 @@
+{
+  "sample_id": "mfc_000565",
+  "sample_index": 565,
+  "task_id": "MFC",
+  "task_name": "maximum_flow_change",
+  "task_english_name": "Maximum-flow Change",
+  "task_dir": "mfc_maximum_flow_change",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [
+    "samples/mfc_maximum_flow_change/000565/images/t1.png",
+    "samples/mfc_maximum_flow_change/000565/images/t2.png",
+    "samples/mfc_maximum_flow_change/000565/images/t3.png",
+    "samples/mfc_maximum_flow_change/000565/images/t4.png"
+  ],
+  "graphs": [
+    "samples/mfc_maximum_flow_change/000565/graphs/t1.json",
+    "samples/mfc_maximum_flow_change/000565/graphs/t2.json",
+    "samples/mfc_maximum_flow_change/000565/graphs/t3.json",
+    "samples/mfc_maximum_flow_change/000565/graphs/t4.json"
+  ],
+  "question": "The images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\nThe source is E63 and the sink is E27. Between which consecutive graph images does the maximum-flow value increase the most? Return the two graph image numbers in chronological order.\nReturn only a valid JSON object of the form {\"answer\": [<GRAPH_IMAGE_NUMBER>, <GRAPH_IMAGE_NUMBER>]}. Do not include explanation or extra fields.",
+  "answer": [
+    3,
+    4
+  ],
+  "answer_type": "graph_view_list",
+  "required_images": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "source": "E63",
+  "target": "E27",
+  "graph_generator": "filtered_random_high_level",
+  "difficulty": {
+    "num_images": 4,
+    "num_unique_nodes": 15,
+    "num_unique_edges": 25,
+    "per_graph_node_counts": {
+      "t1": 11,
+      "t2": 11,
+      "t3": 10,
+      "t4": 10
+    },
+    "per_graph_edge_counts": {
+      "t1": 15,
+      "t2": 15,
+      "t3": 14,
+      "t4": 14
+    },
+    "num_time_steps": 4,
+    "visual_level": 1
+  },
+  "checks": {
+    "semantic_gold_valid": true,
+    "multi_image": true,
+    "all_images_required_by_task_contract": true
+  },
+  "layout": {
+    "t1": {
+      "E77": [
+        -0.41021684052976914,
+        -0.4987594699774999
+      ],
+      "E76": [
+        0.015132326753002277,
+        -0.30355360487306526
+      ],
+      "E35": [
+        0.6089512621097074,
+        -0.6233844173316131
+      ],
+      "E61": [
+        -0.2810103679642299,
+        1.0
+      ],
+      "E54": [
+        0.5609787160122194,
+        -1.0
+      ],
+      "E41": [
+        -0.4635225349061628,
+        0.017456499938840585
+      ],
+      "E63": [
+        0.14027009614255928,
+        -0.6091093177647312
+      ],
+      "E9": [
+        0.1438744464317603,
+        0.698221746125132
+      ],
+      "E27": [
+        -0.6089512621097074,
+        0.6198887224999713
+      ],
+      "E14": [
+        -0.19122464937314754,
+        -0.7700965076165754
+      ],
+      "E42": [
+        0.24317363753045793,
+        0.06204471429263909
+      ]
+    },
+    "t2": {
+      "E77": [
+        -0.47554644831806187,
+        -0.4368952368832519
+      ],
+      "E52": [
+        -1.0,
+        0.09804621355289383
+      ],
+      "E76": [
+        0.3724370539346902,
+        -0.5519939964698996
+      ],
+      "E61": [
+        0.5279113403323815,
+        0.9636363675595649
+      ],
+      "E41": [
+        0.09075433074949424,
+        -0.05049347868379862
+      ],
+      "E64": [
+        -0.8561561073696536,
+        0.6990148438057894
+      ],
+      "E63": [
+        0.7471657222720807,
+        -0.9607049452926097
+      ],
+      "E9": [
+        1.0,
+        0.4969714388349439
+      ],
+      "E27": [
+        -0.14763132329457324,
+        0.6796854154048019
+      ],
+      "E14": [
+        0.07645067490752093,
+        -0.9636363675595649
+      ],
+      "E42": [
+        0.7683520466543028,
+        -0.23141320911639163
+      ]
+    },
+    "t3": {
+      "E77": [
+        -0.7272330638415896,
+        0.10869697390767154
+      ],
+      "E76": [
+        -0.7056343870906703,
+        0.6592821086659237
+      ],
+      "E61": [
+        0.6349739888482865,
+        -1.0
+      ],
+      "E41": [
+        -0.1963288998366777,
+        0.14245663805958633
+      ],
+      "E11": [
+        -0.280682695101688,
+        1.0
+      ],
+      "E63": [
+        0.7272330638415896,
+        0.9752849020100554
+      ],
+      "E9": [
+        0.6414161187164622,
+        -0.20683839965264367
+      ],
+      "E27": [
+        -0.008777524801084841,
+        -0.7882557007850721
+      ],
+      "E14": [
+        0.020630296716629002,
+        0.5393829107482137
+      ],
+      "E42": [
+        0.6620663483120146,
+        0.35961078894698517
+      ]
+    },
+    "t4": {
+      "E77": [
+        0.12404421286951596,
+        -0.07590938392893655
+      ],
+      "E76": [
+        -0.9403302405479033,
+        0.4183268599220767
+      ],
+      "E61": [
+        0.27494040239449885,
+        -0.6500253295245365
+      ],
+      "E58": [
+        -1.0,
+        -0.7548403122615787
+      ],
+      "E41": [
+        -0.12996052579556158,
+        0.1537700183163049
+      ],
+      "E63": [
+        -0.0010729800300970556,
+        0.7548403122615787
+      ],
+      "E9": [
+        1.0,
+        -0.22505131845395906
+      ],
+      "E27": [
+        -0.39135566557462376,
+        -0.7068876639666448
+      ],
+      "E14": [
+        -0.4614863191344574,
+        -0.10539005208153615
+      ],
+      "E42": [
+        0.5935724815194532,
+        0.4623262447775144
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "title": "t1",
+      "nodes": [
+        "E9",
+        "E14",
+        "E27",
+        "E35",
+        "E41",
+        "E42",
+        "E54",
+        "E61",
+        "E63",
+        "E76",
+        "E77"
+      ],
+      "edges": [
+        {
+          "source": "E14",
+          "target": "E76",
+          "capacity": 15,
+          "relation": "R1"
+        },
+        {
+          "source": "E14",
+          "target": "E77",
+          "capacity": 3,
+          "relation": "R2"
+        },
+        {
+          "source": "E35",
+          "target": "E76",
+          "capacity": 9,
+          "relation": "R3"
+        },
+        {
+          "source": "E41",
+          "target": "E27",
+          "capacity": 3,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E76",
+          "capacity": 12,
+          "relation": "R1"
+        },
+        {
+          "source": "E42",
+          "target": "E9",
+          "capacity": 11,
+          "relation": "R2"
+        },
+        {
+          "source": "E54",
+          "target": "E35",
+          "capacity": 15,
+          "relation": "R3"
+        },
+        {
+          "source": "E61",
+          "target": "E27",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E63",
+          "target": "E14",
+          "capacity": 7,
+          "relation": "R1"
+        },
+        {
+          "source": "E63",
+          "target": "E42",
+          "capacity": 11,
+          "relation": "R2"
+        },
+        {
+          "source": "E63",
+          "target": "E54",
+          "capacity": 10,
+          "relation": "R3"
+        },
+        {
+          "source": "E63",
+          "target": "E77",
+          "capacity": 9,
+          "relation": "R4"
+        },
+        {
+          "source": "E76",
+          "target": "E41",
+          "capacity": 12,
+          "relation": "R1"
+        },
+        {
+          "source": "E77",
+          "target": "E41",
+          "capacity": 15,
+          "relation": "R2"
+        },
+        {
+          "source": "E9",
+          "target": "E61",
+          "capacity": 5,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E14",
+          "R1",
+          "E76"
+        ],
+        [
+          "E14",
+          "R2",
+          "E77"
+        ],
+        [
+          "E35",
+          "R3",
+          "E76"
+        ],
+        [
+          "E41",
+          "R4",
+          "E27"
+        ],
+        [
+          "E42",
+          "R1",
+          "E76"
+        ],
+        [
+          "E42",
+          "R2",
+          "E9"
+        ],
+        [
+          "E54",
+          "R3",
+          "E35"
+        ],
+        [
+          "E61",
+          "R4",
+          "E27"
+        ],
+        [
+          "E63",
+          "R1",
+          "E14"
+        ],
+        [
+          "E63",
+          "R2",
+          "E42"
+        ],
+        [
+          "E63",
+          "R3",
+          "E54"
+        ],
+        [
+          "E63",
+          "R4",
+          "E77"
+        ],
+        [
+          "E76",
+          "R1",
+          "E41"
+        ],
+        [
+          "E77",
+          "R2",
+          "E41"
+        ],
+        [
+          "E9",
+          "R3",
+          "E61"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t2",
+      "title": "t2",
+      "nodes": [
+        "E9",
+        "E14",
+        "E27",
+        "E41",
+        "E42",
+        "E52",
+        "E61",
+        "E63",
+        "E64",
+        "E76",
+        "E77"
+      ],
+      "edges": [
+        {
+          "source": "E14",
+          "target": "E76",
+          "capacity": 15,
+          "relation": "R1"
+        },
+        {
+          "source": "E14",
+          "target": "E77",
+          "capacity": 3,
+          "relation": "R2"
+        },
+        {
+          "source": "E41",
+          "target": "E27",
+          "capacity": 3,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E41",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E76",
+          "capacity": 12,
+          "relation": "R1"
+        },
+        {
+          "source": "E42",
+          "target": "E9",
+          "capacity": 11,
+          "relation": "R2"
+        },
+        {
+          "source": "E52",
+          "target": "E64",
+          "capacity": 4,
+          "relation": "R1"
+        },
+        {
+          "source": "E61",
+          "target": "E27",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E63",
+          "target": "E14",
+          "capacity": 9,
+          "relation": "R1"
+        },
+        {
+          "source": "E63",
+          "target": "E42",
+          "capacity": 11,
+          "relation": "R2"
+        },
+        {
+          "source": "E64",
+          "target": "E27",
+          "capacity": 15,
+          "relation": "R2"
+        },
+        {
+          "source": "E76",
+          "target": "E41",
+          "capacity": 18,
+          "relation": "R1"
+        },
+        {
+          "source": "E77",
+          "target": "E41",
+          "capacity": 15,
+          "relation": "R2"
+        },
+        {
+          "source": "E77",
+          "target": "E52",
+          "capacity": 4,
+          "relation": "R3"
+        },
+        {
+          "source": "E9",
+          "target": "E61",
+          "capacity": 5,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E14",
+          "R1",
+          "E76"
+        ],
+        [
+          "E14",
+          "R2",
+          "E77"
+        ],
+        [
+          "E41",
+          "R4",
+          "E27"
+        ],
+        [
+          "E42",
+          "R4",
+          "E41"
+        ],
+        [
+          "E42",
+          "R1",
+          "E76"
+        ],
+        [
+          "E42",
+          "R2",
+          "E9"
+        ],
+        [
+          "E52",
+          "R1",
+          "E64"
+        ],
+        [
+          "E61",
+          "R4",
+          "E27"
+        ],
+        [
+          "E63",
+          "R1",
+          "E14"
+        ],
+        [
+          "E63",
+          "R2",
+          "E42"
+        ],
+        [
+          "E64",
+          "R2",
+          "E27"
+        ],
+        [
+          "E76",
+          "R1",
+          "E41"
+        ],
+        [
+          "E77",
+          "R2",
+          "E41"
+        ],
+        [
+          "E77",
+          "R3",
+          "E52"
+        ],
+        [
+          "E9",
+          "R3",
+          "E61"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t3",
+      "title": "t3",
+      "nodes": [
+        "E9",
+        "E11",
+        "E14",
+        "E27",
+        "E41",
+        "E42",
+        "E61",
+        "E63",
+        "E76",
+        "E77"
+      ],
+      "edges": [
+        {
+          "source": "E11",
+          "target": "E41",
+          "capacity": 5,
+          "relation": "R4"
+        },
+        {
+          "source": "E14",
+          "target": "E11",
+          "capacity": 4,
+          "relation": "R1"
+        },
+        {
+          "source": "E14",
+          "target": "E76",
+          "capacity": 10,
+          "relation": "R1"
+        },
+        {
+          "source": "E14",
+          "target": "E77",
+          "capacity": 3,
+          "relation": "R2"
+        },
+        {
+          "source": "E14",
+          "target": "E9",
+          "capacity": 12,
+          "relation": "R2"
+        },
+        {
+          "source": "E41",
+          "target": "E27",
+          "capacity": 9,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E41",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E9",
+          "capacity": 16,
+          "relation": "R2"
+        },
+        {
+          "source": "E61",
+          "target": "E27",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E63",
+          "target": "E14",
+          "capacity": 13,
+          "relation": "R1"
+        },
+        {
+          "source": "E63",
+          "target": "E42",
+          "capacity": 11,
+          "relation": "R2"
+        },
+        {
+          "source": "E76",
+          "target": "E41",
+          "capacity": 18,
+          "relation": "R1"
+        },
+        {
+          "source": "E77",
+          "target": "E41",
+          "capacity": 15,
+          "relation": "R2"
+        },
+        {
+          "source": "E9",
+          "target": "E61",
+          "capacity": 5,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E11",
+          "R4",
+          "E41"
+        ],
+        [
+          "E14",
+          "R1",
+          "E11"
+        ],
+        [
+          "E14",
+          "R1",
+          "E76"
+        ],
+        [
+          "E14",
+          "R2",
+          "E77"
+        ],
+        [
+          "E14",
+          "R2",
+          "E9"
+        ],
+        [
+          "E41",
+          "R4",
+          "E27"
+        ],
+        [
+          "E42",
+          "R4",
+          "E41"
+        ],
+        [
+          "E42",
+          "R2",
+          "E9"
+        ],
+        [
+          "E61",
+          "R4",
+          "E27"
+        ],
+        [
+          "E63",
+          "R1",
+          "E14"
+        ],
+        [
+          "E63",
+          "R2",
+          "E42"
+        ],
+        [
+          "E76",
+          "R1",
+          "E41"
+        ],
+        [
+          "E77",
+          "R2",
+          "E41"
+        ],
+        [
+          "E9",
+          "R3",
+          "E61"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t4",
+      "title": "t4",
+      "nodes": [
+        "E9",
+        "E14",
+        "E27",
+        "E41",
+        "E42",
+        "E58",
+        "E61",
+        "E63",
+        "E76",
+        "E77"
+      ],
+      "edges": [
+        {
+          "source": "E14",
+          "target": "E58",
+          "capacity": 6,
+          "relation": "R3"
+        },
+        {
+          "source": "E14",
+          "target": "E61",
+          "capacity": 14,
+          "relation": "R4"
+        },
+        {
+          "source": "E14",
+          "target": "E76",
+          "capacity": 5,
+          "relation": "R1"
+        },
+        {
+          "source": "E14",
+          "target": "E77",
+          "capacity": 3,
+          "relation": "R2"
+        },
+        {
+          "source": "E41",
+          "target": "E27",
+          "capacity": 9,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E41",
+          "capacity": 14,
+          "relation": "R4"
+        },
+        {
+          "source": "E42",
+          "target": "E9",
+          "capacity": 16,
+          "relation": "R2"
+        },
+        {
+          "source": "E58",
+          "target": "E27",
+          "capacity": 4,
+          "relation": "R1"
+        },
+        {
+          "source": "E61",
+          "target": "E27",
+          "capacity": 6,
+          "relation": "R4"
+        },
+        {
+          "source": "E63",
+          "target": "E14",
+          "capacity": 13,
+          "relation": "R1"
+        },
+        {
+          "source": "E63",
+          "target": "E42",
+          "capacity": 11,
+          "relation": "R2"
+        },
+        {
+          "source": "E76",
+          "target": "E41",
+          "capacity": 18,
+          "relation": "R1"
+        },
+        {
+          "source": "E77",
+          "target": "E41",
+          "capacity": 19,
+          "relation": "R2"
+        },
+        {
+          "source": "E9",
+          "target": "E61",
+          "capacity": 5,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E14",
+          "R3",
+          "E58"
+        ],
+        [
+          "E14",
+          "R4",
+          "E61"
+        ],
+        [
+          "E14",
+          "R1",
+          "E76"
+        ],
+        [
+          "E14",
+          "R2",
+          "E77"
+        ],
+        [
+          "E41",
+          "R4",
+          "E27"
+        ],
+        [
+          "E42",
+          "R4",
+          "E41"
+        ],
+        [
+          "E42",
+          "R2",
+          "E9"
+        ],
+        [
+          "E58",
+          "R1",
+          "E27"
+        ],
+        [
+          "E61",
+          "R4",
+          "E27"
+        ],
+        [
+          "E63",
+          "R1",
+          "E14"
+        ],
+        [
+          "E63",
+          "R2",
+          "E42"
+        ],
+        [
+          "E76",
+          "R1",
+          "E41"
+        ],
+        [
+          "E77",
+          "R2",
+          "E41"
+        ],
+        [
+          "E9",
+          "R3",
+          "E61"
+        ]
+      ]
+    }
+  ],
+  "validation_context": {
+    "maximum_flow_values": [
+      8,
+      11,
+      14,
+      19
+    ],
+    "core_maximum_flow_values": [
+      8,
+      8,
+      14,
+      15
+    ],
+    "flow_gains": [
+      3,
+      3,
+      5
+    ],
+    "temporal_route_contributions": [
+      0,
+      3,
+      0,
+      4
+    ],
+    "stable_core_nodes": [
+      "E63",
+      "E14",
+      "E42",
+      "E9",
+      "E76",
+      "E77",
+      "E41",
+      "E61",
+      "E27"
+    ],
+    "temporal_nodes": [
+      [
+        "E54",
+        "E35"
+      ],
+      [
+        "E52",
+        "E64"
+      ],
+      [
+        "E11"
+      ],
+      [
+        "E58"
+      ]
+    ],
+    "core_topology_changes": [
+      2,
+      2,
+      2
+    ],
+    "temporal_noise": "one_or_two_node_active_core_to_core_route",
+    "view_node_sets_are_distinct": true
+  },
+  "generation": {
+    "generator": "sample_gen_high_level",
+    "version": 29
+  }
+}

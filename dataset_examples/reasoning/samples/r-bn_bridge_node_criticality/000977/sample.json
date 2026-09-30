@@ -1,0 +1,358 @@
+{
+  "sample_id": "r-bn_000977",
+  "sample_index": 977,
+  "task_id": "R-BN",
+  "task_name": "bridge_node_criticality",
+  "task_english_name": "Bridge-Node Criticality",
+  "task_dir": "r-bn_bridge_node_criticality",
+  "graph_scenario": "partial_graph_views",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Graph G_merged is the union of all original views; the separate one-column Shared nodes CSV lists nodes present in at least two original views.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- A row \"E1,,\" means that E1 is an isolated node. Empty relation and destination together are the isolated-node encoding.\n- Every node in the graph appears in at least one row, either as an endpoint of an edge or as an isolated-node row.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nGraph G_merged\nsrc,relation,dst\nE3,R2,E18\nE5,R4,E49\nE6,R1,E10\nE9,R3,E26\nE10,R4,E15\nE10,R2,E19\nE10,R3,E30\nE10,R1,E76\nE15,R2,E25\nE15,R1,E49\nE15,R4,E56\nE15,R4,E77\nE16,R1,E18\nE16,R2,E30\nE18,R1,E34\nE20,R4,E58\nE20,R3,E68\nE20,R4,E70\nE22,R1,E40\nE22,R1,E75\nE25,R3,E54\nE26,R2,E44\nE26,R2,E49\nE42,R3,E52\nE43,R2,E72\nE49,R3,E74\n\nShared nodes\nnode\nE10\nE15\nE30\nE49\n\nQuestion:\nAfter merging all graph views, which overlapping node(s) are necessary for E18 to reach E26?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E10",
+    "E15",
+    "E30",
+    "E49"
+  ],
+  "answer_type": "node_list",
+  "required_images": [],
+  "source": "E18",
+  "target": "E26",
+  "reasoning_program": [
+    {
+      "op": "union",
+      "inputs": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ],
+      "output": "G_star"
+    },
+    {
+      "op": "critical_overlap_nodes",
+      "graph": "G_star",
+      "source": "E18",
+      "target": "E26"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 5,
+    "num_unique_nodes": 31,
+    "num_unique_edges": 26,
+    "per_graph_node_counts": {
+      "G1": 7,
+      "G2": 7,
+      "G3": 7,
+      "G4": 7,
+      "G5": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 5,
+      "G2": 5,
+      "G3": 6,
+      "G4": 5,
+      "G5": 5
+    },
+    "answer_list_length": 4,
+    "path_length": 6,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E10",
+      "E15",
+      "E30",
+      "E49"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [
+          "E10",
+          "E15",
+          "E49"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [
+          "E15",
+          "E49"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 3,
+        "answer_without_image": [
+          "E30",
+          "E49"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 4,
+        "answer_without_image": [
+          "E10",
+          "E30"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 5,
+        "answer_without_image": [
+          "E10",
+          "E15",
+          "E30"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "removed_answer_nodes_break_path": {
+        "E10": true,
+        "E15": true,
+        "E30": true,
+        "E49": true
+      }
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "This is a basic programmatic shortcut check, not a substitute for manual visual audit."
+    }
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E3",
+        "E16",
+        "E18",
+        "E30",
+        "E34",
+        "E42",
+        "E52"
+      ],
+      "triples": [
+        [
+          "E3",
+          "R2",
+          "E18"
+        ],
+        [
+          "E16",
+          "R1",
+          "E18"
+        ],
+        [
+          "E16",
+          "R2",
+          "E30"
+        ],
+        [
+          "E18",
+          "R1",
+          "E34"
+        ],
+        [
+          "E42",
+          "R3",
+          "E52"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E6",
+        "E10",
+        "E20",
+        "E30",
+        "E58",
+        "E68",
+        "E70"
+      ],
+      "triples": [
+        [
+          "E6",
+          "R1",
+          "E10"
+        ],
+        [
+          "E10",
+          "R3",
+          "E30"
+        ],
+        [
+          "E20",
+          "R4",
+          "E58"
+        ],
+        [
+          "E20",
+          "R3",
+          "E68"
+        ],
+        [
+          "E20",
+          "R4",
+          "E70"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G3",
+      "nodes": [
+        "E10",
+        "E15",
+        "E19",
+        "E25",
+        "E54",
+        "E56",
+        "E76"
+      ],
+      "triples": [
+        [
+          "E10",
+          "R4",
+          "E15"
+        ],
+        [
+          "E10",
+          "R2",
+          "E19"
+        ],
+        [
+          "E10",
+          "R1",
+          "E76"
+        ],
+        [
+          "E15",
+          "R2",
+          "E25"
+        ],
+        [
+          "E15",
+          "R4",
+          "E56"
+        ],
+        [
+          "E25",
+          "R3",
+          "E54"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G4",
+      "nodes": [
+        "E15",
+        "E22",
+        "E40",
+        "E49",
+        "E74",
+        "E75",
+        "E77"
+      ],
+      "triples": [
+        [
+          "E15",
+          "R1",
+          "E49"
+        ],
+        [
+          "E15",
+          "R4",
+          "E77"
+        ],
+        [
+          "E22",
+          "R1",
+          "E40"
+        ],
+        [
+          "E22",
+          "R1",
+          "E75"
+        ],
+        [
+          "E49",
+          "R3",
+          "E74"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G5",
+      "nodes": [
+        "E5",
+        "E9",
+        "E26",
+        "E43",
+        "E44",
+        "E49",
+        "E72"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R4",
+          "E49"
+        ],
+        [
+          "E9",
+          "R3",
+          "E26"
+        ],
+        [
+          "E26",
+          "R2",
+          "E44"
+        ],
+        [
+          "E26",
+          "R2",
+          "E49"
+        ],
+        [
+          "E43",
+          "R2",
+          "E72"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "original_graph_text": "Graph G_merged\nsrc,relation,dst\nE3,R2,E18\nE5,R4,E49\nE6,R1,E10\nE9,R3,E26\nE10,R4,E15\nE10,R2,E19\nE10,R3,E30\nE10,R1,E76\nE15,R2,E25\nE15,R1,E49\nE15,R4,E56\nE15,R4,E77\nE16,R1,E18\nE16,R2,E30\nE18,R1,E34\nE20,R4,E58\nE20,R3,E68\nE20,R4,E70\nE22,R1,E40\nE22,R1,E75\nE25,R3,E54\nE26,R2,E44\nE26,R2,E49\nE42,R3,E52\nE43,R2,E72\nE49,R3,E74\n\nShared nodes\nnode\nE10\nE15\nE30\nE49"
+}

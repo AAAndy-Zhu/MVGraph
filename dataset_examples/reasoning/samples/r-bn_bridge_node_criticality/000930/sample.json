@@ -1,0 +1,239 @@
+{
+  "sample_id": "r-bn_000930",
+  "sample_index": 930,
+  "task_id": "R-BN",
+  "task_name": "bridge_node_criticality",
+  "task_english_name": "Bridge-Node Criticality",
+  "task_dir": "r-bn_bridge_node_criticality",
+  "graph_scenario": "partial_graph_views",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Graph G_merged is the union of all original views; the separate one-column Shared nodes CSV lists nodes present in at least two original views.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- A row \"E1,,\" means that E1 is an isolated node. Empty relation and destination together are the isolated-node encoding.\n- Every node in the graph appears in at least one row, either as an endpoint of an edge or as an isolated-node row.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nGraph G_merged\nsrc,relation,dst\nE6,R1,E34\nE23,R2,E69\nE27,R4,E64\nE27,R1,E69\nE27,R3,E80\nE28,R4,E68\nE29,R4,E64\nE34,R2,E40\nE34,R3,E64\nE40,R1,E46\nE45,R2,E57\nE54,R3,E68\nE54,R2,E72\nE57,R1,E73\nE61,R4,E80\nE72,R3,E74\n\nShared nodes\nnode\nE34\nE64\n\nQuestion:\nWhich shared node(s) across views are required to connect E46 to E29 in the merged graph?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E34",
+    "E64"
+  ],
+  "answer_type": "node_list",
+  "required_images": [],
+  "source": "E46",
+  "target": "E29",
+  "reasoning_program": [
+    {
+      "op": "union",
+      "inputs": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "output": "G_star"
+    },
+    {
+      "op": "critical_overlap_nodes",
+      "graph": "G_star",
+      "source": "E46",
+      "target": "E29"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 3,
+    "num_unique_nodes": 19,
+    "num_unique_edges": 16,
+    "per_graph_node_counts": {
+      "G1": 7,
+      "G2": 7,
+      "G3": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 5,
+      "G2": 5,
+      "G3": 6
+    },
+    "answer_list_length": 2,
+    "path_length": 4,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E34",
+      "E64"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [
+          "E64"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 3,
+        "answer_without_image": [
+          "E34"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "removed_answer_nodes_break_path": {
+        "E34": true,
+        "E64": true
+      }
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "This is a basic programmatic shortcut check, not a substitute for manual visual audit."
+    }
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E6",
+        "E34",
+        "E40",
+        "E45",
+        "E46",
+        "E57",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E6",
+          "R1",
+          "E34"
+        ],
+        [
+          "E34",
+          "R2",
+          "E40"
+        ],
+        [
+          "E40",
+          "R1",
+          "E46"
+        ],
+        [
+          "E45",
+          "R2",
+          "E57"
+        ],
+        [
+          "E57",
+          "R1",
+          "E73"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E28",
+        "E34",
+        "E54",
+        "E64",
+        "E68",
+        "E72",
+        "E74"
+      ],
+      "triples": [
+        [
+          "E28",
+          "R4",
+          "E68"
+        ],
+        [
+          "E34",
+          "R3",
+          "E64"
+        ],
+        [
+          "E54",
+          "R3",
+          "E68"
+        ],
+        [
+          "E54",
+          "R2",
+          "E72"
+        ],
+        [
+          "E72",
+          "R3",
+          "E74"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G3",
+      "nodes": [
+        "E23",
+        "E27",
+        "E29",
+        "E61",
+        "E64",
+        "E69",
+        "E80"
+      ],
+      "triples": [
+        [
+          "E23",
+          "R2",
+          "E69"
+        ],
+        [
+          "E27",
+          "R4",
+          "E64"
+        ],
+        [
+          "E27",
+          "R1",
+          "E69"
+        ],
+        [
+          "E27",
+          "R3",
+          "E80"
+        ],
+        [
+          "E29",
+          "R4",
+          "E64"
+        ],
+        [
+          "E61",
+          "R4",
+          "E80"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "original_graph_text": "Graph G_merged\nsrc,relation,dst\nE6,R1,E34\nE23,R2,E69\nE27,R4,E64\nE27,R1,E69\nE27,R3,E80\nE28,R4,E68\nE29,R4,E64\nE34,R2,E40\nE34,R3,E64\nE40,R1,E46\nE45,R2,E57\nE54,R3,E68\nE54,R2,E72\nE57,R1,E73\nE61,R4,E80\nE72,R3,E74\n\nShared nodes\nnode\nE34\nE64"
+}

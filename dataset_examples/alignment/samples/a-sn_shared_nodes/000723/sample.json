@@ -1,0 +1,299 @@
+{
+  "sample_id": "a-sn_000723",
+  "sample_index": 723,
+  "task_id": "A-SN",
+  "task_name": "shared_nodes",
+  "task_english_name": "Shared Nodes",
+  "task_dir": "a-sn_shared_nodes",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/a-sn_shared_nodes/000723/images/G1.png",
+    "samples/a-sn_shared_nodes/000723/images/G2.png"
+  ],
+  "graphs": [
+    "samples/a-sn_shared_nodes/000723/graphs/G1.json",
+    "samples/a-sn_shared_nodes/000723/graphs/G2.json"
+  ],
+  "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E27",
+    "E55"
+  ],
+  "answer_type": "node_list",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": null,
+  "target": null,
+  "reasoning_program": [],
+  "graph_generator": "custom_perception_motif",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 15,
+    "num_unique_edges": 17,
+    "per_graph_node_counts": {
+      "G1": 8,
+      "G2": 9
+    },
+    "per_graph_edge_counts": {
+      "G1": 10,
+      "G2": 7
+    },
+    "answer_list_length": 2,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E27",
+      "E55"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [
+          "E8",
+          "E16",
+          "E26",
+          "E27",
+          "E36",
+          "E49",
+          "E53",
+          "E54",
+          "E55"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [
+          "E27",
+          "E40",
+          "E41",
+          "E55",
+          "E60",
+          "E70",
+          "E74",
+          "E78"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": true,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "note": "Perception tasks are validated by direct set/count recomputation."
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "Basic programmatic shortcut check for perception samples."
+    }
+  },
+  "layout": {
+    "G1": {
+      "E70": [
+        -0.8698907187432904,
+        0.26564620854985627
+      ],
+      "E41": [
+        -0.3757103534145859,
+        -0.2750253849238666
+      ],
+      "E60": [
+        0.24629110404823218,
+        0.8406852655530302
+      ],
+      "E55": [
+        0.7164402763660961,
+        1.0
+      ],
+      "E27": [
+        -0.6325013260657012,
+        -1.0
+      ],
+      "E40": [
+        -0.54193745241503,
+        0.8761467505637094
+      ],
+      "E78": [
+        0.8698907187432904,
+        0.46675843065499684
+      ],
+      "E74": [
+        0.336009604025903,
+        0.31108070438855545
+      ]
+    },
+    "G2": {
+      "E49": [
+        -0.15064326107827894,
+        -0.660924218480158
+      ],
+      "E8": [
+        0.29624422839249587,
+        -0.30913369550849673
+      ],
+      "E16": [
+        -0.038550623912333055,
+        0.5188622507027185
+      ],
+      "E55": [
+        -0.22960663953153865,
+        -1.0
+      ],
+      "E27": [
+        -0.17597032628918213,
+        0.19091501068004196
+      ],
+      "E53": [
+        -0.0430363724601744,
+        -0.24953424248205286
+      ],
+      "E26": [
+        -0.46974227655100065,
+        0.3883388999369546
+      ],
+      "E36": [
+        0.7594311253513594,
+        1.0
+      ],
+      "E54": [
+        -0.7594311253513594,
+        0.9999999336084224
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E27",
+        "E40",
+        "E41",
+        "E55",
+        "E60",
+        "E70",
+        "E74",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E27",
+          "R2",
+          "E41"
+        ],
+        [
+          "E40",
+          "R3",
+          "E60"
+        ],
+        [
+          "E40",
+          "R2",
+          "E70"
+        ],
+        [
+          "E41",
+          "R1",
+          "E70"
+        ],
+        [
+          "E41",
+          "R1",
+          "E74"
+        ],
+        [
+          "E55",
+          "R4",
+          "E60"
+        ],
+        [
+          "E55",
+          "R4",
+          "E74"
+        ],
+        [
+          "E60",
+          "R1",
+          "E74"
+        ],
+        [
+          "E60",
+          "R3",
+          "E78"
+        ],
+        [
+          "E74",
+          "R1",
+          "E78"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E8",
+        "E16",
+        "E26",
+        "E27",
+        "E36",
+        "E49",
+        "E53",
+        "E54",
+        "E55"
+      ],
+      "triples": [
+        [
+          "E8",
+          "R4",
+          "E53"
+        ],
+        [
+          "E16",
+          "R4",
+          "E27"
+        ],
+        [
+          "E26",
+          "R1",
+          "E27"
+        ],
+        [
+          "E27",
+          "R3",
+          "E53"
+        ],
+        [
+          "E36",
+          "R2",
+          "E54"
+        ],
+        [
+          "E49",
+          "R2",
+          "E53"
+        ],
+        [
+          "E49",
+          "R3",
+          "E55"
+        ]
+      ],
+      "directed": false
+    }
+  ]
+}

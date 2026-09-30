@@ -1,0 +1,621 @@
+{
+  "sample_id": "r-ce_000256",
+  "sample_index": 256,
+  "task_id": "R-CE",
+  "task_name": "causal_edge_identification",
+  "task_english_name": "Causal Edge Identification",
+  "task_dir": "r-ce_causal_edge_identification",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Each Graph block is one time step of an undirected graph; the same node label denotes the same node across time.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- Each CSV row contains an edge triple; isolated nodes are not listed.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nGraph t1\nsrc,relation,dst\nE7,R2,E34\nE19,R1,E69\nE34,R4,E78\nE52,R3,E61\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t2\nsrc,relation,dst\nE19,R1,E69\nE34,R4,E78\nE41,R1,E78\nE52,R3,E61\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t3\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE34,R4,E78\nE52,R3,E61\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t4\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE29,R4,E69\nE34,R4,E78\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t5\nsrc,relation,dst\nE7,R2,E34\nE19,R1,E39\nE19,R1,E69\nE34,R4,E78\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t6\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE29,R4,E69\nE34,R3,E58\nE34,R4,E78\nE41,R1,E78\nE52,R1,E78\nE58,R2,E70\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t7\nsrc,relation,dst\nE7,R2,E34\nE19,R1,E69\nE29,R4,E69\nE34,R3,E58\nE34,R4,E78\nE41,R1,E78\nE52,R1,E78\nE58,R2,E70\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nQuestion:\nComposition evidence CSV:\nt5: subgraph1\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nt5: subgraph2\nsrc,relation,dst\nE7,R2,E34\nE34,R4,E78\nE52,R1,E78\n\nt6: path\nsrc,relation,dst\nE19,R1,E69\nE69,R2,E71\nE71,R3,E70\nE70,R2,E58\nE58,R3,E34\nE34,R4,E78\nE78,R1,E52\n\nAt the earlier time, subgraph1 and subgraph2 contain the edge triples of the complete source-side and target-side subgraphs. At the later time, path gives one simple path from E19 to E52.\nWhich newly added edge triples in the transition shown by the evidence are individually necessary for E19 to reach E52? An edge is necessary if removing only that edge from the later graph makes E19 and E52 disconnected.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Do not include explanation or extra text.",
+  "answer": [
+    [
+      "E34",
+      "R3",
+      "E58"
+    ],
+    [
+      "E58",
+      "R2",
+      "E70"
+    ]
+  ],
+  "answer_type": "edge_triple_list",
+  "required_images": [],
+  "source": "E19",
+  "target": "E52",
+  "reasoning_program": [
+    {
+      "op": "compare_path_with_preceding_components"
+    },
+    {
+      "op": "remove_each_new_path_edge_and_test_reachability"
+    }
+  ],
+  "difficulty": {
+    "num_time_steps": 7,
+    "per_graph_node_counts": {
+      "t1": 14,
+      "t2": 14,
+      "t3": 14,
+      "t4": 14,
+      "t5": 14,
+      "t6": 14,
+      "t7": 14
+    },
+    "per_graph_edge_counts": {
+      "t1": 8,
+      "t2": 8,
+      "t3": 8,
+      "t4": 8,
+      "t5": 8,
+      "t6": 11,
+      "t7": 11
+    },
+    "path_length": 7,
+    "causal_edge_count": 2
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E7",
+          "R2",
+          "E34"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E52",
+          "R3",
+          "E61"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t2",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E41",
+          "R1",
+          "E78"
+        ],
+        [
+          "E52",
+          "R3",
+          "E61"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t3",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E19",
+          "R1",
+          "E39"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E52",
+          "R3",
+          "E61"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t4",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E19",
+          "R1",
+          "E39"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E29",
+          "R4",
+          "E69"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t5",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E7",
+          "R2",
+          "E34"
+        ],
+        [
+          "E19",
+          "R1",
+          "E39"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t6",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E19",
+          "R1",
+          "E39"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E29",
+          "R4",
+          "E69"
+        ],
+        [
+          "E34",
+          "R3",
+          "E58"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E41",
+          "R1",
+          "E78"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E58",
+          "R2",
+          "E70"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t7",
+      "nodes": [
+        "E7",
+        "E19",
+        "E29",
+        "E34",
+        "E39",
+        "E41",
+        "E52",
+        "E58",
+        "E61",
+        "E69",
+        "E70",
+        "E71",
+        "E72",
+        "E78"
+      ],
+      "triples": [
+        [
+          "E7",
+          "R2",
+          "E34"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E29",
+          "R4",
+          "E69"
+        ],
+        [
+          "E34",
+          "R3",
+          "E58"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E41",
+          "R1",
+          "E78"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ],
+        [
+          "E58",
+          "R2",
+          "E70"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "original_graph_text": "Graph t1\nsrc,relation,dst\nE7,R2,E34\nE19,R1,E69\nE34,R4,E78\nE52,R3,E61\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t2\nsrc,relation,dst\nE19,R1,E69\nE34,R4,E78\nE41,R1,E78\nE52,R3,E61\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t3\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE34,R4,E78\nE52,R3,E61\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t4\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE29,R4,E69\nE34,R4,E78\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t5\nsrc,relation,dst\nE7,R2,E34\nE19,R1,E39\nE19,R1,E69\nE34,R4,E78\nE52,R1,E78\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t6\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE29,R4,E69\nE34,R3,E58\nE34,R4,E78\nE41,R1,E78\nE52,R1,E78\nE58,R2,E70\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nGraph t7\nsrc,relation,dst\nE7,R2,E34\nE19,R1,E69\nE29,R4,E69\nE34,R3,E58\nE34,R4,E78\nE41,R1,E78\nE52,R1,E78\nE58,R2,E70\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72",
+  "generation_seed": 42,
+  "generation_attempt": 0,
+  "first_connectivity_transition": [
+    "t5",
+    "t6"
+  ],
+  "composition_evidence_csv": "t5: subgraph1\nsrc,relation,dst\nE19,R1,E39\nE19,R1,E69\nE69,R2,E71\nE70,R3,E71\nE71,R4,E72\n\nt5: subgraph2\nsrc,relation,dst\nE7,R2,E34\nE34,R4,E78\nE52,R1,E78\n\nt6: path\nsrc,relation,dst\nE19,R1,E69\nE69,R2,E71\nE71,R3,E70\nE70,R2,E58\nE58,R3,E34\nE34,R4,E78\nE78,R1,E52",
+  "composition_evidence": {
+    "t5": {
+      "subgraph1": [
+        [
+          "E19",
+          "R1",
+          "E39"
+        ],
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E70",
+          "R3",
+          "E71"
+        ],
+        [
+          "E71",
+          "R4",
+          "E72"
+        ]
+      ],
+      "subgraph2": [
+        [
+          "E7",
+          "R2",
+          "E34"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E52",
+          "R1",
+          "E78"
+        ]
+      ]
+    },
+    "t6": {
+      "path": [
+        [
+          "E19",
+          "R1",
+          "E69"
+        ],
+        [
+          "E69",
+          "R2",
+          "E71"
+        ],
+        [
+          "E71",
+          "R3",
+          "E70"
+        ],
+        [
+          "E70",
+          "R2",
+          "E58"
+        ],
+        [
+          "E58",
+          "R3",
+          "E34"
+        ],
+        [
+          "E34",
+          "R4",
+          "E78"
+        ],
+        [
+          "E78",
+          "R1",
+          "E52"
+        ]
+      ]
+    }
+  }
+}

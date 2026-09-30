@@ -1,0 +1,13 @@
+{
+  "total_samples": 80,
+  "task_sample_counts": {
+    "C-CD": 10,
+    "C-EV": 10,
+    "C-MVS": 10,
+    "C-PA": 10,
+    "C-PP": 10,
+    "C-TPC": 10,
+    "C-UE": 10,
+    "C-UN": 10
+  }
+}

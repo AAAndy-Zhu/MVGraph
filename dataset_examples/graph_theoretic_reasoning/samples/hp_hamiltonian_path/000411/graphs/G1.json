@@ -1,0 +1,124 @@
+{
+  "graph_id": "G1",
+  "title": "Graph 1",
+  "nodes": [
+    "E15",
+    "E20",
+    "E26",
+    "E30",
+    "E31",
+    "E36",
+    "E45",
+    "E49",
+    "E52",
+    "E64",
+    "E65",
+    "E75",
+    "E79"
+  ],
+  "edges": [
+    {
+      "source": "E15",
+      "target": "E45",
+      "relation": "R1"
+    },
+    {
+      "source": "E20",
+      "target": "E64",
+      "relation": "R2"
+    },
+    {
+      "source": "E26",
+      "target": "E36",
+      "relation": "R3"
+    },
+    {
+      "source": "E26",
+      "target": "E49",
+      "relation": "R4"
+    },
+    {
+      "source": "E30",
+      "target": "E65",
+      "relation": "R1"
+    },
+    {
+      "source": "E30",
+      "target": "E79",
+      "relation": "R2"
+    },
+    {
+      "source": "E31",
+      "target": "E52",
+      "relation": "R3"
+    },
+    {
+      "source": "E31",
+      "target": "E79",
+      "relation": "R4"
+    },
+    {
+      "source": "E65",
+      "target": "E75",
+      "relation": "R1"
+    },
+    {
+      "source": "E65",
+      "target": "E79",
+      "relation": "R2"
+    }
+  ],
+  "directed": false,
+  "triples": [
+    [
+      "E15",
+      "R1",
+      "E45"
+    ],
+    [
+      "E20",
+      "R2",
+      "E64"
+    ],
+    [
+      "E26",
+      "R3",
+      "E36"
+    ],
+    [
+      "E26",
+      "R4",
+      "E49"
+    ],
+    [
+      "E30",
+      "R1",
+      "E65"
+    ],
+    [
+      "E30",
+      "R2",
+      "E79"
+    ],
+    [
+      "E31",
+      "R3",
+      "E52"
+    ],
+    [
+      "E31",
+      "R4",
+      "E79"
+    ],
+    [
+      "E65",
+      "R1",
+      "E75"
+    ],
+    [
+      "E65",
+      "R2",
+      "E79"
+    ]
+  ]
+}

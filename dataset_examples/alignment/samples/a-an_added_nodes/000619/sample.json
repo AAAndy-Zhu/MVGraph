@@ -1,0 +1,393 @@
+{
+  "sample_id": "a-an_000619",
+  "sample_index": 619,
+  "task_id": "A-AN",
+  "task_name": "added_nodes",
+  "task_english_name": "Added Nodes",
+  "task_dir": "a-an_added_nodes",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [
+    "samples/a-an_added_nodes/000619/images/t1.png",
+    "samples/a-an_added_nodes/000619/images/t2.png",
+    "samples/a-an_added_nodes/000619/images/t3.png"
+  ],
+  "graphs": [
+    "samples/a-an_added_nodes/000619/graphs/t1.json",
+    "samples/a-an_added_nodes/000619/graphs/t2.json",
+    "samples/a-an_added_nodes/000619/graphs/t3.json"
+  ],
+  "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes newly appearing between t1 and t2.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E8"
+  ],
+  "answer_type": "node_list",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": null,
+  "target": null,
+  "reasoning_program": [],
+  "graph_generator": "custom_perception_motif",
+  "difficulty": {
+    "num_images": 3,
+    "num_unique_nodes": 9,
+    "num_unique_edges": 11,
+    "per_graph_node_counts": {
+      "t1": 8,
+      "t2": 9,
+      "t3": 9
+    },
+    "per_graph_edge_counts": {
+      "t1": 9,
+      "t2": 9,
+      "t3": 9
+    },
+    "answer_list_length": 1,
+    "num_time_steps": 3,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E8"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [],
+        "answer_changed": true,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [
+          "E8"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "note": "Perception tasks are validated by direct set/count recomputation."
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "Basic programmatic shortcut check for perception samples."
+    }
+  },
+  "layout": {
+    "t1": {
+      "E37": [
+        -0.27869742997434316,
+        -1.0
+      ],
+      "E49": [
+        -0.1540480831604729,
+        -0.13731998928785727
+      ],
+      "E19": [
+        0.4133677494277673,
+        -0.499304057306209
+      ],
+      "E53": [
+        -0.9244351556706896,
+        -0.5455854236896663
+      ],
+      "E25": [
+        -0.6863043694953246,
+        0.2746586976791155
+      ],
+      "E69": [
+        0.6305107467694712,
+        0.9769743155960007
+      ],
+      "E46": [
+        -0.17636814269487333,
+        1.0
+      ],
+      "E40": [
+        0.9244351556706896,
+        0.2252421253125054
+      ]
+    },
+    "t2": {
+      "E37": [
+        -0.1631768371440306,
+        -0.24970276867368463
+      ],
+      "E49": [
+        0.6160196427082736,
+        0.16444793878124234
+      ],
+      "E8": [
+        1.0,
+        0.2151163230389998
+      ],
+      "E19": [
+        0.13415746619826407,
+        0.10084207917581173
+      ],
+      "E53": [
+        -0.5763491754035716,
+        -0.39780134115338645
+      ],
+      "E25": [
+        -0.949241056097122,
+        -0.23762572915468008
+      ],
+      "E69": [
+        -0.6815428464041775,
+        0.39780134115338645
+      ],
+      "E46": [
+        -1.0,
+        0.14623832827688157
+      ],
+      "E40": [
+        -0.24406992456781787,
+        0.36211513464520073
+      ]
+    },
+    "t3": {
+      "E37": [
+        0.174138087617413,
+        -0.5644927655388235
+      ],
+      "E49": [
+        1.0,
+        -0.11888804067685671
+      ],
+      "E19": [
+        0.4780581069378616,
+        -0.1071815816168858
+      ],
+      "E53": [
+        -0.33082385278531823,
+        -0.6465185900624346
+      ],
+      "E25": [
+        -0.628610203990347,
+        -0.24528763213112217
+      ],
+      "E69": [
+        -0.27253205225656285,
+        0.6465185900624346
+      ],
+      "E46": [
+        -0.44035802676618685,
+        0.2569854509186785
+      ],
+      "E40": [
+        0.04120629107079708,
+        0.3128853292691195
+      ],
+      "E8": [
+        -1.0,
+        0.2737392363291831
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "nodes": [
+        "E19",
+        "E25",
+        "E37",
+        "E40",
+        "E46",
+        "E49",
+        "E53",
+        "E69"
+      ],
+      "triples": [
+        [
+          "E19",
+          "R4",
+          "E37"
+        ],
+        [
+          "E19",
+          "R1",
+          "E40"
+        ],
+        [
+          "E19",
+          "R2",
+          "E49"
+        ],
+        [
+          "E25",
+          "R4",
+          "E46"
+        ],
+        [
+          "E25",
+          "R1",
+          "E49"
+        ],
+        [
+          "E25",
+          "R1",
+          "E53"
+        ],
+        [
+          "E37",
+          "R2",
+          "E53"
+        ],
+        [
+          "E40",
+          "R3",
+          "E69"
+        ],
+        [
+          "E46",
+          "R3",
+          "E69"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t2",
+      "nodes": [
+        "E8",
+        "E19",
+        "E25",
+        "E37",
+        "E40",
+        "E46",
+        "E49",
+        "E53",
+        "E69"
+      ],
+      "triples": [
+        [
+          "E8",
+          "R2",
+          "E49"
+        ],
+        [
+          "E19",
+          "R4",
+          "E37"
+        ],
+        [
+          "E19",
+          "R1",
+          "E40"
+        ],
+        [
+          "E19",
+          "R2",
+          "E49"
+        ],
+        [
+          "E25",
+          "R4",
+          "E46"
+        ],
+        [
+          "E25",
+          "R1",
+          "E53"
+        ],
+        [
+          "E37",
+          "R2",
+          "E53"
+        ],
+        [
+          "E40",
+          "R3",
+          "E69"
+        ],
+        [
+          "E46",
+          "R3",
+          "E69"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t3",
+      "nodes": [
+        "E8",
+        "E19",
+        "E25",
+        "E37",
+        "E40",
+        "E46",
+        "E49",
+        "E53",
+        "E69"
+      ],
+      "triples": [
+        [
+          "E19",
+          "R4",
+          "E37"
+        ],
+        [
+          "E19",
+          "R1",
+          "E40"
+        ],
+        [
+          "E19",
+          "R2",
+          "E49"
+        ],
+        [
+          "E25",
+          "R4",
+          "E46"
+        ],
+        [
+          "E25",
+          "R1",
+          "E53"
+        ],
+        [
+          "E37",
+          "R2",
+          "E53"
+        ],
+        [
+          "E40",
+          "R3",
+          "E46"
+        ],
+        [
+          "E40",
+          "R3",
+          "E69"
+        ],
+        [
+          "E46",
+          "R3",
+          "E69"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "from_time_index": 1,
+  "to_time_index": 2,
+  "from_time": "t1",
+  "to_time": "t2"
+}

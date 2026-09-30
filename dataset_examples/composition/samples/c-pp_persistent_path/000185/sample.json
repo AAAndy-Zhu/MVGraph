@@ -1,0 +1,305 @@
+{
+  "sample_id": "c-pp_000185",
+  "sample_index": 185,
+  "task_id": "C-PP",
+  "task_name": "persistent_path",
+  "task_english_name": "Persistent Path",
+  "task_dir": "c-pp_persistent_path",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [
+    "samples/c-pp_persistent_path/000185/images/t1.png",
+    "samples/c-pp_persistent_path/000185/images/t2.png",
+    "samples/c-pp_persistent_path/000185/images/t3.png"
+  ],
+  "graphs": [
+    "samples/c-pp_persistent_path/000185/graphs/t1.json",
+    "samples/c-pp_persistent_path/000185/graphs/t2.json",
+    "samples/c-pp_persistent_path/000185/graphs/t3.json"
+  ],
+  "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIntersect the node sets and edge triples across all time steps. In this persistent intersection graph, give one path from E36 to E68 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Every path node and edge triple must occur at every time step, and the triples must form one simple source-to-target path. Do not include any explanation or extra text.",
+  "answer": [
+    [
+      "E36",
+      "R1",
+      "E47"
+    ],
+    [
+      "E47",
+      "R2",
+      "E68"
+    ]
+  ],
+  "answer_type": "edge_triple_path_or_none",
+  "required_images": [
+    1,
+    2,
+    3
+  ],
+  "source": "E36",
+  "target": "E68",
+  "reasoning_program": [
+    {
+      "op": "intersect_all_time_graphs",
+      "output": "G_intersection"
+    },
+    {
+      "op": "find_evidence_path",
+      "graph": "G_intersection",
+      "source": "E36",
+      "target": "E68"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 3,
+    "num_unique_nodes": 15,
+    "num_unique_edges": 14,
+    "per_graph_node_counts": {
+      "t1": 7,
+      "t2": 7,
+      "t3": 7
+    },
+    "per_graph_edge_counts": {
+      "t1": 6,
+      "t2": 6,
+      "t3": 6
+    },
+    "answer_list_length": 2,
+    "path_length": 2,
+    "num_time_steps": 3,
+    "visual_level": 1
+  },
+  "checks": {
+    "answer_validity_verified": true
+  },
+  "layout": {
+    "t1": {
+      "E47": [
+        0.2872742214047897,
+        -0.09058381504189328
+      ],
+      "E56": [
+        1.0,
+        -0.10102215325021288
+      ],
+      "E68": [
+        -0.42999358665186355,
+        0.36882900410568353
+      ],
+      "E13": [
+        -1.0,
+        0.7338187997827401
+      ],
+      "E55": [
+        0.5857945949809034,
+        0.5303349576327284
+      ],
+      "E36": [
+        -0.15216681190323478,
+        -0.6211204551795592
+      ],
+      "E72": [
+        0.5944037968760034,
+        -0.7338187997827401
+      ]
+    },
+    "t2": {
+      "E75": [
+        0.4704768234027943,
+        1.0
+      ],
+      "E47": [
+        0.16660571987054737,
+        0.4021661140117227
+      ],
+      "E69": [
+        -0.09648119310934382,
+        -1.0
+      ],
+      "E68": [
+        -0.22315282775285242,
+        -0.36380474826185644
+      ],
+      "E50": [
+        -0.8120367714846202,
+        -0.6359129716697961
+      ],
+      "E36": [
+        0.8120367714846202,
+        0.3274473307269022
+      ],
+      "E7": [
+        -0.2740797103098869,
+        0.8794484573962842
+      ]
+    },
+    "t3": {
+      "E47": [
+        -0.2608115973445809,
+        -0.2775928253428993
+      ],
+      "E8": [
+        -0.8244380897992883,
+        -1.0
+      ],
+      "E68": [
+        0.0658322214841356,
+        0.14105888731449936
+      ],
+      "E62": [
+        0.8244380897992883,
+        0.6472935111199469
+      ],
+      "E24": [
+        0.3993338626541423,
+        0.5684960508235878
+      ],
+      "E36": [
+        -0.566723386766494,
+        -0.669680082286338
+      ],
+      "E70": [
+        0.3723831198388085,
+        1.0
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "nodes": [
+        "E13",
+        "E36",
+        "E47",
+        "E55",
+        "E56",
+        "E68",
+        "E72"
+      ],
+      "triples": [
+        [
+          "E13",
+          "R3",
+          "E68"
+        ],
+        [
+          "E36",
+          "R1",
+          "E47"
+        ],
+        [
+          "E47",
+          "R3",
+          "E55"
+        ],
+        [
+          "E47",
+          "R1",
+          "E56"
+        ],
+        [
+          "E47",
+          "R2",
+          "E68"
+        ],
+        [
+          "E47",
+          "R2",
+          "E72"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t2",
+      "nodes": [
+        "E7",
+        "E36",
+        "E47",
+        "E50",
+        "E68",
+        "E69",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E7",
+          "R4",
+          "E47"
+        ],
+        [
+          "E36",
+          "R1",
+          "E47"
+        ],
+        [
+          "E47",
+          "R2",
+          "E68"
+        ],
+        [
+          "E47",
+          "R4",
+          "E75"
+        ],
+        [
+          "E50",
+          "R1",
+          "E68"
+        ],
+        [
+          "E68",
+          "R2",
+          "E69"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "t3",
+      "nodes": [
+        "E8",
+        "E24",
+        "E36",
+        "E47",
+        "E62",
+        "E68",
+        "E70"
+      ],
+      "triples": [
+        [
+          "E8",
+          "R4",
+          "E36"
+        ],
+        [
+          "E24",
+          "R3",
+          "E62"
+        ],
+        [
+          "E24",
+          "R1",
+          "E68"
+        ],
+        [
+          "E24",
+          "R1",
+          "E70"
+        ],
+        [
+          "E36",
+          "R1",
+          "E47"
+        ],
+        [
+          "E47",
+          "R2",
+          "E68"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "source_task_id": "R12"
+}

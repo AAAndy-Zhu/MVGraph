@@ -1,0 +1,183 @@
+{
+  "graph_id": "G1",
+  "title": "Graph 1",
+  "nodes": [
+    "E8",
+    "E11",
+    "E15",
+    "E18",
+    "E19",
+    "E20",
+    "E48",
+    "E57",
+    "E59",
+    "E62",
+    "E69",
+    "E78"
+  ],
+  "edges": [
+    {
+      "source": "E11",
+      "target": "E20",
+      "relation": "R1"
+    },
+    {
+      "source": "E15",
+      "target": "E62",
+      "relation": "R2"
+    },
+    {
+      "source": "E15",
+      "target": "E69",
+      "relation": "R3"
+    },
+    {
+      "source": "E15",
+      "target": "E8",
+      "relation": "R4"
+    },
+    {
+      "source": "E18",
+      "target": "E20",
+      "relation": "R1"
+    },
+    {
+      "source": "E18",
+      "target": "E59",
+      "relation": "R2"
+    },
+    {
+      "source": "E18",
+      "target": "E69",
+      "relation": "R3"
+    },
+    {
+      "source": "E20",
+      "target": "E19",
+      "relation": "R4"
+    },
+    {
+      "source": "E20",
+      "target": "E8",
+      "relation": "R1"
+    },
+    {
+      "source": "E48",
+      "target": "E19",
+      "relation": "R2"
+    },
+    {
+      "source": "E48",
+      "target": "E78",
+      "relation": "R3"
+    },
+    {
+      "source": "E48",
+      "target": "E8",
+      "relation": "R4"
+    },
+    {
+      "source": "E57",
+      "target": "E78",
+      "relation": "R1"
+    },
+    {
+      "source": "E62",
+      "target": "E59",
+      "relation": "R2"
+    },
+    {
+      "source": "E78",
+      "target": "E15",
+      "relation": "R3"
+    },
+    {
+      "source": "E78",
+      "target": "E69",
+      "relation": "R4"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E11",
+      "R1",
+      "E20"
+    ],
+    [
+      "E15",
+      "R2",
+      "E62"
+    ],
+    [
+      "E15",
+      "R3",
+      "E69"
+    ],
+    [
+      "E15",
+      "R4",
+      "E8"
+    ],
+    [
+      "E18",
+      "R1",
+      "E20"
+    ],
+    [
+      "E18",
+      "R2",
+      "E59"
+    ],
+    [
+      "E18",
+      "R3",
+      "E69"
+    ],
+    [
+      "E20",
+      "R4",
+      "E19"
+    ],
+    [
+      "E20",
+      "R1",
+      "E8"
+    ],
+    [
+      "E48",
+      "R2",
+      "E19"
+    ],
+    [
+      "E48",
+      "R3",
+      "E78"
+    ],
+    [
+      "E48",
+      "R4",
+      "E8"
+    ],
+    [
+      "E57",
+      "R1",
+      "E78"
+    ],
+    [
+      "E62",
+      "R2",
+      "E59"
+    ],
+    [
+      "E78",
+      "R3",
+      "E15"
+    ],
+    [
+      "E78",
+      "R4",
+      "E69"
+    ]
+  ]
+}

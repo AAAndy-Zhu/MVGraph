@@ -1,0 +1,979 @@
+{
+  "sample_id": "p_023916",
+  "sample_index": 23916,
+  "task_id": "P",
+  "task_name": "graph_parsing",
+  "task_english_name": "Graph Parsing",
+  "task_dir": "p_graph_parsing",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [
+    "samples/p_graph_parsing/023916/images/t1.png",
+    "samples/p_graph_parsing/023916/images/t2.png",
+    "samples/p_graph_parsing/023916/images/t3.png"
+  ],
+  "graphs": [
+    "samples/p_graph_parsing/023916/graphs/t1.json",
+    "samples/p_graph_parsing/023916/graphs/t2.json",
+    "samples/p_graph_parsing/023916/graphs/t3.json"
+  ],
+  "question": "You are a graph image parsing assistant.\n\nThe images show a directed capacity network at different time steps. Same E* labels indicate the same node across time, and the number displayed on each edge is its capacity.\n\nInspect all graph images and reconstruct every graph shown. Do not infer relation meanings or facts that are not visible in the images.\n\nReturn exactly one JSON object with this schema:\n{\n  \"graphs\": [\n    {\n      \"graph_id\": \"G1\",\n      \"triples\": [\n        [\"E18\", 5, \"E19\"],\n        [\"E80\", \"\", \"\"]\n      ]\n    }\n  ]\n}\n\nRules:\n- Preserve every graph ID and keep graph boundaries separate.\n- Extract every node. A node with no incident edge must be emitted as [\"<node label>\", \"\", \"\"]. Replace <node label> with the actual label.\n- Extract every edge as [\"src\", <capacity>, \"dst\"] with a positive integer capacity, and emit each edge once.\n- All graphs are directed; preserve each arrow direction and do not infer a reverse edge.\n- Preserve node labels and capacity numbers exactly. The relation labels are not displayed on capacity edges; do not invent them.\n- Do not include nodes, directed fields, explanations, Markdown, or any additional keys.",
+  "answer": {
+    "graphs": [
+      {
+        "graph_id": "t1",
+        "triples": [
+          [
+            "E12",
+            6,
+            "E26"
+          ],
+          [
+            "E12",
+            8,
+            "E48"
+          ],
+          [
+            "E22",
+            5,
+            "E5"
+          ],
+          [
+            "E26",
+            7,
+            "E68"
+          ],
+          [
+            "E26",
+            6,
+            "E9"
+          ],
+          [
+            "E33",
+            4,
+            "E5"
+          ],
+          [
+            "E39",
+            5,
+            "E63"
+          ],
+          [
+            "E48",
+            5,
+            "E22"
+          ],
+          [
+            "E48",
+            9,
+            "E55"
+          ],
+          [
+            "E55",
+            3,
+            "E22"
+          ],
+          [
+            "E55",
+            12,
+            "E33"
+          ],
+          [
+            "E63",
+            6,
+            "E5"
+          ],
+          [
+            "E68",
+            13,
+            "E22"
+          ],
+          [
+            "E68",
+            14,
+            "E39"
+          ],
+          [
+            "E9",
+            13,
+            "E22"
+          ]
+        ]
+      },
+      {
+        "graph_id": "t2",
+        "triples": [
+          [
+            "E11",
+            12,
+            "E15"
+          ],
+          [
+            "E12",
+            8,
+            "E26"
+          ],
+          [
+            "E12",
+            8,
+            "E48"
+          ],
+          [
+            "E15",
+            4,
+            "E5"
+          ],
+          [
+            "E22",
+            9,
+            "E5"
+          ],
+          [
+            "E26",
+            7,
+            "E68"
+          ],
+          [
+            "E26",
+            6,
+            "E9"
+          ],
+          [
+            "E33",
+            4,
+            "E5"
+          ],
+          [
+            "E48",
+            12,
+            "E55"
+          ],
+          [
+            "E55",
+            3,
+            "E22"
+          ],
+          [
+            "E55",
+            12,
+            "E33"
+          ],
+          [
+            "E68",
+            7,
+            "E11"
+          ],
+          [
+            "E68",
+            13,
+            "E22"
+          ],
+          [
+            "E68",
+            7,
+            "E33"
+          ],
+          [
+            "E9",
+            11,
+            "E22"
+          ]
+        ]
+      },
+      {
+        "graph_id": "t3",
+        "triples": [
+          [
+            "E12",
+            8,
+            "E26"
+          ],
+          [
+            "E12",
+            8,
+            "E48"
+          ],
+          [
+            "E22",
+            12,
+            "E5"
+          ],
+          [
+            "E26",
+            12,
+            "E22"
+          ],
+          [
+            "E26",
+            9,
+            "E68"
+          ],
+          [
+            "E26",
+            6,
+            "E9"
+          ],
+          [
+            "E3",
+            12,
+            "E5"
+          ],
+          [
+            "E33",
+            4,
+            "E5"
+          ],
+          [
+            "E48",
+            14,
+            "E55"
+          ],
+          [
+            "E55",
+            12,
+            "E33"
+          ],
+          [
+            "E68",
+            13,
+            "E22"
+          ],
+          [
+            "E68",
+            7,
+            "E33"
+          ],
+          [
+            "E9",
+            6,
+            "E22"
+          ],
+          [
+            "E9",
+            11,
+            "E3"
+          ]
+        ]
+      }
+    ]
+  },
+  "answer_type": "graph_parse",
+  "required_images": [
+    1,
+    2,
+    3
+  ],
+  "graph_generator": "filtered_random_high_level",
+  "difficulty": {
+    "num_images": 3,
+    "num_unique_nodes": 14,
+    "num_unique_edges": 22,
+    "per_graph_node_counts": {
+      "t1": 11,
+      "t2": 11,
+      "t3": 10
+    },
+    "per_graph_edge_counts": {
+      "t1": 15,
+      "t2": 15,
+      "t3": 14
+    },
+    "num_time_steps": 3,
+    "visual_level": 1
+  },
+  "checks": {
+    "semantic_gold_valid": true,
+    "multi_image": true,
+    "all_images_required_by_task_contract": true
+  },
+  "layout": {
+    "t1": {
+      "E26": [
+        0.21817597143426073,
+        -1.0
+      ],
+      "E68": [
+        -0.30322209930846605,
+        -0.4410255697423422
+      ],
+      "E9": [
+        0.29532734539194827,
+        -0.595719017338072
+      ],
+      "E33": [
+        0.46507687519656604,
+        1.0
+      ],
+      "E55": [
+        0.7719449097366847,
+        0.4368245547578887
+      ],
+      "E5": [
+        -0.1047691044504576,
+        0.6953893580266867
+      ],
+      "E48": [
+        0.9135686409186392,
+        -0.1881403827955855
+      ],
+      "E12": [
+        0.8916278923552892,
+        -0.8975986569314194
+      ],
+      "E22": [
+        0.2825063940324361,
+        0.026407345207344012
+      ],
+      "E63": [
+        -0.8075450350222647,
+        0.5987450437604113
+      ],
+      "E39": [
+        -0.9135686409186392,
+        -0.02108898812563428
+      ]
+    },
+    "t2": {
+      "E26": [
+        0.4322035303939036,
+        -0.46788713625416456
+      ],
+      "E68": [
+        0.14095502299780568,
+        0.14728528239815408
+      ],
+      "E33": [
+        -0.4322035303939036,
+        0.0822532913426348
+      ],
+      "E55": [
+        -0.4306584014535255,
+        -0.45375426923989026
+      ],
+      "E5": [
+        -0.38348761193425623,
+        0.5137715690848955
+      ],
+      "E15": [
+        -0.17784872930481996,
+        1.0
+      ],
+      "E11": [
+        0.17744972119201496,
+        0.7432588144132143
+      ],
+      "E12": [
+        0.28234090519501803,
+        -1.0
+      ],
+      "E9": [
+        0.16577408838625288,
+        -0.30241935337293835
+      ],
+      "E22": [
+        -0.16792247087293885,
+        -0.05885149224401445
+      ],
+      "E48": [
+        -0.21437182734336585,
+        -0.9907391753118059
+      ]
+    },
+    "t3": {
+      "E26": [
+        0.47372629748410267,
+        0.046416212190658626
+      ],
+      "E68": [
+        0.0028552894993235864,
+        -0.028598416418024457
+      ],
+      "E9": [
+        0.5999370007673039,
+        -0.5732986786935861
+      ],
+      "E33": [
+        -0.4895205272409104,
+        -0.02046692120893651
+      ],
+      "E55": [
+        -0.5999370007673039,
+        0.6200118410414488
+      ],
+      "E5": [
+        -0.18601253206802096,
+        -0.6190460869494292
+      ],
+      "E48": [
+        -0.1820679725802475,
+        1.0
+      ],
+      "E12": [
+        0.32990052168363654,
+        0.7177270146314607
+      ],
+      "E22": [
+        0.2573960444063013,
+        -0.3742893891025165
+      ],
+      "E3": [
+        0.24744296843044408,
+        -1.0
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "title": "t1",
+      "nodes": [
+        "E5",
+        "E9",
+        "E12",
+        "E22",
+        "E26",
+        "E33",
+        "E39",
+        "E48",
+        "E55",
+        "E63",
+        "E68"
+      ],
+      "edges": [
+        {
+          "source": "E12",
+          "target": "E26",
+          "capacity": 6,
+          "relation": "R1"
+        },
+        {
+          "source": "E12",
+          "target": "E48",
+          "capacity": 8,
+          "relation": "R2"
+        },
+        {
+          "source": "E22",
+          "target": "E5",
+          "capacity": 5,
+          "relation": "R3"
+        },
+        {
+          "source": "E26",
+          "target": "E68",
+          "capacity": 7,
+          "relation": "R4"
+        },
+        {
+          "source": "E26",
+          "target": "E9",
+          "capacity": 6,
+          "relation": "R1"
+        },
+        {
+          "source": "E33",
+          "target": "E5",
+          "capacity": 4,
+          "relation": "R2"
+        },
+        {
+          "source": "E39",
+          "target": "E63",
+          "capacity": 5,
+          "relation": "R3"
+        },
+        {
+          "source": "E48",
+          "target": "E22",
+          "capacity": 5,
+          "relation": "R4"
+        },
+        {
+          "source": "E48",
+          "target": "E55",
+          "capacity": 9,
+          "relation": "R1"
+        },
+        {
+          "source": "E55",
+          "target": "E22",
+          "capacity": 3,
+          "relation": "R2"
+        },
+        {
+          "source": "E55",
+          "target": "E33",
+          "capacity": 12,
+          "relation": "R3"
+        },
+        {
+          "source": "E63",
+          "target": "E5",
+          "capacity": 6,
+          "relation": "R4"
+        },
+        {
+          "source": "E68",
+          "target": "E22",
+          "capacity": 13,
+          "relation": "R1"
+        },
+        {
+          "source": "E68",
+          "target": "E39",
+          "capacity": 14,
+          "relation": "R2"
+        },
+        {
+          "source": "E9",
+          "target": "E22",
+          "capacity": 13,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E12",
+          "R1",
+          "E26"
+        ],
+        [
+          "E12",
+          "R2",
+          "E48"
+        ],
+        [
+          "E22",
+          "R3",
+          "E5"
+        ],
+        [
+          "E26",
+          "R4",
+          "E68"
+        ],
+        [
+          "E26",
+          "R1",
+          "E9"
+        ],
+        [
+          "E33",
+          "R2",
+          "E5"
+        ],
+        [
+          "E39",
+          "R3",
+          "E63"
+        ],
+        [
+          "E48",
+          "R4",
+          "E22"
+        ],
+        [
+          "E48",
+          "R1",
+          "E55"
+        ],
+        [
+          "E55",
+          "R2",
+          "E22"
+        ],
+        [
+          "E55",
+          "R3",
+          "E33"
+        ],
+        [
+          "E63",
+          "R4",
+          "E5"
+        ],
+        [
+          "E68",
+          "R1",
+          "E22"
+        ],
+        [
+          "E68",
+          "R2",
+          "E39"
+        ],
+        [
+          "E9",
+          "R3",
+          "E22"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t2",
+      "title": "t2",
+      "nodes": [
+        "E5",
+        "E9",
+        "E11",
+        "E12",
+        "E15",
+        "E22",
+        "E26",
+        "E33",
+        "E48",
+        "E55",
+        "E68"
+      ],
+      "edges": [
+        {
+          "source": "E11",
+          "target": "E15",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E12",
+          "target": "E26",
+          "capacity": 8,
+          "relation": "R1"
+        },
+        {
+          "source": "E12",
+          "target": "E48",
+          "capacity": 8,
+          "relation": "R2"
+        },
+        {
+          "source": "E15",
+          "target": "E5",
+          "capacity": 4,
+          "relation": "R1"
+        },
+        {
+          "source": "E22",
+          "target": "E5",
+          "capacity": 9,
+          "relation": "R3"
+        },
+        {
+          "source": "E26",
+          "target": "E68",
+          "capacity": 7,
+          "relation": "R4"
+        },
+        {
+          "source": "E26",
+          "target": "E9",
+          "capacity": 6,
+          "relation": "R1"
+        },
+        {
+          "source": "E33",
+          "target": "E5",
+          "capacity": 4,
+          "relation": "R2"
+        },
+        {
+          "source": "E48",
+          "target": "E55",
+          "capacity": 12,
+          "relation": "R1"
+        },
+        {
+          "source": "E55",
+          "target": "E22",
+          "capacity": 3,
+          "relation": "R2"
+        },
+        {
+          "source": "E55",
+          "target": "E33",
+          "capacity": 12,
+          "relation": "R3"
+        },
+        {
+          "source": "E68",
+          "target": "E11",
+          "capacity": 7,
+          "relation": "R2"
+        },
+        {
+          "source": "E68",
+          "target": "E22",
+          "capacity": 13,
+          "relation": "R1"
+        },
+        {
+          "source": "E68",
+          "target": "E33",
+          "capacity": 7,
+          "relation": "R3"
+        },
+        {
+          "source": "E9",
+          "target": "E22",
+          "capacity": 11,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E11",
+          "R4",
+          "E15"
+        ],
+        [
+          "E12",
+          "R1",
+          "E26"
+        ],
+        [
+          "E12",
+          "R2",
+          "E48"
+        ],
+        [
+          "E15",
+          "R1",
+          "E5"
+        ],
+        [
+          "E22",
+          "R3",
+          "E5"
+        ],
+        [
+          "E26",
+          "R4",
+          "E68"
+        ],
+        [
+          "E26",
+          "R1",
+          "E9"
+        ],
+        [
+          "E33",
+          "R2",
+          "E5"
+        ],
+        [
+          "E48",
+          "R1",
+          "E55"
+        ],
+        [
+          "E55",
+          "R2",
+          "E22"
+        ],
+        [
+          "E55",
+          "R3",
+          "E33"
+        ],
+        [
+          "E68",
+          "R2",
+          "E11"
+        ],
+        [
+          "E68",
+          "R1",
+          "E22"
+        ],
+        [
+          "E68",
+          "R3",
+          "E33"
+        ],
+        [
+          "E9",
+          "R3",
+          "E22"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t3",
+      "title": "t3",
+      "nodes": [
+        "E3",
+        "E5",
+        "E9",
+        "E12",
+        "E22",
+        "E26",
+        "E33",
+        "E48",
+        "E55",
+        "E68"
+      ],
+      "edges": [
+        {
+          "source": "E12",
+          "target": "E26",
+          "capacity": 8,
+          "relation": "R1"
+        },
+        {
+          "source": "E12",
+          "target": "E48",
+          "capacity": 8,
+          "relation": "R2"
+        },
+        {
+          "source": "E22",
+          "target": "E5",
+          "capacity": 12,
+          "relation": "R3"
+        },
+        {
+          "source": "E26",
+          "target": "E22",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E26",
+          "target": "E68",
+          "capacity": 9,
+          "relation": "R4"
+        },
+        {
+          "source": "E26",
+          "target": "E9",
+          "capacity": 6,
+          "relation": "R1"
+        },
+        {
+          "source": "E3",
+          "target": "E5",
+          "capacity": 12,
+          "relation": "R1"
+        },
+        {
+          "source": "E33",
+          "target": "E5",
+          "capacity": 4,
+          "relation": "R2"
+        },
+        {
+          "source": "E48",
+          "target": "E55",
+          "capacity": 14,
+          "relation": "R1"
+        },
+        {
+          "source": "E55",
+          "target": "E33",
+          "capacity": 12,
+          "relation": "R3"
+        },
+        {
+          "source": "E68",
+          "target": "E22",
+          "capacity": 13,
+          "relation": "R1"
+        },
+        {
+          "source": "E68",
+          "target": "E33",
+          "capacity": 7,
+          "relation": "R3"
+        },
+        {
+          "source": "E9",
+          "target": "E22",
+          "capacity": 6,
+          "relation": "R3"
+        },
+        {
+          "source": "E9",
+          "target": "E3",
+          "capacity": 11,
+          "relation": "R2"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E12",
+          "R1",
+          "E26"
+        ],
+        [
+          "E12",
+          "R2",
+          "E48"
+        ],
+        [
+          "E22",
+          "R3",
+          "E5"
+        ],
+        [
+          "E26",
+          "R4",
+          "E22"
+        ],
+        [
+          "E26",
+          "R4",
+          "E68"
+        ],
+        [
+          "E26",
+          "R1",
+          "E9"
+        ],
+        [
+          "E3",
+          "R1",
+          "E5"
+        ],
+        [
+          "E33",
+          "R2",
+          "E5"
+        ],
+        [
+          "E48",
+          "R1",
+          "E55"
+        ],
+        [
+          "E55",
+          "R3",
+          "E33"
+        ],
+        [
+          "E68",
+          "R1",
+          "E22"
+        ],
+        [
+          "E68",
+          "R3",
+          "E33"
+        ],
+        [
+          "E9",
+          "R3",
+          "E22"
+        ],
+        [
+          "E9",
+          "R2",
+          "E3"
+        ]
+      ]
+    }
+  ],
+  "generation": {
+    "generator": "sample_gen_high_level",
+    "version": 29
+  }
+}

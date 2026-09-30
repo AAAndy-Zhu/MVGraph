@@ -1,0 +1,253 @@
+{
+  "sample_id": "c-ev_000521",
+  "sample_index": 521,
+  "task_id": "C-EV",
+  "task_name": "essential_views",
+  "task_english_name": "Essential Views",
+  "task_dir": "c-ev_essential_views",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/c-ev_essential_views/000521/images/G1.png",
+    "samples/c-ev_essential_views/000521/images/G2.png"
+  ],
+  "graphs": [
+    "samples/c-ev_essential_views/000521/graphs/G1.json",
+    "samples/c-ev_essential_views/000521/graphs/G2.json"
+  ],
+  "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the graph view(s) whose removal would break reachability from E17 to E50.\nReturn only a valid JSON object in the form {\"answer\": [<GRAPH_VIEW_NUMBER>, ...]}. The value of \"answer\" must be a JSON list of graph view numbers. Do not include any explanation or extra text.",
+  "answer": [
+    1,
+    2
+  ],
+  "answer_type": "graph_view_list",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": "E17",
+  "target": "E50",
+  "reasoning_program": [
+    {
+      "op": "union",
+      "inputs": [
+        "G1",
+        "G2"
+      ],
+      "output": "G_star"
+    },
+    {
+      "op": "leave_one_view_out",
+      "source": "E17",
+      "target": "E50"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 13,
+    "num_unique_edges": 11,
+    "per_graph_node_counts": {
+      "G1": 7,
+      "G2": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 5,
+      "G2": 6
+    },
+    "answer_list_length": 2,
+    "path_length": 2,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      1,
+      2
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "removed_answer_views_break_path": {
+        "1": true,
+        "2": true
+      }
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "This is a basic programmatic shortcut check, not a substitute for manual visual audit."
+    }
+  },
+  "layout": {
+    "G1": {
+      "E30": [
+        0.5016858098617231,
+        -0.020181514133420016
+      ],
+      "E34": [
+        0.7628770591826476,
+        0.4628902151520054
+      ],
+      "E52": [
+        1.0,
+        0.9014477448230713
+      ],
+      "E42": [
+        0.26456286922479605,
+        -0.45873904347078953
+      ],
+      "E61": [
+        0.360186788293861,
+        -0.9014477448230713
+      ],
+      "E17": [
+        -0.31989497766729996,
+        -0.7308366069356239
+      ],
+      "E1": [
+        -1.0,
+        -0.5602196347555812
+      ]
+    },
+    "G2": {
+      "E27": [
+        0.5543520381739375,
+        0.0916218401224372
+      ],
+      "E12": [
+        -0.07260435160601329,
+        0.43994279469356484
+      ],
+      "E2": [
+        -1.0,
+        -0.1648779682540884
+      ],
+      "E61": [
+        -0.5543505405358775,
+        -0.09144779363457711
+      ],
+      "E50": [
+        5.838045651943663e-05,
+        2.479003549692702e-05
+      ],
+      "E66": [
+        1.0,
+        0.16526685368328414
+      ],
+      "E58": [
+        0.07265785152263082,
+        -0.43994279469356484
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E1",
+        "E17",
+        "E30",
+        "E34",
+        "E42",
+        "E52",
+        "E61"
+      ],
+      "triples": [
+        [
+          "E1",
+          "R2",
+          "E17"
+        ],
+        [
+          "E17",
+          "R1",
+          "E61"
+        ],
+        [
+          "E30",
+          "R1",
+          "E34"
+        ],
+        [
+          "E30",
+          "R3",
+          "E42"
+        ],
+        [
+          "E34",
+          "R3",
+          "E52"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E2",
+        "E12",
+        "E27",
+        "E50",
+        "E58",
+        "E61",
+        "E66"
+      ],
+      "triples": [
+        [
+          "E2",
+          "R1",
+          "E61"
+        ],
+        [
+          "E12",
+          "R2",
+          "E50"
+        ],
+        [
+          "E27",
+          "R3",
+          "E50"
+        ],
+        [
+          "E27",
+          "R1",
+          "E66"
+        ],
+        [
+          "E50",
+          "R2",
+          "E58"
+        ],
+        [
+          "E50",
+          "R2",
+          "E61"
+        ]
+      ],
+      "directed": false
+    }
+  ]
+}

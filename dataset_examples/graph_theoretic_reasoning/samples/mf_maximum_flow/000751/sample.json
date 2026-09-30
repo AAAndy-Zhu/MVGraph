@@ -1,0 +1,427 @@
+{
+  "sample_id": "mf_000751",
+  "sample_index": 751,
+  "task_id": "MF",
+  "task_name": "maximum_flow",
+  "task_english_name": "Maximum Flow",
+  "task_dir": "mf_maximum_flow",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/mf_maximum_flow/000751/images/G1.png",
+    "samples/mf_maximum_flow/000751/images/G2.png"
+  ],
+  "graphs": [
+    "samples/mf_maximum_flow/000751/graphs/G1.json",
+    "samples/mf_maximum_flow/000751/graphs/G2.json"
+  ],
+  "question": "The images show partial views of a related directed capacity network. Same E* labels indicate the same node across views, and the number displayed on each edge is its capacity.\nMerge all views into one capacity network. The source is E76 and the sink is E64. What is the maximum-flow value from source to sink?\nReturn only a valid JSON object of the form {\"answer\": <INTEGER>}. Do not include explanation or extra fields.",
+  "answer": 45,
+  "answer_type": "maximum_flow_value",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": "E76",
+  "target": "E64",
+  "graph_generator": "filtered_random_high_level",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 12,
+    "num_unique_edges": 21,
+    "per_graph_node_counts": {
+      "G1": 11,
+      "G2": 10
+    },
+    "per_graph_edge_counts": {
+      "G1": 11,
+      "G2": 10
+    },
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "semantic_gold_valid": true,
+    "multi_image": true,
+    "all_images_required_by_task_contract": true
+  },
+  "layout": {
+    "G1": {
+      "E71": [
+        -0.16514142503362994,
+        0.5071448302457474
+      ],
+      "E76": [
+        -0.6807281427555391,
+        0.4767683017080349
+      ],
+      "E31": [
+        0.4180357344830446,
+        0.37324166593396396
+      ],
+      "E35": [
+        0.49785182820712237,
+        0.850479399133357
+      ],
+      "E51": [
+        0.9322446593688143,
+        -0.5972270935771521
+      ],
+      "E64": [
+        0.6139296230909369,
+        -0.2281294533254462
+      ],
+      "E2": [
+        -0.19627946072583333,
+        -0.850479399133357
+      ],
+      "E10": [
+        1.0,
+        0.016582297623142374
+      ],
+      "E56": [
+        0.8804956968286989,
+        0.3750473579715707
+      ],
+      "E27": [
+        -1.0,
+        0.21152985833140087
+      ],
+      "E62": [
+        0.22215265291457262,
+        -0.6445576076961315
+      ]
+    },
+    "G2": {
+      "E71": [
+        -0.45649723365036915,
+        -0.27576452523566525
+      ],
+      "E76": [
+        0.3434565106088152,
+        -0.12572728000933114
+      ],
+      "E35": [
+        0.7101174635777378,
+        -0.1870077961905465
+      ],
+      "E51": [
+        1.0,
+        -0.23550346088046706
+      ],
+      "E64": [
+        -0.3650200096062578,
+        0.27576452523566525
+      ],
+      "E2": [
+        0.05478544442395329,
+        0.020716378627261143
+      ],
+      "E10": [
+        -1.0,
+        0.09728219676316567
+      ],
+      "E56": [
+        0.02290077457357885,
+        -0.17046207945773797
+      ],
+      "E27": [
+        -0.6962631163491487,
+        0.047141253205324314
+      ],
+      "E66": [
+        -0.30101500613173277,
+        -0.01830341695484937
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "title": "Graph 1",
+      "nodes": [
+        "E2",
+        "E10",
+        "E27",
+        "E31",
+        "E35",
+        "E51",
+        "E56",
+        "E62",
+        "E64",
+        "E71",
+        "E76"
+      ],
+      "edges": [
+        {
+          "source": "E10",
+          "target": "E64",
+          "capacity": 11,
+          "relation": "R1"
+        },
+        {
+          "source": "E2",
+          "target": "E62",
+          "capacity": 12,
+          "relation": "R2"
+        },
+        {
+          "source": "E31",
+          "target": "E64",
+          "capacity": 7,
+          "relation": "R3"
+        },
+        {
+          "source": "E35",
+          "target": "E31",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E51",
+          "target": "E64",
+          "capacity": 15,
+          "relation": "R1"
+        },
+        {
+          "source": "E56",
+          "target": "E10",
+          "capacity": 8,
+          "relation": "R2"
+        },
+        {
+          "source": "E56",
+          "target": "E31",
+          "capacity": 4,
+          "relation": "R3"
+        },
+        {
+          "source": "E62",
+          "target": "E64",
+          "capacity": 11,
+          "relation": "R4"
+        },
+        {
+          "source": "E71",
+          "target": "E31",
+          "capacity": 10,
+          "relation": "R1"
+        },
+        {
+          "source": "E76",
+          "target": "E27",
+          "capacity": 9,
+          "relation": "R2"
+        },
+        {
+          "source": "E76",
+          "target": "E71",
+          "capacity": 5,
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E10",
+          "R1",
+          "E64"
+        ],
+        [
+          "E2",
+          "R2",
+          "E62"
+        ],
+        [
+          "E31",
+          "R3",
+          "E64"
+        ],
+        [
+          "E35",
+          "R4",
+          "E31"
+        ],
+        [
+          "E51",
+          "R1",
+          "E64"
+        ],
+        [
+          "E56",
+          "R2",
+          "E10"
+        ],
+        [
+          "E56",
+          "R3",
+          "E31"
+        ],
+        [
+          "E62",
+          "R4",
+          "E64"
+        ],
+        [
+          "E71",
+          "R1",
+          "E31"
+        ],
+        [
+          "E76",
+          "R2",
+          "E27"
+        ],
+        [
+          "E76",
+          "R3",
+          "E71"
+        ]
+      ]
+    },
+    {
+      "graph_id": "G2",
+      "title": "Graph 2",
+      "nodes": [
+        "E2",
+        "E10",
+        "E27",
+        "E35",
+        "E51",
+        "E56",
+        "E64",
+        "E66",
+        "E71",
+        "E76"
+      ],
+      "edges": [
+        {
+          "source": "E2",
+          "target": "E66",
+          "capacity": 8,
+          "relation": "R4"
+        },
+        {
+          "source": "E27",
+          "target": "E10",
+          "capacity": 13,
+          "relation": "R1"
+        },
+        {
+          "source": "E27",
+          "target": "E66",
+          "capacity": 14,
+          "relation": "R2"
+        },
+        {
+          "source": "E35",
+          "target": "E51",
+          "capacity": 6,
+          "relation": "R3"
+        },
+        {
+          "source": "E56",
+          "target": "E66",
+          "capacity": 8,
+          "relation": "R4"
+        },
+        {
+          "source": "E66",
+          "target": "E64",
+          "capacity": 14,
+          "relation": "R1"
+        },
+        {
+          "source": "E71",
+          "target": "E66",
+          "capacity": 12,
+          "relation": "R2"
+        },
+        {
+          "source": "E76",
+          "target": "E2",
+          "capacity": 15,
+          "relation": "R3"
+        },
+        {
+          "source": "E76",
+          "target": "E35",
+          "capacity": 12,
+          "relation": "R4"
+        },
+        {
+          "source": "E76",
+          "target": "E56",
+          "capacity": 4,
+          "relation": "R1"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E2",
+          "R4",
+          "E66"
+        ],
+        [
+          "E27",
+          "R1",
+          "E10"
+        ],
+        [
+          "E27",
+          "R2",
+          "E66"
+        ],
+        [
+          "E35",
+          "R3",
+          "E51"
+        ],
+        [
+          "E56",
+          "R4",
+          "E66"
+        ],
+        [
+          "E66",
+          "R1",
+          "E64"
+        ],
+        [
+          "E71",
+          "R2",
+          "E66"
+        ],
+        [
+          "E76",
+          "R3",
+          "E2"
+        ],
+        [
+          "E76",
+          "R4",
+          "E35"
+        ],
+        [
+          "E76",
+          "R1",
+          "E56"
+        ]
+      ]
+    }
+  ],
+  "validation_context": {
+    "maximum_flow_value": 45,
+    "omitted_view_flow_values": [
+      12,
+      5
+    ],
+    "all_views_required": true,
+    "construction": "random_balanced_complete_capacity_graph_partition",
+    "view_node_sets_are_distinct": true
+  },
+  "generation": {
+    "generator": "sample_gen_high_level",
+    "version": 29
+  }
+}

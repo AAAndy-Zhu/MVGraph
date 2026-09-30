@@ -1,0 +1,238 @@
+{
+  "sample_id": "c-cd_000700",
+  "sample_index": 700,
+  "task_id": "C-CD",
+  "task_name": "component_decomposition",
+  "task_english_name": "Component Decomposition",
+  "task_dir": "c-cd_component_decomposition",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/c-cd_component_decomposition/000700/images/G1.png",
+    "samples/c-cd_component_decomposition/000700/images/G2.png"
+  ],
+  "graphs": [
+    "samples/c-cd_component_decomposition/000700/graphs/G1.json",
+    "samples/c-cd_component_decomposition/000700/graphs/G2.json"
+  ],
+  "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, list every connected component. For each component, include all of its nodes and all edge triples inside it; include isolated nodes as components with no edges.\nReturn only a valid JSON object in the form {\"answer\": [{\"nodes\": [\"E1\", ...], \"edges\": [[\"E1\", \"R1\", \"E2\"], ...]}, ...]}. Include every node and every edge exactly once; component, node, and edge order does not matter. Do not include any explanation or extra text.",
+  "answer": [
+    {
+      "nodes": [
+        "E2",
+        "E25",
+        "E45",
+        "E48",
+        "E51"
+      ],
+      "edges": [
+        [
+          "E2",
+          "R1",
+          "E48"
+        ],
+        [
+          "E2",
+          "R2",
+          "E45"
+        ],
+        [
+          "E2",
+          "R3",
+          "E51"
+        ],
+        [
+          "E2",
+          "R4",
+          "E25"
+        ]
+      ]
+    },
+    {
+      "nodes": [
+        "E8",
+        "E32",
+        "E75"
+      ],
+      "edges": [
+        [
+          "E8",
+          "R1",
+          "E32"
+        ],
+        [
+          "E8",
+          "R2",
+          "E75"
+        ]
+      ]
+    }
+  ],
+  "answer_type": "connected_components_with_edges",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": null,
+  "target": null,
+  "reasoning_program": [
+    {
+      "op": "union",
+      "inputs": [
+        "G1",
+        "G2"
+      ],
+      "output": "G_star"
+    },
+    {
+      "op": "connected_components_with_edges",
+      "graph": "G_star"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 8,
+    "num_unique_edges": 6,
+    "per_graph_node_counts": {
+      "G1": 7,
+      "G2": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 4,
+      "G2": 2
+    },
+    "answer_list_length": 2,
+    "path_length": null,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "answer_validity_verified": true
+  },
+  "layout": {
+    "G1": {
+      "E25": [
+        -0.4716694902287019,
+        0.41662933060414503
+      ],
+      "E48": [
+        0.16175791777257337,
+        -0.15294492964986364
+      ],
+      "E51": [
+        -0.6481382135116307,
+        -0.41662933060414503
+      ],
+      "E2": [
+        -0.31931990474023314,
+        -0.050948253415819926
+      ],
+      "E8": [
+        1.0,
+        -0.1457449550688807
+      ],
+      "E32": [
+        0.16674133879170983,
+        -0.14574499149177358
+      ],
+      "E75": [
+        -1.0,
+        0.13344599619658595
+      ]
+    },
+    "G2": {
+      "E45": [
+        0.20757532455168315,
+        2.1781661143757436e-08
+      ],
+      "E2": [
+        -0.7890373252923503,
+        -2.17816613650499e-08
+      ],
+      "E75": [
+        1.0,
+        -0.1540317316003388
+      ],
+      "E8": [
+        0.003387350155966538,
+        -0.15403177516366132
+      ],
+      "E25": [
+        -0.1528630729605188,
+        0.7092689996296662
+      ],
+      "E32": [
+        -1.0,
+        0.1378679274098141
+      ],
+      "E51": [
+        -0.4285989277801491,
+        -0.7092689996296662
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E2",
+        "E8",
+        "E25",
+        "E32",
+        "E48",
+        "E51",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E2",
+          "R4",
+          "E25"
+        ],
+        [
+          "E2",
+          "R1",
+          "E48"
+        ],
+        [
+          "E2",
+          "R3",
+          "E51"
+        ],
+        [
+          "E8",
+          "R1",
+          "E32"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E2",
+        "E8",
+        "E25",
+        "E32",
+        "E45",
+        "E51",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E2",
+          "R2",
+          "E45"
+        ],
+        [
+          "E8",
+          "R2",
+          "E75"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "source_task_id": "R3",
+  "target_component_count": 2
+}

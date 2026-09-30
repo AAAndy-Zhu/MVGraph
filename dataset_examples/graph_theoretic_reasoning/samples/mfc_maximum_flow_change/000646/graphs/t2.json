@@ -1,0 +1,186 @@
+{
+  "graph_id": "t2",
+  "title": "t2",
+  "nodes": [
+    "E14",
+    "E26",
+    "E27",
+    "E36",
+    "E39",
+    "E42",
+    "E54",
+    "E57",
+    "E63",
+    "E80"
+  ],
+  "edges": [
+    {
+      "source": "E14",
+      "target": "E42",
+      "capacity": 14,
+      "relation": "R1"
+    },
+    {
+      "source": "E26",
+      "target": "E42",
+      "capacity": 5,
+      "relation": "R1"
+    },
+    {
+      "source": "E27",
+      "target": "E26",
+      "capacity": 11,
+      "relation": "R2"
+    },
+    {
+      "source": "E27",
+      "target": "E63",
+      "capacity": 15,
+      "relation": "R3"
+    },
+    {
+      "source": "E36",
+      "target": "E63",
+      "capacity": 14,
+      "relation": "R1"
+    },
+    {
+      "source": "E39",
+      "target": "E14",
+      "capacity": 10,
+      "relation": "R2"
+    },
+    {
+      "source": "E39",
+      "target": "E27",
+      "capacity": 11,
+      "relation": "R3"
+    },
+    {
+      "source": "E39",
+      "target": "E54",
+      "capacity": 5,
+      "relation": "R2"
+    },
+    {
+      "source": "E54",
+      "target": "E26",
+      "capacity": 11,
+      "relation": "R4"
+    },
+    {
+      "source": "E57",
+      "target": "E39",
+      "capacity": 19,
+      "relation": "R2"
+    },
+    {
+      "source": "E57",
+      "target": "E80",
+      "capacity": 8,
+      "relation": "R3"
+    },
+    {
+      "source": "E63",
+      "target": "E42",
+      "capacity": 9,
+      "relation": "R4"
+    },
+    {
+      "source": "E80",
+      "target": "E26",
+      "capacity": 11,
+      "relation": "R2"
+    },
+    {
+      "source": "E80",
+      "target": "E27",
+      "capacity": 15,
+      "relation": "R3"
+    },
+    {
+      "source": "E80",
+      "target": "E36",
+      "capacity": 1,
+      "relation": "R4"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E14",
+      "R1",
+      "E42"
+    ],
+    [
+      "E26",
+      "R1",
+      "E42"
+    ],
+    [
+      "E27",
+      "R2",
+      "E26"
+    ],
+    [
+      "E27",
+      "R3",
+      "E63"
+    ],
+    [
+      "E36",
+      "R1",
+      "E63"
+    ],
+    [
+      "E39",
+      "R2",
+      "E14"
+    ],
+    [
+      "E39",
+      "R3",
+      "E27"
+    ],
+    [
+      "E39",
+      "R2",
+      "E54"
+    ],
+    [
+      "E54",
+      "R4",
+      "E26"
+    ],
+    [
+      "E57",
+      "R2",
+      "E39"
+    ],
+    [
+      "E57",
+      "R3",
+      "E80"
+    ],
+    [
+      "E63",
+      "R4",
+      "E42"
+    ],
+    [
+      "E80",
+      "R2",
+      "E26"
+    ],
+    [
+      "E80",
+      "R3",
+      "E27"
+    ],
+    [
+      "E80",
+      "R4",
+      "E36"
+    ]
+  ]
+}

@@ -1,0 +1,971 @@
+{
+  "sample_id": "a-sn_000347",
+  "sample_index": 347,
+  "task_id": "A-SN",
+  "task_name": "shared_nodes",
+  "task_english_name": "Shared Nodes",
+  "task_dir": "a-sn_shared_nodes",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/a-sn_shared_nodes/000347/images/G1.png",
+    "samples/a-sn_shared_nodes/000347/images/G2.png",
+    "samples/a-sn_shared_nodes/000347/images/G3.png",
+    "samples/a-sn_shared_nodes/000347/images/G4.png",
+    "samples/a-sn_shared_nodes/000347/images/G5.png",
+    "samples/a-sn_shared_nodes/000347/images/G6.png",
+    "samples/a-sn_shared_nodes/000347/images/G7.png",
+    "samples/a-sn_shared_nodes/000347/images/G8.png"
+  ],
+  "graphs": [
+    "samples/a-sn_shared_nodes/000347/graphs/G1.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G2.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G3.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G4.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G5.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G6.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G7.json",
+    "samples/a-sn_shared_nodes/000347/graphs/G8.json"
+  ],
+  "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the node(s) that occur in each graph view.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E52"
+  ],
+  "answer_type": "node_list",
+  "required_images": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "source": null,
+  "target": null,
+  "reasoning_program": [],
+  "graph_generator": "custom_perception_motif",
+  "difficulty": {
+    "num_images": 8,
+    "num_unique_nodes": 58,
+    "num_unique_edges": 78,
+    "per_graph_node_counts": {
+      "G1": 8,
+      "G2": 9,
+      "G3": 9,
+      "G4": 9,
+      "G5": 7,
+      "G6": 7,
+      "G7": 8,
+      "G8": 8
+    },
+    "per_graph_edge_counts": {
+      "G1": 7,
+      "G2": 10,
+      "G3": 12,
+      "G4": 10,
+      "G5": 10,
+      "G6": 10,
+      "G7": 11,
+      "G8": 8
+    },
+    "answer_list_length": 1,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E52"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 3,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 4,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 5,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 6,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 7,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      },
+      {
+        "image": 8,
+        "answer_without_image": [
+          "E52"
+        ],
+        "answer_changed": false,
+        "underdetermined_without_image": true,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "note": "Perception tasks are validated by direct set/count recomputation."
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "Basic programmatic shortcut check for perception samples."
+    }
+  },
+  "layout": {
+    "G1": {
+      "E50": [
+        -0.2683745231714666,
+        0.014443333610003545
+      ],
+      "E36": [
+        0.4495925602335864,
+        -0.4501799386334746
+      ],
+      "E43": [
+        -1.0,
+        0.4501799386334746
+      ],
+      "E12": [
+        0.22556354639037485,
+        -0.12403291076470699
+      ],
+      "E55": [
+        -0.5989524362809433,
+        -0.06545295113499237
+      ],
+      "E58": [
+        -0.6715972529936783,
+        0.22057096866273493
+      ],
+      "E52": [
+        0.5863312078212323,
+        0.03685534653090665
+      ],
+      "E6": [
+        1.0,
+        -0.3921242653807859
+      ]
+    },
+    "G2": {
+      "E45": [
+        -0.2686539551289715,
+        0.9273568240369502
+      ],
+      "E60": [
+        0.24755738447662506,
+        -0.7472275941143762
+      ],
+      "E27": [
+        -0.06702237986583984,
+        -0.19480994083807054
+      ],
+      "E22": [
+        -0.5507538748571986,
+        0.3145845955697632
+      ],
+      "E51": [
+        -0.9736474014377254,
+        -0.060770345909421215
+      ],
+      "E25": [
+        -0.5212605865842967,
+        -0.332022258158462
+      ],
+      "E52": [
+        -0.2234346447028311,
+        -0.9273568240369502
+      ],
+      "E59": [
+        -1.0,
+        0.8299272286478845
+      ],
+      "E73": [
+        1.0,
+        -0.4738709982599651
+      ]
+    },
+    "G3": {
+      "E10": [
+        -0.5591957821793034,
+        0.17607175779097758
+      ],
+      "E56": [
+        -0.3342709380051241,
+        -0.2686385011760887
+      ],
+      "E53": [
+        0.5591957821793034,
+        -0.026391280167041346
+      ],
+      "E5": [
+        0.18680476616652683,
+        -0.3631048273150783
+      ],
+      "E13": [
+        0.4248776327255096,
+        0.5063554262534473
+      ],
+      "E7": [
+        -0.053944225593326955,
+        -0.04044188203053437
+      ],
+      "E61": [
+        0.3656157174134745,
+        -1.0
+      ],
+      "E52": [
+        -0.11758605594769587,
+        1.0
+      ],
+      "E54": [
+        0.040391590042763305,
+        0.34083691284614476
+      ]
+    },
+    "G4": {
+      "E32": [
+        -0.562331683063754,
+        -0.03909766405670616
+      ],
+      "E64": [
+        -0.23473356601703874,
+        -0.3838307720513653
+      ],
+      "E16": [
+        0.1696311743948325,
+        -0.2999935236620713
+      ],
+      "E80": [
+        -0.5611183593885326,
+        0.3301637385046722
+      ],
+      "E18": [
+        -0.18920138039089623,
+        0.05557155035359246
+      ],
+      "E31": [
+        -0.972888012373801,
+        0.4970604059079291
+      ],
+      "E70": [
+        0.5860988595208009,
+        -0.4970604059079291
+      ],
+      "E52": [
+        -1.0,
+        0.138930003247058
+      ],
+      "E34": [
+        1.0,
+        -0.4633049159804695
+      ]
+    },
+    "G5": {
+      "E66": [
+        -0.5001638659199675,
+        1.0
+      ],
+      "E37": [
+        -0.02475358300883799,
+        0.23025314355433157
+      ],
+      "E30": [
+        0.9449128155358618,
+        -1.0
+      ],
+      "E14": [
+        0.0032140550670760135,
+        -0.4488394915054173
+      ],
+      "E52": [
+        -0.36544830455086597,
+        -0.7797835195654472
+      ],
+      "E2": [
+        -0.8115659932862691,
+        0.2003210986913875
+      ],
+      "E23": [
+        -0.9449128155358618,
+        -0.5825977304920871
+      ]
+    },
+    "G6": {
+      "E72": [
+        -0.27110193723504245,
+        0.11002613988597197
+      ],
+      "E75": [
+        -1.0,
+        -0.20505806577668498
+      ],
+      "E40": [
+        -0.6862883022015694,
+        0.7012378438699236
+      ],
+      "E8": [
+        -0.09500175645539852,
+        -0.7012378438699236
+      ],
+      "E52": [
+        0.6455536797093566,
+        -0.38556859044965375
+      ],
+      "E63": [
+        0.2806343531240612,
+        0.2861716553712421
+      ],
+      "E46": [
+        1.0,
+        -0.4997015845403769
+      ]
+    },
+    "G7": {
+      "E48": [
+        0.26254946833601567,
+        0.8005013273302072
+      ],
+      "E33": [
+        0.39706550950380953,
+        0.14839625382465998
+      ],
+      "E42": [
+        -0.2904253116264703,
+        -0.21218857867243426
+      ],
+      "E44": [
+        0.875498601843535,
+        -0.42761529218666017
+      ],
+      "E38": [
+        -0.2744804575429786,
+        0.5123047266692232
+      ],
+      "E1": [
+        -0.8759417971185767,
+        1.0
+      ],
+      "E52": [
+        0.37452697041629596,
+        -0.5291952737996697
+      ],
+      "E62": [
+        0.8759417971185767,
+        -1.0
+      ]
+    },
+    "G8": {
+      "E24": [
+        -0.6050641030510502,
+        -0.5947262628428852
+      ],
+      "E15": [
+        -0.09565763774315816,
+        -0.49375751896007314
+      ],
+      "E35": [
+        0.07617142968262142,
+        0.03559358136534361
+      ],
+      "E76": [
+        -1.0,
+        -0.4082398793967508
+      ],
+      "E11": [
+        0.20946162060754783,
+        0.5947262628428852
+      ],
+      "E52": [
+        -0.5439297751622238,
+        -0.1657131372395832
+      ],
+      "E20": [
+        0.6538682382049084,
+        0.06135816398426572
+      ],
+      "E74": [
+        1.0,
+        -0.547009603782866
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E6",
+        "E12",
+        "E36",
+        "E43",
+        "E50",
+        "E52",
+        "E55",
+        "E58"
+      ],
+      "triples": [
+        [
+          "E12",
+          "R3",
+          "E36"
+        ],
+        [
+          "E12",
+          "R3",
+          "E50"
+        ],
+        [
+          "E12",
+          "R1",
+          "E52"
+        ],
+        [
+          "E43",
+          "R2",
+          "E58"
+        ],
+        [
+          "E50",
+          "R1",
+          "E55"
+        ],
+        [
+          "E50",
+          "R2",
+          "E58"
+        ],
+        [
+          "E55",
+          "R4",
+          "E58"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E22",
+        "E25",
+        "E27",
+        "E45",
+        "E51",
+        "E52",
+        "E59",
+        "E60",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E22",
+          "R1",
+          "E25"
+        ],
+        [
+          "E22",
+          "R3",
+          "E27"
+        ],
+        [
+          "E22",
+          "R2",
+          "E45"
+        ],
+        [
+          "E22",
+          "R3",
+          "E51"
+        ],
+        [
+          "E22",
+          "R1",
+          "E59"
+        ],
+        [
+          "E25",
+          "R4",
+          "E27"
+        ],
+        [
+          "E25",
+          "R4",
+          "E51"
+        ],
+        [
+          "E25",
+          "R3",
+          "E52"
+        ],
+        [
+          "E27",
+          "R4",
+          "E60"
+        ],
+        [
+          "E52",
+          "R2",
+          "E60"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G3",
+      "nodes": [
+        "E5",
+        "E7",
+        "E10",
+        "E13",
+        "E52",
+        "E53",
+        "E54",
+        "E56",
+        "E61"
+      ],
+      "triples": [
+        [
+          "E5",
+          "R2",
+          "E7"
+        ],
+        [
+          "E5",
+          "R2",
+          "E53"
+        ],
+        [
+          "E5",
+          "R3",
+          "E54"
+        ],
+        [
+          "E5",
+          "R4",
+          "E56"
+        ],
+        [
+          "E5",
+          "R4",
+          "E61"
+        ],
+        [
+          "E7",
+          "R2",
+          "E13"
+        ],
+        [
+          "E7",
+          "R3",
+          "E56"
+        ],
+        [
+          "E10",
+          "R1",
+          "E54"
+        ],
+        [
+          "E10",
+          "R4",
+          "E56"
+        ],
+        [
+          "E13",
+          "R3",
+          "E54"
+        ],
+        [
+          "E52",
+          "R1",
+          "E54"
+        ],
+        [
+          "E53",
+          "R1",
+          "E54"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G4",
+      "nodes": [
+        "E16",
+        "E18",
+        "E31",
+        "E32",
+        "E34",
+        "E52",
+        "E64",
+        "E70",
+        "E80"
+      ],
+      "triples": [
+        [
+          "E16",
+          "R1",
+          "E18"
+        ],
+        [
+          "E16",
+          "R3",
+          "E64"
+        ],
+        [
+          "E16",
+          "R2",
+          "E70"
+        ],
+        [
+          "E18",
+          "R1",
+          "E32"
+        ],
+        [
+          "E18",
+          "R2",
+          "E80"
+        ],
+        [
+          "E31",
+          "R4",
+          "E52"
+        ],
+        [
+          "E31",
+          "R3",
+          "E80"
+        ],
+        [
+          "E32",
+          "R4",
+          "E52"
+        ],
+        [
+          "E32",
+          "R1",
+          "E64"
+        ],
+        [
+          "E32",
+          "R2",
+          "E80"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G5",
+      "nodes": [
+        "E2",
+        "E14",
+        "E23",
+        "E30",
+        "E37",
+        "E52",
+        "E66"
+      ],
+      "triples": [
+        [
+          "E2",
+          "R1",
+          "E14"
+        ],
+        [
+          "E2",
+          "R4",
+          "E23"
+        ],
+        [
+          "E2",
+          "R4",
+          "E66"
+        ],
+        [
+          "E14",
+          "R4",
+          "E23"
+        ],
+        [
+          "E14",
+          "R1",
+          "E30"
+        ],
+        [
+          "E14",
+          "R3",
+          "E37"
+        ],
+        [
+          "E14",
+          "R3",
+          "E52"
+        ],
+        [
+          "E23",
+          "R1",
+          "E52"
+        ],
+        [
+          "E37",
+          "R2",
+          "E52"
+        ],
+        [
+          "E37",
+          "R2",
+          "E66"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G6",
+      "nodes": [
+        "E8",
+        "E40",
+        "E46",
+        "E52",
+        "E63",
+        "E72",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E8",
+          "R4",
+          "E52"
+        ],
+        [
+          "E8",
+          "R3",
+          "E63"
+        ],
+        [
+          "E8",
+          "R3",
+          "E75"
+        ],
+        [
+          "E40",
+          "R1",
+          "E63"
+        ],
+        [
+          "E40",
+          "R3",
+          "E72"
+        ],
+        [
+          "E40",
+          "R1",
+          "E75"
+        ],
+        [
+          "E52",
+          "R2",
+          "E63"
+        ],
+        [
+          "E52",
+          "R2",
+          "E72"
+        ],
+        [
+          "E63",
+          "R4",
+          "E72"
+        ],
+        [
+          "E72",
+          "R4",
+          "E75"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G7",
+      "nodes": [
+        "E1",
+        "E33",
+        "E38",
+        "E42",
+        "E44",
+        "E48",
+        "E52",
+        "E62"
+      ],
+      "triples": [
+        [
+          "E1",
+          "R3",
+          "E38"
+        ],
+        [
+          "E33",
+          "R1",
+          "E38"
+        ],
+        [
+          "E33",
+          "R4",
+          "E44"
+        ],
+        [
+          "E33",
+          "R4",
+          "E48"
+        ],
+        [
+          "E33",
+          "R2",
+          "E52"
+        ],
+        [
+          "E38",
+          "R1",
+          "E42"
+        ],
+        [
+          "E38",
+          "R1",
+          "E48"
+        ],
+        [
+          "E42",
+          "R2",
+          "E52"
+        ],
+        [
+          "E44",
+          "R2",
+          "E52"
+        ],
+        [
+          "E44",
+          "R3",
+          "E62"
+        ],
+        [
+          "E52",
+          "R2",
+          "E62"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G8",
+      "nodes": [
+        "E11",
+        "E15",
+        "E20",
+        "E24",
+        "E35",
+        "E52",
+        "E74",
+        "E76"
+      ],
+      "triples": [
+        [
+          "E11",
+          "R4",
+          "E35"
+        ],
+        [
+          "E15",
+          "R1",
+          "E24"
+        ],
+        [
+          "E15",
+          "R3",
+          "E35"
+        ],
+        [
+          "E20",
+          "R2",
+          "E35"
+        ],
+        [
+          "E24",
+          "R3",
+          "E52"
+        ],
+        [
+          "E24",
+          "R1",
+          "E76"
+        ],
+        [
+          "E35",
+          "R4",
+          "E52"
+        ],
+        [
+          "E52",
+          "R2",
+          "E76"
+        ]
+      ],
+      "directed": false
+    }
+  ]
+}

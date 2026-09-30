@@ -1,0 +1,489 @@
+{
+  "sample_id": "r-bn_000440",
+  "sample_index": 440,
+  "task_id": "R-BN",
+  "task_name": "bridge_node_criticality",
+  "task_english_name": "Bridge-Node Criticality",
+  "task_dir": "r-bn_bridge_node_criticality",
+  "graph_scenario": "partial_graph_views",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Graph G_merged is the union of all original views; the separate one-column Shared nodes CSV lists nodes present in at least two original views.\n- The CSV columns are src, relation, and dst.\n- All graphs are undirected. A row \"E1,R1,E2\" means that E1 and E2 are connected by relation R1 in either traversal direction.\n- A row \"E1,,\" means that E1 is an isolated node. Empty relation and destination together are the isolated-node encoding.\n- Every node in the graph appears in at least one row, either as an endpoint of an edge or as an isolated-node row.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nGraph G_merged\nsrc,relation,dst\nE3,R3,E20\nE4,R2,E72\nE8,R3,E64\nE8,R4,E70\nE9,R3,E53\nE11,R1,E18\nE17,R3,E26\nE18,R3,E40\nE20,R1,E70\nE22,R2,E45\nE22,R1,E70\nE23,R3,E54\nE23,R4,E60\nE23,R2,E70\nE25,R4,E39\nE26,R2,E66\nE28,R2,E30\nE28,R1,E52\nE29,R1,E57\nE31,R1,E52\nE31,R2,E72\nE31,R4,E73\nE32,R3,E34\nE32,R4,E65\nE34,R2,E52\nE35,R2,E40\nE35,R4,E80\nE37,R1,E66\nE38,R2,E59\nE42,R3,E72\nE49,R3,E55\nE49,R4,E57\nE52,R4,E54\nE53,R1,E71\nE53,R1,E75\nE59,R1,E70\nE69,R2,E75\n\nShared nodes\nnode\nE23\nE31\nE52\nE54\nE70\nE72\n\nQuestion:\nAfter combining the views, which overlapping node(s) must remain for E42 to be reachable from E20?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+  "answer": [
+    "E23",
+    "E31",
+    "E52",
+    "E54",
+    "E70",
+    "E72"
+  ],
+  "answer_type": "node_list",
+  "required_images": [],
+  "source": "E20",
+  "target": "E42",
+  "reasoning_program": [
+    {
+      "op": "union",
+      "inputs": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5",
+        "G6",
+        "G7"
+      ],
+      "output": "G_star"
+    },
+    {
+      "op": "critical_overlap_nodes",
+      "graph": "G_star",
+      "source": "E20",
+      "target": "E42"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 7,
+    "num_unique_nodes": 43,
+    "num_unique_edges": 37,
+    "per_graph_node_counts": {
+      "G1": 7,
+      "G2": 7,
+      "G3": 7,
+      "G4": 7,
+      "G5": 7,
+      "G6": 7,
+      "G7": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 5,
+      "G2": 6,
+      "G3": 5,
+      "G4": 5,
+      "G5": 6,
+      "G6": 5,
+      "G7": 5
+    },
+    "answer_list_length": 6,
+    "path_length": 7,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "non_empty_list_verified": true,
+    "answer_validity_verified": true,
+    "expected_answer": [
+      "E23",
+      "E31",
+      "E52",
+      "E54",
+      "E70",
+      "E72"
+    ],
+    "necessity_verified": true,
+    "leave_one_out_verified": true,
+    "leave_one_out_details": [
+      {
+        "image": 1,
+        "answer_without_image": [
+          "E23",
+          "E31",
+          "E52",
+          "E54",
+          "E72"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 2,
+        "answer_without_image": [
+          "E31",
+          "E52",
+          "E54",
+          "E72"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 3,
+        "answer_without_image": [
+          "E31",
+          "E52",
+          "E70",
+          "E72"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 4,
+        "answer_without_image": [
+          "E23",
+          "E31",
+          "E70",
+          "E72"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 5,
+        "answer_without_image": [
+          "E23",
+          "E54",
+          "E70",
+          "E72"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 6,
+        "answer_without_image": [
+          "E23",
+          "E52",
+          "E54",
+          "E70"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      },
+      {
+        "image": 7,
+        "answer_without_image": [
+          "E23",
+          "E31",
+          "E52",
+          "E54",
+          "E70"
+        ],
+        "answer_changed": true,
+        "underdetermined_without_image": false,
+        "passes": true
+      }
+    ],
+    "counterfactual_verified": true,
+    "counterfactual_details": {
+      "removed_answer_nodes_break_path": {
+        "E23": true,
+        "E31": true,
+        "E52": true,
+        "E54": true,
+        "E70": true,
+        "E72": true
+      }
+    },
+    "shortcut_checked": true,
+    "shortcut_check_details": {
+      "uniform_node_style": true,
+      "uniform_edge_style": true,
+      "no_multiple_choice_options": true,
+      "answer_not_encoded_in_sample_id": true,
+      "corpus_level_answer_buckets_recorded": true,
+      "note": "This is a basic programmatic shortcut check, not a substitute for manual visual audit."
+    }
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E3",
+        "E20",
+        "E22",
+        "E25",
+        "E39",
+        "E45",
+        "E70"
+      ],
+      "triples": [
+        [
+          "E3",
+          "R3",
+          "E20"
+        ],
+        [
+          "E20",
+          "R1",
+          "E70"
+        ],
+        [
+          "E22",
+          "R2",
+          "E45"
+        ],
+        [
+          "E22",
+          "R1",
+          "E70"
+        ],
+        [
+          "E25",
+          "R4",
+          "E39"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E8",
+        "E23",
+        "E38",
+        "E59",
+        "E60",
+        "E64",
+        "E70"
+      ],
+      "triples": [
+        [
+          "E8",
+          "R3",
+          "E64"
+        ],
+        [
+          "E8",
+          "R4",
+          "E70"
+        ],
+        [
+          "E23",
+          "R4",
+          "E60"
+        ],
+        [
+          "E23",
+          "R2",
+          "E70"
+        ],
+        [
+          "E38",
+          "R2",
+          "E59"
+        ],
+        [
+          "E59",
+          "R1",
+          "E70"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G3",
+      "nodes": [
+        "E9",
+        "E23",
+        "E53",
+        "E54",
+        "E69",
+        "E71",
+        "E75"
+      ],
+      "triples": [
+        [
+          "E9",
+          "R3",
+          "E53"
+        ],
+        [
+          "E23",
+          "R3",
+          "E54"
+        ],
+        [
+          "E53",
+          "R1",
+          "E71"
+        ],
+        [
+          "E53",
+          "R1",
+          "E75"
+        ],
+        [
+          "E69",
+          "R2",
+          "E75"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G4",
+      "nodes": [
+        "E11",
+        "E18",
+        "E35",
+        "E40",
+        "E52",
+        "E54",
+        "E80"
+      ],
+      "triples": [
+        [
+          "E11",
+          "R1",
+          "E18"
+        ],
+        [
+          "E18",
+          "R3",
+          "E40"
+        ],
+        [
+          "E35",
+          "R2",
+          "E40"
+        ],
+        [
+          "E35",
+          "R4",
+          "E80"
+        ],
+        [
+          "E52",
+          "R4",
+          "E54"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G5",
+      "nodes": [
+        "E28",
+        "E30",
+        "E31",
+        "E32",
+        "E34",
+        "E52",
+        "E65"
+      ],
+      "triples": [
+        [
+          "E28",
+          "R2",
+          "E30"
+        ],
+        [
+          "E28",
+          "R1",
+          "E52"
+        ],
+        [
+          "E31",
+          "R1",
+          "E52"
+        ],
+        [
+          "E32",
+          "R3",
+          "E34"
+        ],
+        [
+          "E32",
+          "R4",
+          "E65"
+        ],
+        [
+          "E34",
+          "R2",
+          "E52"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G6",
+      "nodes": [
+        "E29",
+        "E31",
+        "E49",
+        "E55",
+        "E57",
+        "E72",
+        "E73"
+      ],
+      "triples": [
+        [
+          "E29",
+          "R1",
+          "E57"
+        ],
+        [
+          "E31",
+          "R2",
+          "E72"
+        ],
+        [
+          "E31",
+          "R4",
+          "E73"
+        ],
+        [
+          "E49",
+          "R3",
+          "E55"
+        ],
+        [
+          "E49",
+          "R4",
+          "E57"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G7",
+      "nodes": [
+        "E4",
+        "E17",
+        "E26",
+        "E37",
+        "E42",
+        "E66",
+        "E72"
+      ],
+      "triples": [
+        [
+          "E4",
+          "R2",
+          "E72"
+        ],
+        [
+          "E17",
+          "R3",
+          "E26"
+        ],
+        [
+          "E26",
+          "R2",
+          "E66"
+        ],
+        [
+          "E37",
+          "R1",
+          "E66"
+        ],
+        [
+          "E42",
+          "R3",
+          "E72"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "original_graph_text": "Graph G_merged\nsrc,relation,dst\nE3,R3,E20\nE4,R2,E72\nE8,R3,E64\nE8,R4,E70\nE9,R3,E53\nE11,R1,E18\nE17,R3,E26\nE18,R3,E40\nE20,R1,E70\nE22,R2,E45\nE22,R1,E70\nE23,R3,E54\nE23,R4,E60\nE23,R2,E70\nE25,R4,E39\nE26,R2,E66\nE28,R2,E30\nE28,R1,E52\nE29,R1,E57\nE31,R1,E52\nE31,R2,E72\nE31,R4,E73\nE32,R3,E34\nE32,R4,E65\nE34,R2,E52\nE35,R2,E40\nE35,R4,E80\nE37,R1,E66\nE38,R2,E59\nE42,R3,E72\nE49,R3,E55\nE49,R4,E57\nE52,R4,E54\nE53,R1,E71\nE53,R1,E75\nE59,R1,E70\nE69,R2,E75\n\nShared nodes\nnode\nE23\nE31\nE52\nE54\nE70\nE72"
+}

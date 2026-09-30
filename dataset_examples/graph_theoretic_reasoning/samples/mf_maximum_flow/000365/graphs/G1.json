@@ -1,0 +1,142 @@
+{
+  "graph_id": "G1",
+  "title": "Graph 1",
+  "nodes": [
+    "E3",
+    "E11",
+    "E31",
+    "E33",
+    "E41",
+    "E45",
+    "E63",
+    "E67",
+    "E68",
+    "E76"
+  ],
+  "edges": [
+    {
+      "source": "E11",
+      "target": "E63",
+      "capacity": 3,
+      "relation": "R1"
+    },
+    {
+      "source": "E11",
+      "target": "E67",
+      "capacity": 9,
+      "relation": "R2"
+    },
+    {
+      "source": "E3",
+      "target": "E31",
+      "capacity": 13,
+      "relation": "R3"
+    },
+    {
+      "source": "E3",
+      "target": "E41",
+      "capacity": 10,
+      "relation": "R4"
+    },
+    {
+      "source": "E3",
+      "target": "E45",
+      "capacity": 12,
+      "relation": "R1"
+    },
+    {
+      "source": "E3",
+      "target": "E68",
+      "capacity": 16,
+      "relation": "R2"
+    },
+    {
+      "source": "E41",
+      "target": "E63",
+      "capacity": 9,
+      "relation": "R3"
+    },
+    {
+      "source": "E45",
+      "target": "E67",
+      "capacity": 10,
+      "relation": "R4"
+    },
+    {
+      "source": "E45",
+      "target": "E76",
+      "capacity": 6,
+      "relation": "R1"
+    },
+    {
+      "source": "E68",
+      "target": "E63",
+      "capacity": 11,
+      "relation": "R2"
+    },
+    {
+      "source": "E76",
+      "target": "E33",
+      "capacity": 11,
+      "relation": "R3"
+    }
+  ],
+  "directed": true,
+  "triples": [
+    [
+      "E11",
+      "R1",
+      "E63"
+    ],
+    [
+      "E11",
+      "R2",
+      "E67"
+    ],
+    [
+      "E3",
+      "R3",
+      "E31"
+    ],
+    [
+      "E3",
+      "R4",
+      "E41"
+    ],
+    [
+      "E3",
+      "R1",
+      "E45"
+    ],
+    [
+      "E3",
+      "R2",
+      "E68"
+    ],
+    [
+      "E41",
+      "R3",
+      "E63"
+    ],
+    [
+      "E45",
+      "R4",
+      "E67"
+    ],
+    [
+      "E45",
+      "R1",
+      "E76"
+    ],
+    [
+      "E68",
+      "R2",
+      "E63"
+    ],
+    [
+      "E76",
+      "R3",
+      "E33"
+    ]
+  ]
+}

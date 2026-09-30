@@ -1,0 +1,2146 @@
+[
+  {
+    "id": "a-ae_000072",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000072/images/t1.png",
+      "samples/a-ae_added_edges/000072/images/t2.png",
+      "samples/a-ae_added_edges/000072/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) are added from t2 to t3?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E10",
+        "R3",
+        "E12"
+      ],
+      [
+        "E11",
+        "R4",
+        "E12"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000072/sample.json"
+  },
+  {
+    "id": "a-ae_000175",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000175/images/t1.png",
+      "samples/a-ae_added_edges/000175/images/t2.png",
+      "samples/a-ae_added_edges/000175/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are introduced at t3 relative to t2?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E4",
+        "R2",
+        "E69"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000175/sample.json"
+  },
+  {
+    "id": "a-ae_000210",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000210/images/t1.png",
+      "samples/a-ae_added_edges/000210/images/t2.png",
+      "samples/a-ae_added_edges/000210/images/t3.png",
+      "samples/a-ae_added_edges/000210/images/t4.png",
+      "samples/a-ae_added_edges/000210/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples newly appearing between t3 and t4.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E37",
+        "R3",
+        "E76"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000210/sample.json"
+  },
+  {
+    "id": "a-ae_000314",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000314/images/t1.png",
+      "samples/a-ae_added_edges/000314/images/t2.png",
+      "samples/a-ae_added_edges/000314/images/t3.png",
+      "samples/a-ae_added_edges/000314/images/t4.png",
+      "samples/a-ae_added_edges/000314/images/t5.png",
+      "samples/a-ae_added_edges/000314/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that are present in t6 but absent in t5.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E2",
+        "R2",
+        "E35"
+      ],
+      [
+        "E2",
+        "R1",
+        "E80"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000314/sample.json"
+  },
+  {
+    "id": "a-ae_000421",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000421/images/t1.png",
+      "samples/a-ae_added_edges/000421/images/t2.png",
+      "samples/a-ae_added_edges/000421/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are introduced at t2 relative to t1?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E11",
+        "R4",
+        "E48"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000421/sample.json"
+  },
+  {
+    "id": "a-ae_000564",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000564/images/t1.png",
+      "samples/a-ae_added_edges/000564/images/t2.png",
+      "samples/a-ae_added_edges/000564/images/t3.png",
+      "samples/a-ae_added_edges/000564/images/t4.png",
+      "samples/a-ae_added_edges/000564/images/t5.png",
+      "samples/a-ae_added_edges/000564/images/t6.png",
+      "samples/a-ae_added_edges/000564/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that are present in t3 but absent in t2.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E10",
+        "R4",
+        "E62"
+      ],
+      [
+        "E23",
+        "R2",
+        "E27"
+      ],
+      [
+        "E37",
+        "R1",
+        "E78"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000564/sample.json"
+  },
+  {
+    "id": "a-ae_000644",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000644/images/t1.png",
+      "samples/a-ae_added_edges/000644/images/t2.png",
+      "samples/a-ae_added_edges/000644/images/t3.png",
+      "samples/a-ae_added_edges/000644/images/t4.png",
+      "samples/a-ae_added_edges/000644/images/t5.png",
+      "samples/a-ae_added_edges/000644/images/t6.png",
+      "samples/a-ae_added_edges/000644/images/t7.png",
+      "samples/a-ae_added_edges/000644/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are introduced at t3 relative to t2?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E46",
+        "R1",
+        "E55"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000644/sample.json"
+  },
+  {
+    "id": "a-ae_000660",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000660/images/t1.png",
+      "samples/a-ae_added_edges/000660/images/t2.png",
+      "samples/a-ae_added_edges/000660/images/t3.png",
+      "samples/a-ae_added_edges/000660/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFrom t3 to t4, which edge triples are added?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E13",
+        "R1",
+        "E63"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000660/sample.json"
+  },
+  {
+    "id": "a-ae_000667",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000667/images/t1.png",
+      "samples/a-ae_added_edges/000667/images/t2.png",
+      "samples/a-ae_added_edges/000667/images/t3.png",
+      "samples/a-ae_added_edges/000667/images/t4.png",
+      "samples/a-ae_added_edges/000667/images/t5.png",
+      "samples/a-ae_added_edges/000667/images/t6.png",
+      "samples/a-ae_added_edges/000667/images/t7.png",
+      "samples/a-ae_added_edges/000667/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are introduced at t8 relative to t7?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E2",
+        "R2",
+        "E40"
+      ],
+      [
+        "E8",
+        "R4",
+        "E20"
+      ],
+      [
+        "E19",
+        "R3",
+        "E34"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000667/sample.json"
+  },
+  {
+    "id": "a-ae_000906",
+    "task_id": "A-AE",
+    "task_name": "added_edges",
+    "image_paths": [
+      "samples/a-ae_added_edges/000906/images/t1.png",
+      "samples/a-ae_added_edges/000906/images/t2.png",
+      "samples/a-ae_added_edges/000906/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) are added from t1 to t2?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E31",
+        "R3",
+        "E57"
+      ]
+    ],
+    "metadata_path": "samples/a-ae_added_edges/000906/sample.json"
+  },
+  {
+    "id": "a-an_000047",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000047/images/t1.png",
+      "samples/a-an_added_nodes/000047/images/t2.png",
+      "samples/a-an_added_nodes/000047/images/t3.png",
+      "samples/a-an_added_nodes/000047/images/t4.png",
+      "samples/a-an_added_nodes/000047/images/t5.png",
+      "samples/a-an_added_nodes/000047/images/t6.png",
+      "samples/a-an_added_nodes/000047/images/t7.png",
+      "samples/a-an_added_nodes/000047/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the nodes that are present in t2 but absent in t1.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E17",
+      "E77"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000047/sample.json"
+  },
+  {
+    "id": "a-an_000126",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000126/images/t1.png",
+      "samples/a-an_added_nodes/000126/images/t2.png",
+      "samples/a-an_added_nodes/000126/images/t3.png",
+      "samples/a-an_added_nodes/000126/images/t4.png",
+      "samples/a-an_added_nodes/000126/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes newly appearing between t2 and t3.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E8",
+      "E51"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000126/sample.json"
+  },
+  {
+    "id": "a-an_000329",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000329/images/t1.png",
+      "samples/a-an_added_nodes/000329/images/t2.png",
+      "samples/a-an_added_nodes/000329/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes newly appearing between t2 and t3.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E40"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000329/sample.json"
+  },
+  {
+    "id": "a-an_000409",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000409/images/t1.png",
+      "samples/a-an_added_nodes/000409/images/t2.png",
+      "samples/a-an_added_nodes/000409/images/t3.png",
+      "samples/a-an_added_nodes/000409/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) are added from t2 to t3?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E13",
+      "E37",
+      "E57"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000409/sample.json"
+  },
+  {
+    "id": "a-an_000511",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000511/images/t1.png",
+      "samples/a-an_added_nodes/000511/images/t2.png",
+      "samples/a-an_added_nodes/000511/images/t3.png",
+      "samples/a-an_added_nodes/000511/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) are added from t3 to t4?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E25",
+      "E53",
+      "E58"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000511/sample.json"
+  },
+  {
+    "id": "a-an_000528",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000528/images/t1.png",
+      "samples/a-an_added_nodes/000528/images/t2.png",
+      "samples/a-an_added_nodes/000528/images/t3.png",
+      "samples/a-an_added_nodes/000528/images/t4.png",
+      "samples/a-an_added_nodes/000528/images/t5.png",
+      "samples/a-an_added_nodes/000528/images/t6.png",
+      "samples/a-an_added_nodes/000528/images/t7.png",
+      "samples/a-an_added_nodes/000528/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) are added from t3 to t4?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E8",
+      "E29",
+      "E73"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000528/sample.json"
+  },
+  {
+    "id": "a-an_000616",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000616/images/t1.png",
+      "samples/a-an_added_nodes/000616/images/t2.png",
+      "samples/a-an_added_nodes/000616/images/t3.png",
+      "samples/a-an_added_nodes/000616/images/t4.png",
+      "samples/a-an_added_nodes/000616/images/t5.png",
+      "samples/a-an_added_nodes/000616/images/t6.png",
+      "samples/a-an_added_nodes/000616/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the nodes that are present in t2 but absent in t1.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E42",
+      "E61",
+      "E76"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000616/sample.json"
+  },
+  {
+    "id": "a-an_000619",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000619/images/t1.png",
+      "samples/a-an_added_nodes/000619/images/t2.png",
+      "samples/a-an_added_nodes/000619/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes newly appearing between t1 and t2.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E8"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000619/sample.json"
+  },
+  {
+    "id": "a-an_000685",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000685/images/t1.png",
+      "samples/a-an_added_nodes/000685/images/t2.png",
+      "samples/a-an_added_nodes/000685/images/t3.png",
+      "samples/a-an_added_nodes/000685/images/t4.png",
+      "samples/a-an_added_nodes/000685/images/t5.png",
+      "samples/a-an_added_nodes/000685/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFrom t1 to t2, which nodes are added?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E2",
+      "E63"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000685/sample.json"
+  },
+  {
+    "id": "a-an_000787",
+    "task_id": "A-AN",
+    "task_name": "added_nodes",
+    "image_paths": [
+      "samples/a-an_added_nodes/000787/images/t1.png",
+      "samples/a-an_added_nodes/000787/images/t2.png",
+      "samples/a-an_added_nodes/000787/images/t3.png",
+      "samples/a-an_added_nodes/000787/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat node labels are introduced at t2 relative to t1?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E19",
+      "E31",
+      "E76"
+    ],
+    "metadata_path": "samples/a-an_added_nodes/000787/sample.json"
+  },
+  {
+    "id": "a-pe_000037",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000037/images/t1.png",
+      "samples/a-pe_persistent_edges/000037/images/t2.png",
+      "samples/a-pe_persistent_edges/000037/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that persist across all time steps.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E16",
+        "R1",
+        "E34"
+      ],
+      [
+        "E16",
+        "R3",
+        "E37"
+      ],
+      [
+        "E34",
+        "R2",
+        "E56"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000037/sample.json"
+  },
+  {
+    "id": "a-pe_000279",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000279/images/t1.png",
+      "samples/a-pe_persistent_edges/000279/images/t2.png",
+      "samples/a-pe_persistent_edges/000279/images/t3.png",
+      "samples/a-pe_persistent_edges/000279/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that remain present throughout the whole sequence.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E63",
+        "R2",
+        "E68"
+      ],
+      [
+        "E63",
+        "R1",
+        "E80"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000279/sample.json"
+  },
+  {
+    "id": "a-pe_000304",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000304/images/t1.png",
+      "samples/a-pe_persistent_edges/000304/images/t2.png",
+      "samples/a-pe_persistent_edges/000304/images/t3.png",
+      "samples/a-pe_persistent_edges/000304/images/t4.png",
+      "samples/a-pe_persistent_edges/000304/images/t5.png",
+      "samples/a-pe_persistent_edges/000304/images/t6.png",
+      "samples/a-pe_persistent_edges/000304/images/t7.png",
+      "samples/a-pe_persistent_edges/000304/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that remain present throughout the whole sequence.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E8",
+        "R1",
+        "E65"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000304/sample.json"
+  },
+  {
+    "id": "a-pe_000366",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000366/images/t1.png",
+      "samples/a-pe_persistent_edges/000366/images/t2.png",
+      "samples/a-pe_persistent_edges/000366/images/t3.png",
+      "samples/a-pe_persistent_edges/000366/images/t4.png",
+      "samples/a-pe_persistent_edges/000366/images/t5.png",
+      "samples/a-pe_persistent_edges/000366/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples appear in every temporal graph image?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E8",
+        "R1",
+        "E23"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000366/sample.json"
+  },
+  {
+    "id": "a-pe_000372",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000372/images/t1.png",
+      "samples/a-pe_persistent_edges/000372/images/t2.png",
+      "samples/a-pe_persistent_edges/000372/images/t3.png",
+      "samples/a-pe_persistent_edges/000372/images/t4.png",
+      "samples/a-pe_persistent_edges/000372/images/t5.png",
+      "samples/a-pe_persistent_edges/000372/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) are present at every time step?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E38",
+        "R2",
+        "E63"
+      ],
+      [
+        "E63",
+        "R1",
+        "E64"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000372/sample.json"
+  },
+  {
+    "id": "a-pe_000419",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000419/images/t1.png",
+      "samples/a-pe_persistent_edges/000419/images/t2.png",
+      "samples/a-pe_persistent_edges/000419/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that persist across all time steps.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E18",
+        "R1",
+        "E32"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000419/sample.json"
+  },
+  {
+    "id": "a-pe_000642",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000642/images/t1.png",
+      "samples/a-pe_persistent_edges/000642/images/t2.png",
+      "samples/a-pe_persistent_edges/000642/images/t3.png",
+      "samples/a-pe_persistent_edges/000642/images/t4.png",
+      "samples/a-pe_persistent_edges/000642/images/t5.png",
+      "samples/a-pe_persistent_edges/000642/images/t6.png",
+      "samples/a-pe_persistent_edges/000642/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triples are visible at all shown time steps?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E24",
+        "R1",
+        "E40"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000642/sample.json"
+  },
+  {
+    "id": "a-pe_000800",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000800/images/t1.png",
+      "samples/a-pe_persistent_edges/000800/images/t2.png",
+      "samples/a-pe_persistent_edges/000800/images/t3.png",
+      "samples/a-pe_persistent_edges/000800/images/t4.png",
+      "samples/a-pe_persistent_edges/000800/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that remain present throughout the whole sequence.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E57",
+        "R1",
+        "E77"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000800/sample.json"
+  },
+  {
+    "id": "a-pe_000864",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000864/images/t1.png",
+      "samples/a-pe_persistent_edges/000864/images/t2.png",
+      "samples/a-pe_persistent_edges/000864/images/t3.png",
+      "samples/a-pe_persistent_edges/000864/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triples are visible at all shown time steps?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E43",
+        "R1",
+        "E50"
+      ],
+      [
+        "E69",
+        "R2",
+        "E75"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000864/sample.json"
+  },
+  {
+    "id": "a-pe_000909",
+    "task_id": "A-PE",
+    "task_name": "persistent_edges",
+    "image_paths": [
+      "samples/a-pe_persistent_edges/000909/images/t1.png",
+      "samples/a-pe_persistent_edges/000909/images/t2.png",
+      "samples/a-pe_persistent_edges/000909/images/t3.png",
+      "samples/a-pe_persistent_edges/000909/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples appear in every temporal graph image?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E9",
+        "R1",
+        "E55"
+      ]
+    ],
+    "metadata_path": "samples/a-pe_persistent_edges/000909/sample.json"
+  },
+  {
+    "id": "a-pn_000163",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000163/images/t1.png",
+      "samples/a-pn_persistent_nodes/000163/images/t2.png",
+      "samples/a-pn_persistent_nodes/000163/images/t3.png",
+      "samples/a-pn_persistent_nodes/000163/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich nodes are visible at all shown time steps?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E5",
+      "E6",
+      "E49"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000163/sample.json"
+  },
+  {
+    "id": "a-pn_000210",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000210/images/t1.png",
+      "samples/a-pn_persistent_nodes/000210/images/t2.png",
+      "samples/a-pn_persistent_nodes/000210/images/t3.png",
+      "samples/a-pn_persistent_nodes/000210/images/t4.png",
+      "samples/a-pn_persistent_nodes/000210/images/t5.png",
+      "samples/a-pn_persistent_nodes/000210/images/t6.png",
+      "samples/a-pn_persistent_nodes/000210/images/t7.png",
+      "samples/a-pn_persistent_nodes/000210/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) are present at every time step?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E55"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000210/sample.json"
+  },
+  {
+    "id": "a-pn_000302",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000302/images/t1.png",
+      "samples/a-pn_persistent_nodes/000302/images/t2.png",
+      "samples/a-pn_persistent_nodes/000302/images/t3.png",
+      "samples/a-pn_persistent_nodes/000302/images/t4.png",
+      "samples/a-pn_persistent_nodes/000302/images/t5.png",
+      "samples/a-pn_persistent_nodes/000302/images/t6.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes appear in every temporal graph image?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E54",
+      "E66"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000302/sample.json"
+  },
+  {
+    "id": "a-pn_000320",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000320/images/t1.png",
+      "samples/a-pn_persistent_nodes/000320/images/t2.png",
+      "samples/a-pn_persistent_nodes/000320/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the nodes that remain present throughout the whole sequence.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E20",
+      "E30"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000320/sample.json"
+  },
+  {
+    "id": "a-pn_000344",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000344/images/t1.png",
+      "samples/a-pn_persistent_nodes/000344/images/t2.png",
+      "samples/a-pn_persistent_nodes/000344/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich nodes are visible at all shown time steps?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E74"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000344/sample.json"
+  },
+  {
+    "id": "a-pn_000362",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000362/images/t1.png",
+      "samples/a-pn_persistent_nodes/000362/images/t2.png",
+      "samples/a-pn_persistent_nodes/000362/images/t3.png",
+      "samples/a-pn_persistent_nodes/000362/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich nodes are visible at all shown time steps?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E28",
+      "E35"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000362/sample.json"
+  },
+  {
+    "id": "a-pn_000421",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000421/images/t1.png",
+      "samples/a-pn_persistent_nodes/000421/images/t2.png",
+      "samples/a-pn_persistent_nodes/000421/images/t3.png",
+      "samples/a-pn_persistent_nodes/000421/images/t4.png",
+      "samples/a-pn_persistent_nodes/000421/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes appear in every temporal graph image?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E78"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000421/sample.json"
+  },
+  {
+    "id": "a-pn_000921",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000921/images/t1.png",
+      "samples/a-pn_persistent_nodes/000921/images/t2.png",
+      "samples/a-pn_persistent_nodes/000921/images/t3.png",
+      "samples/a-pn_persistent_nodes/000921/images/t4.png",
+      "samples/a-pn_persistent_nodes/000921/images/t5.png",
+      "samples/a-pn_persistent_nodes/000921/images/t6.png",
+      "samples/a-pn_persistent_nodes/000921/images/t7.png",
+      "samples/a-pn_persistent_nodes/000921/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the node labels that persist across all time steps.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E41",
+      "E66"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000921/sample.json"
+  },
+  {
+    "id": "a-pn_000925",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000925/images/t1.png",
+      "samples/a-pn_persistent_nodes/000925/images/t2.png",
+      "samples/a-pn_persistent_nodes/000925/images/t3.png",
+      "samples/a-pn_persistent_nodes/000925/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the nodes that remain present throughout the whole sequence.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E1",
+      "E79"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000925/sample.json"
+  },
+  {
+    "id": "a-pn_000944",
+    "task_id": "A-PN",
+    "task_name": "persistent_nodes",
+    "image_paths": [
+      "samples/a-pn_persistent_nodes/000944/images/t1.png",
+      "samples/a-pn_persistent_nodes/000944/images/t2.png",
+      "samples/a-pn_persistent_nodes/000944/images/t3.png",
+      "samples/a-pn_persistent_nodes/000944/images/t4.png",
+      "samples/a-pn_persistent_nodes/000944/images/t5.png",
+      "samples/a-pn_persistent_nodes/000944/images/t6.png",
+      "samples/a-pn_persistent_nodes/000944/images/t7.png",
+      "samples/a-pn_persistent_nodes/000944/images/t8.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes appear in every temporal graph image?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E12",
+      "E32",
+      "E64"
+    ],
+    "metadata_path": "samples/a-pn_persistent_nodes/000944/sample.json"
+  },
+  {
+    "id": "a-re_000034",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000034/images/t1.png",
+      "samples/a-re_removed_edges/000034/images/t2.png",
+      "samples/a-re_removed_edges/000034/images/t3.png",
+      "samples/a-re_removed_edges/000034/images/t4.png",
+      "samples/a-re_removed_edges/000034/images/t5.png",
+      "samples/a-re_removed_edges/000034/images/t6.png",
+      "samples/a-re_removed_edges/000034/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are present in t1 but absent in t2?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E5",
+        "R3",
+        "E65"
+      ],
+      [
+        "E66",
+        "R4",
+        "E68"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000034/sample.json"
+  },
+  {
+    "id": "a-re_000063",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000063/images/t1.png",
+      "samples/a-re_removed_edges/000063/images/t2.png",
+      "samples/a-re_removed_edges/000063/images/t3.png",
+      "samples/a-re_removed_edges/000063/images/t4.png",
+      "samples/a-re_removed_edges/000063/images/t5.png",
+      "samples/a-re_removed_edges/000063/images/t6.png",
+      "samples/a-re_removed_edges/000063/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples deleted at t3 relative to t2.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E20",
+        "R3",
+        "E60"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000063/sample.json"
+  },
+  {
+    "id": "a-re_000204",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000204/images/t1.png",
+      "samples/a-re_removed_edges/000204/images/t2.png",
+      "samples/a-re_removed_edges/000204/images/t3.png",
+      "samples/a-re_removed_edges/000204/images/t4.png",
+      "samples/a-re_removed_edges/000204/images/t5.png",
+      "samples/a-re_removed_edges/000204/images/t6.png",
+      "samples/a-re_removed_edges/000204/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are present in t2 but absent in t3?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E14",
+        "R1",
+        "E32"
+      ],
+      [
+        "E32",
+        "R4",
+        "E76"
+      ],
+      [
+        "E45",
+        "R2",
+        "E73"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000204/sample.json"
+  },
+  {
+    "id": "a-re_000221",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000221/images/t1.png",
+      "samples/a-re_removed_edges/000221/images/t2.png",
+      "samples/a-re_removed_edges/000221/images/t3.png",
+      "samples/a-re_removed_edges/000221/images/t4.png",
+      "samples/a-re_removed_edges/000221/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) are removed from t3 to t4?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E2",
+        "R1",
+        "E28"
+      ],
+      [
+        "E6",
+        "R3",
+        "E65"
+      ],
+      [
+        "E10",
+        "R4",
+        "E28"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000221/sample.json"
+  },
+  {
+    "id": "a-re_000252",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000252/images/t1.png",
+      "samples/a-re_removed_edges/000252/images/t2.png",
+      "samples/a-re_removed_edges/000252/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that disappear between t2 and t3.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E12",
+        "R4",
+        "E59"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000252/sample.json"
+  },
+  {
+    "id": "a-re_000326",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000326/images/t1.png",
+      "samples/a-re_removed_edges/000326/images/t2.png",
+      "samples/a-re_removed_edges/000326/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that disappear between t1 and t2.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E42",
+        "R1",
+        "E53"
+      ],
+      [
+        "E51",
+        "R4",
+        "E53"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000326/sample.json"
+  },
+  {
+    "id": "a-re_000362",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000362/images/t1.png",
+      "samples/a-re_removed_edges/000362/images/t2.png",
+      "samples/a-re_removed_edges/000362/images/t3.png",
+      "samples/a-re_removed_edges/000362/images/t4.png",
+      "samples/a-re_removed_edges/000362/images/t5.png",
+      "samples/a-re_removed_edges/000362/images/t6.png",
+      "samples/a-re_removed_edges/000362/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that disappear between t5 and t6.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E18",
+        "R4",
+        "E34"
+      ],
+      [
+        "E18",
+        "R3",
+        "E36"
+      ],
+      [
+        "E36",
+        "R1",
+        "E66"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000362/sample.json"
+  },
+  {
+    "id": "a-re_000450",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000450/images/t1.png",
+      "samples/a-re_removed_edges/000450/images/t2.png",
+      "samples/a-re_removed_edges/000450/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that disappear between t1 and t2.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E13",
+        "R3",
+        "E47"
+      ],
+      [
+        "E41",
+        "R4",
+        "E52"
+      ],
+      [
+        "E70",
+        "R1",
+        "E79"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000450/sample.json"
+  },
+  {
+    "id": "a-re_000564",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000564/images/t1.png",
+      "samples/a-re_removed_edges/000564/images/t2.png",
+      "samples/a-re_removed_edges/000564/images/t3.png",
+      "samples/a-re_removed_edges/000564/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFrom t2 to t3, which edge triples are removed?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E13",
+        "R2",
+        "E64"
+      ],
+      [
+        "E33",
+        "R4",
+        "E41"
+      ],
+      [
+        "E51",
+        "R1",
+        "E72"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000564/sample.json"
+  },
+  {
+    "id": "a-re_000709",
+    "task_id": "A-RE",
+    "task_name": "removed_edges",
+    "image_paths": [
+      "samples/a-re_removed_edges/000709/images/t1.png",
+      "samples/a-re_removed_edges/000709/images/t2.png",
+      "samples/a-re_removed_edges/000709/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples deleted at t2 relative to t1.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E41",
+        "R4",
+        "E48"
+      ],
+      [
+        "E51",
+        "R1",
+        "E52"
+      ]
+    ],
+    "metadata_path": "samples/a-re_removed_edges/000709/sample.json"
+  },
+  {
+    "id": "a-rn_000076",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000076/images/t1.png",
+      "samples/a-rn_removed_nodes/000076/images/t2.png",
+      "samples/a-rn_removed_nodes/000076/images/t3.png",
+      "samples/a-rn_removed_nodes/000076/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFrom t3 to t4, which nodes are removed?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E23"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000076/sample.json"
+  },
+  {
+    "id": "a-rn_000186",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000186/images/t1.png",
+      "samples/a-rn_removed_nodes/000186/images/t2.png",
+      "samples/a-rn_removed_nodes/000186/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) are removed from t2 to t3?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E34"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000186/sample.json"
+  },
+  {
+    "id": "a-rn_000236",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000236/images/t1.png",
+      "samples/a-rn_removed_nodes/000236/images/t2.png",
+      "samples/a-rn_removed_nodes/000236/images/t3.png",
+      "samples/a-rn_removed_nodes/000236/images/t4.png",
+      "samples/a-rn_removed_nodes/000236/images/t5.png",
+      "samples/a-rn_removed_nodes/000236/images/t6.png",
+      "samples/a-rn_removed_nodes/000236/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the nodes deleted at t7 relative to t6.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E53"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000236/sample.json"
+  },
+  {
+    "id": "a-rn_000415",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000415/images/t1.png",
+      "samples/a-rn_removed_nodes/000415/images/t2.png",
+      "samples/a-rn_removed_nodes/000415/images/t3.png",
+      "samples/a-rn_removed_nodes/000415/images/t4.png",
+      "samples/a-rn_removed_nodes/000415/images/t5.png",
+      "samples/a-rn_removed_nodes/000415/images/t6.png",
+      "samples/a-rn_removed_nodes/000415/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes that disappear between t3 and t4.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E14"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000415/sample.json"
+  },
+  {
+    "id": "a-rn_000468",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000468/images/t1.png",
+      "samples/a-rn_removed_nodes/000468/images/t2.png",
+      "samples/a-rn_removed_nodes/000468/images/t3.png",
+      "samples/a-rn_removed_nodes/000468/images/t4.png",
+      "samples/a-rn_removed_nodes/000468/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes that disappear between t4 and t5.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E29",
+      "E42"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000468/sample.json"
+  },
+  {
+    "id": "a-rn_000647",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000647/images/t1.png",
+      "samples/a-rn_removed_nodes/000647/images/t2.png",
+      "samples/a-rn_removed_nodes/000647/images/t3.png",
+      "samples/a-rn_removed_nodes/000647/images/t4.png",
+      "samples/a-rn_removed_nodes/000647/images/t5.png",
+      "samples/a-rn_removed_nodes/000647/images/t6.png",
+      "samples/a-rn_removed_nodes/000647/images/t7.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the nodes deleted at t6 relative to t5.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E11",
+      "E48",
+      "E70"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000647/sample.json"
+  },
+  {
+    "id": "a-rn_000658",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000658/images/t1.png",
+      "samples/a-rn_removed_nodes/000658/images/t2.png",
+      "samples/a-rn_removed_nodes/000658/images/t3.png",
+      "samples/a-rn_removed_nodes/000658/images/t4.png",
+      "samples/a-rn_removed_nodes/000658/images/t5.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) are removed from t4 to t5?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E3",
+      "E4",
+      "E16"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000658/sample.json"
+  },
+  {
+    "id": "a-rn_000709",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000709/images/t1.png",
+      "samples/a-rn_removed_nodes/000709/images/t2.png",
+      "samples/a-rn_removed_nodes/000709/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFrom t1 to t2, which nodes are removed?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E80"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000709/sample.json"
+  },
+  {
+    "id": "a-rn_000965",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000965/images/t1.png",
+      "samples/a-rn_removed_nodes/000965/images/t2.png",
+      "samples/a-rn_removed_nodes/000965/images/t3.png",
+      "samples/a-rn_removed_nodes/000965/images/t4.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nFrom t3 to t4, which nodes are removed?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E35",
+      "E49"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000965/sample.json"
+  },
+  {
+    "id": "a-rn_000969",
+    "task_id": "A-RN",
+    "task_name": "removed_nodes",
+    "image_paths": [
+      "samples/a-rn_removed_nodes/000969/images/t1.png",
+      "samples/a-rn_removed_nodes/000969/images/t2.png",
+      "samples/a-rn_removed_nodes/000969/images/t3.png"
+    ],
+    "question": "The images show an undirected graph at different time steps. Same E* labels indicate the same node across time, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat node labels are present in t2 but absent in t3?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E15",
+      "E20",
+      "E54"
+    ],
+    "metadata_path": "samples/a-rn_removed_nodes/000969/sample.json"
+  },
+  {
+    "id": "a-se_000089",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000089/images/G1.png",
+      "samples/a-se_shared_edges/000089/images/G2.png",
+      "samples/a-se_shared_edges/000089/images/G3.png",
+      "samples/a-se_shared_edges/000089/images/G4.png",
+      "samples/a-se_shared_edges/000089/images/G5.png",
+      "samples/a-se_shared_edges/000089/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat are the common edge triples shared by every graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E39",
+        "R1",
+        "E61"
+      ],
+      [
+        "E56",
+        "R4",
+        "E61"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000089/sample.json"
+  },
+  {
+    "id": "a-se_000241",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000241/images/G1.png",
+      "samples/a-se_shared_edges/000241/images/G2.png",
+      "samples/a-se_shared_edges/000241/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triple(s) that occur in each graph view.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E4",
+        "R3",
+        "E69"
+      ],
+      [
+        "E4",
+        "R1",
+        "E77"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000241/sample.json"
+  },
+  {
+    "id": "a-se_000248",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000248/images/G1.png",
+      "samples/a-se_shared_edges/000248/images/G2.png",
+      "samples/a-se_shared_edges/000248/images/G3.png",
+      "samples/a-se_shared_edges/000248/images/G4.png",
+      "samples/a-se_shared_edges/000248/images/G5.png",
+      "samples/a-se_shared_edges/000248/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E26",
+        "R1",
+        "E69"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000248/sample.json"
+  },
+  {
+    "id": "a-se_000337",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000337/images/G1.png",
+      "samples/a-se_shared_edges/000337/images/G2.png",
+      "samples/a-se_shared_edges/000337/images/G3.png",
+      "samples/a-se_shared_edges/000337/images/G4.png",
+      "samples/a-se_shared_edges/000337/images/G5.png",
+      "samples/a-se_shared_edges/000337/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triple(s) that occur in each graph view.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E27",
+        "R4",
+        "E37"
+      ],
+      [
+        "E37",
+        "R1",
+        "E61"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000337/sample.json"
+  },
+  {
+    "id": "a-se_000383",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000383/images/G1.png",
+      "samples/a-se_shared_edges/000383/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triples are visible across all graph views without exception?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E11",
+        "R1",
+        "E49"
+      ],
+      [
+        "E49",
+        "R4",
+        "E59"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000383/sample.json"
+  },
+  {
+    "id": "a-se_000431",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000431/images/G1.png",
+      "samples/a-se_shared_edges/000431/images/G2.png",
+      "samples/a-se_shared_edges/000431/images/G3.png",
+      "samples/a-se_shared_edges/000431/images/G4.png",
+      "samples/a-se_shared_edges/000431/images/G5.png",
+      "samples/a-se_shared_edges/000431/images/G6.png",
+      "samples/a-se_shared_edges/000431/images/G7.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E29",
+        "R1",
+        "E75"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000431/sample.json"
+  },
+  {
+    "id": "a-se_000614",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000614/images/G1.png",
+      "samples/a-se_shared_edges/000614/images/G2.png",
+      "samples/a-se_shared_edges/000614/images/G3.png",
+      "samples/a-se_shared_edges/000614/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat are the common edge triples shared by every graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E23",
+        "R1",
+        "E65"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000614/sample.json"
+  },
+  {
+    "id": "a-se_000635",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000635/images/G1.png",
+      "samples/a-se_shared_edges/000635/images/G2.png",
+      "samples/a-se_shared_edges/000635/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat are the common edge triples shared by every graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E2",
+        "R2",
+        "E58"
+      ],
+      [
+        "E4",
+        "R4",
+        "E58"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000635/sample.json"
+  },
+  {
+    "id": "a-se_000820",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000820/images/G1.png",
+      "samples/a-se_shared_edges/000820/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that are present in all graph views.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E12",
+        "R1",
+        "E15"
+      ],
+      [
+        "E12",
+        "R4",
+        "E57"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000820/sample.json"
+  },
+  {
+    "id": "a-se_000997",
+    "task_id": "A-SE",
+    "task_name": "shared_edges",
+    "image_paths": [
+      "samples/a-se_shared_edges/000997/images/G1.png",
+      "samples/a-se_shared_edges/000997/images/G2.png",
+      "samples/a-se_shared_edges/000997/images/G3.png",
+      "samples/a-se_shared_edges/000997/images/G4.png",
+      "samples/a-se_shared_edges/000997/images/G5.png",
+      "samples/a-se_shared_edges/000997/images/G6.png",
+      "samples/a-se_shared_edges/000997/images/G7.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E30",
+        "R2",
+        "E34"
+      ],
+      [
+        "E30",
+        "R2",
+        "E59"
+      ]
+    ],
+    "metadata_path": "samples/a-se_shared_edges/000997/sample.json"
+  },
+  {
+    "id": "a-sn_000049",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000049/images/G1.png",
+      "samples/a-sn_shared_nodes/000049/images/G2.png",
+      "samples/a-sn_shared_nodes/000049/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E8"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000049/sample.json"
+  },
+  {
+    "id": "a-sn_000087",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000087/images/G1.png",
+      "samples/a-sn_shared_nodes/000087/images/G2.png",
+      "samples/a-sn_shared_nodes/000087/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat are the common nodes shared by every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E18",
+      "E24"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000087/sample.json"
+  },
+  {
+    "id": "a-sn_000091",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000091/images/G1.png",
+      "samples/a-sn_shared_nodes/000091/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat are the common nodes shared by every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E15",
+      "E21",
+      "E42"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000091/sample.json"
+  },
+  {
+    "id": "a-sn_000266",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000266/images/G1.png",
+      "samples/a-sn_shared_nodes/000266/images/G2.png",
+      "samples/a-sn_shared_nodes/000266/images/G3.png",
+      "samples/a-sn_shared_nodes/000266/images/G4.png",
+      "samples/a-sn_shared_nodes/000266/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat are the common nodes shared by every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E30"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000266/sample.json"
+  },
+  {
+    "id": "a-sn_000271",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000271/images/G1.png",
+      "samples/a-sn_shared_nodes/000271/images/G2.png",
+      "samples/a-sn_shared_nodes/000271/images/G3.png",
+      "samples/a-sn_shared_nodes/000271/images/G4.png",
+      "samples/a-sn_shared_nodes/000271/images/G5.png",
+      "samples/a-sn_shared_nodes/000271/images/G6.png",
+      "samples/a-sn_shared_nodes/000271/images/G7.png",
+      "samples/a-sn_shared_nodes/000271/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E61"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000271/sample.json"
+  },
+  {
+    "id": "a-sn_000347",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000347/images/G1.png",
+      "samples/a-sn_shared_nodes/000347/images/G2.png",
+      "samples/a-sn_shared_nodes/000347/images/G3.png",
+      "samples/a-sn_shared_nodes/000347/images/G4.png",
+      "samples/a-sn_shared_nodes/000347/images/G5.png",
+      "samples/a-sn_shared_nodes/000347/images/G6.png",
+      "samples/a-sn_shared_nodes/000347/images/G7.png",
+      "samples/a-sn_shared_nodes/000347/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the node(s) that occur in each graph view.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E52"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000347/sample.json"
+  },
+  {
+    "id": "a-sn_000485",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000485/images/G1.png",
+      "samples/a-sn_shared_nodes/000485/images/G2.png",
+      "samples/a-sn_shared_nodes/000485/images/G3.png",
+      "samples/a-sn_shared_nodes/000485/images/G4.png",
+      "samples/a-sn_shared_nodes/000485/images/G5.png",
+      "samples/a-sn_shared_nodes/000485/images/G6.png",
+      "samples/a-sn_shared_nodes/000485/images/G7.png",
+      "samples/a-sn_shared_nodes/000485/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich nodes are visible across all graph views without exception?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E49",
+      "E64"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000485/sample.json"
+  },
+  {
+    "id": "a-sn_000723",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000723/images/G1.png",
+      "samples/a-sn_shared_nodes/000723/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) appear in every graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E27",
+      "E55"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000723/sample.json"
+  },
+  {
+    "id": "a-sn_000788",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000788/images/G1.png",
+      "samples/a-sn_shared_nodes/000788/images/G2.png",
+      "samples/a-sn_shared_nodes/000788/images/G3.png",
+      "samples/a-sn_shared_nodes/000788/images/G4.png",
+      "samples/a-sn_shared_nodes/000788/images/G5.png",
+      "samples/a-sn_shared_nodes/000788/images/G6.png",
+      "samples/a-sn_shared_nodes/000788/images/G7.png",
+      "samples/a-sn_shared_nodes/000788/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich nodes are visible across all graph views without exception?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E31",
+      "E72"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000788/sample.json"
+  },
+  {
+    "id": "a-sn_000896",
+    "task_id": "A-SN",
+    "task_name": "shared_nodes",
+    "image_paths": [
+      "samples/a-sn_shared_nodes/000896/images/G1.png",
+      "samples/a-sn_shared_nodes/000896/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the node(s) that occur in each graph view.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E7",
+      "E16",
+      "E24"
+    ],
+    "metadata_path": "samples/a-sn_shared_nodes/000896/sample.json"
+  },
+  {
+    "id": "a-vse_000003",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000003/images/G1.png",
+      "samples/a-vse_view_specific_edges/000003/images/G2.png",
+      "samples/a-vse_view_specific_edges/000003/images/G3.png",
+      "samples/a-vse_view_specific_edges/000003/images/G4.png",
+      "samples/a-vse_view_specific_edges/000003/images/G5.png",
+      "samples/a-vse_view_specific_edges/000003/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are unique to Graph 5 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E13",
+        "R1",
+        "E43"
+      ],
+      [
+        "E13",
+        "R3",
+        "E57"
+      ],
+      [
+        "E43",
+        "R4",
+        "E50"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000003/sample.json"
+  },
+  {
+    "id": "a-vse_000018",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000018/images/G1.png",
+      "samples/a-vse_view_specific_edges/000018/images/G2.png",
+      "samples/a-vse_view_specific_edges/000018/images/G3.png",
+      "samples/a-vse_view_specific_edges/000018/images/G4.png",
+      "samples/a-vse_view_specific_edges/000018/images/G5.png",
+      "samples/a-vse_view_specific_edges/000018/images/G6.png",
+      "samples/a-vse_view_specific_edges/000018/images/G7.png",
+      "samples/a-vse_view_specific_edges/000018/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) appear only in Graph 3 and not in any other graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E16",
+        "R1",
+        "E54"
+      ],
+      [
+        "E47",
+        "R3",
+        "E59"
+      ],
+      [
+        "E59",
+        "R2",
+        "E68"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000018/sample.json"
+  },
+  {
+    "id": "a-vse_000025",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000025/images/G1.png",
+      "samples/a-vse_view_specific_edges/000025/images/G2.png",
+      "samples/a-vse_view_specific_edges/000025/images/G3.png",
+      "samples/a-vse_view_specific_edges/000025/images/G4.png",
+      "samples/a-vse_view_specific_edges/000025/images/G5.png",
+      "samples/a-vse_view_specific_edges/000025/images/G6.png",
+      "samples/a-vse_view_specific_edges/000025/images/G7.png",
+      "samples/a-vse_view_specific_edges/000025/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that are exclusive to Graph 8.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E30",
+        "R4",
+        "E39"
+      ],
+      [
+        "E58",
+        "R2",
+        "E72"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000025/sample.json"
+  },
+  {
+    "id": "a-vse_000506",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000506/images/G1.png",
+      "samples/a-vse_view_specific_edges/000506/images/G2.png",
+      "samples/a-vse_view_specific_edges/000506/images/G3.png",
+      "samples/a-vse_view_specific_edges/000506/images/G4.png",
+      "samples/a-vse_view_specific_edges/000506/images/G5.png",
+      "samples/a-vse_view_specific_edges/000506/images/G6.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that belong only to Graph 4.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E50",
+        "R3",
+        "E68"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000506/sample.json"
+  },
+  {
+    "id": "a-vse_000560",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000560/images/G1.png",
+      "samples/a-vse_view_specific_edges/000560/images/G2.png",
+      "samples/a-vse_view_specific_edges/000560/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that are exclusive to Graph 1.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E25",
+        "R2",
+        "E40"
+      ],
+      [
+        "E43",
+        "R4",
+        "E77"
+      ],
+      [
+        "E43",
+        "R1",
+        "E80"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000560/sample.json"
+  },
+  {
+    "id": "a-vse_000595",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000595/images/G1.png",
+      "samples/a-vse_view_specific_edges/000595/images/G2.png",
+      "samples/a-vse_view_specific_edges/000595/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are unique to Graph 2 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E64",
+        "R1",
+        "E75"
+      ],
+      [
+        "E64",
+        "R3",
+        "E76"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000595/sample.json"
+  },
+  {
+    "id": "a-vse_000604",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000604/images/G1.png",
+      "samples/a-vse_view_specific_edges/000604/images/G2.png",
+      "samples/a-vse_view_specific_edges/000604/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat edge triples are unique to Graph 1 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E30",
+        "R4",
+        "E42"
+      ],
+      [
+        "E34",
+        "R1",
+        "E68"
+      ],
+      [
+        "E42",
+        "R3",
+        "E48"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000604/sample.json"
+  },
+  {
+    "id": "a-vse_000635",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000635/images/G1.png",
+      "samples/a-vse_view_specific_edges/000635/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the edge triples that belong only to Graph 1.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E26",
+        "R2",
+        "E58"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000635/sample.json"
+  },
+  {
+    "id": "a-vse_000699",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000699/images/G1.png",
+      "samples/a-vse_view_specific_edges/000699/images/G2.png",
+      "samples/a-vse_view_specific_edges/000699/images/G3.png",
+      "samples/a-vse_view_specific_edges/000699/images/G4.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich edge triple(s) appear only in Graph 2 and not in any other graph view?\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E4",
+        "R1",
+        "E18"
+      ],
+      [
+        "E4",
+        "R1",
+        "E41"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000699/sample.json"
+  },
+  {
+    "id": "a-vse_000790",
+    "task_id": "A-VSE",
+    "task_name": "view_specific_edges",
+    "image_paths": [
+      "samples/a-vse_view_specific_edges/000790/images/G1.png",
+      "samples/a-vse_view_specific_edges/000790/images/G2.png",
+      "samples/a-vse_view_specific_edges/000790/images/G3.png",
+      "samples/a-vse_view_specific_edges/000790/images/G4.png",
+      "samples/a-vse_view_specific_edges/000790/images/G5.png",
+      "samples/a-vse_view_specific_edges/000790/images/G6.png",
+      "samples/a-vse_view_specific_edges/000790/images/G7.png",
+      "samples/a-vse_view_specific_edges/000790/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nList the edge triples that are exclusive to Graph 5.\nReturn only a valid JSON object in the form {\"answer\": [[\"<HEAD_NODE>\", \"<RELATION_TYPE>\", \"<TAIL_NODE>\"], ...]}. The value of \"answer\" must be a JSON list of edge triples. Do not include any explanation or extra text.",
+    "answer": [
+      [
+        "E28",
+        "R2",
+        "E61"
+      ]
+    ],
+    "metadata_path": "samples/a-vse_view_specific_edges/000790/sample.json"
+  },
+  {
+    "id": "a-vsn_000170",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000170/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000170/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000170/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes are unique to Graph 1 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E43"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000170/sample.json"
+  },
+  {
+    "id": "a-vsn_000245",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000245/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000245/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000245/images/G3.png",
+      "samples/a-vsn_view_specific_nodes/000245/images/G4.png",
+      "samples/a-vsn_view_specific_nodes/000245/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes that belong only to Graph 5.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E24",
+      "E32",
+      "E47"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000245/sample.json"
+  },
+  {
+    "id": "a-vsn_000270",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000270/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000270/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000270/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node(s) appear only in Graph 1 and in no other graph view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E18",
+      "E52"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000270/sample.json"
+  },
+  {
+    "id": "a-vsn_000287",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000287/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000287/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000287/images/G3.png",
+      "samples/a-vsn_view_specific_nodes/000287/images/G4.png",
+      "samples/a-vsn_view_specific_nodes/000287/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes are unique to Graph 5 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E2",
+      "E14",
+      "E65"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000287/sample.json"
+  },
+  {
+    "id": "a-vsn_000567",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000567/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G3.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G4.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G5.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G6.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G7.png",
+      "samples/a-vsn_view_specific_nodes/000567/images/G8.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node labels occur in Graph 3 but not in any other view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E11"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000567/sample.json"
+  },
+  {
+    "id": "a-vsn_000627",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000627/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000627/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000627/images/G3.png",
+      "samples/a-vsn_view_specific_nodes/000627/images/G4.png",
+      "samples/a-vsn_view_specific_nodes/000627/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes are unique to Graph 2 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E3"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000627/sample.json"
+  },
+  {
+    "id": "a-vsn_000656",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000656/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000656/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000656/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhat nodes are unique to Graph 3 across the given graph views?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E20",
+      "E78"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000656/sample.json"
+  },
+  {
+    "id": "a-vsn_000673",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000673/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000673/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000673/images/G3.png",
+      "samples/a-vsn_view_specific_nodes/000673/images/G4.png",
+      "samples/a-vsn_view_specific_nodes/000673/images/G5.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes that belong only to Graph 2.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E6"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000673/sample.json"
+  },
+  {
+    "id": "a-vsn_000786",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000786/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000786/images/G2.png",
+      "samples/a-vsn_view_specific_nodes/000786/images/G3.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nIdentify the nodes that belong only to Graph 3.\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E28"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000786/sample.json"
+  },
+  {
+    "id": "a-vsn_000901",
+    "task_id": "A-VSN",
+    "task_name": "view_specific_nodes",
+    "image_paths": [
+      "samples/a-vsn_view_specific_nodes/000901/images/G1.png",
+      "samples/a-vsn_view_specific_nodes/000901/images/G2.png"
+    ],
+    "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nWhich node labels occur in Graph 2 but not in any other view?\nReturn only a valid JSON object in the form {\"answer\": [\"<NODE_LABEL>\", ...]}. The value of \"answer\" must be a JSON list of node labels. Do not include any explanation or extra text.",
+    "answer": [
+      "E1"
+    ],
+    "metadata_path": "samples/a-vsn_view_specific_nodes/000901/sample.json"
+  }
+]

@@ -1,0 +1,219 @@
+{
+  "sample_id": "c-pa_000671",
+  "sample_index": 671,
+  "task_id": "C-PA",
+  "task_name": "path_assembly",
+  "task_english_name": "Path Assembly",
+  "task_dir": "c-pa_path_assembly",
+  "graph_scenario": "partial_graph_views",
+  "images": [
+    "samples/c-pa_path_assembly/000671/images/G1.png",
+    "samples/c-pa_path_assembly/000671/images/G2.png"
+  ],
+  "graphs": [
+    "samples/c-pa_path_assembly/000671/graphs/G1.json",
+    "samples/c-pa_path_assembly/000671/graphs/G2.json"
+  ],
+  "question": "The images show partial views of related undirected graphs. Same E* labels indicate the same node across views, and edges are triples [head node, relation type, tail node] where R* is the reusable relation type.\nAfter merging all graph views, give one path from E48 to E1 as an ordered list of edge triples.\nReturn only a valid JSON object in the form {\"answer\": [[\"E1\", \"R1\", \"E2\"], ...]}. Each triple must be an actual edge, and consecutive triples must form one simple path from source to target. Do not include any explanation or extra text.",
+  "answer": [
+    [
+      "E48",
+      "R1",
+      "E35"
+    ],
+    [
+      "E35",
+      "R2",
+      "E1"
+    ]
+  ],
+  "answer_type": "edge_triple_path_or_none",
+  "required_images": [
+    1,
+    2
+  ],
+  "source": "E48",
+  "target": "E1",
+  "reasoning_program": [
+    {
+      "op": "union",
+      "inputs": [
+        "G1",
+        "G2"
+      ],
+      "output": "G_star"
+    },
+    {
+      "op": "find_evidence_path",
+      "graph": "G_star",
+      "source": "E48",
+      "target": "E1"
+    }
+  ],
+  "graph_generator": "custom_motif",
+  "difficulty": {
+    "num_images": 2,
+    "num_unique_nodes": 13,
+    "num_unique_edges": 10,
+    "per_graph_node_counts": {
+      "G1": 7,
+      "G2": 7
+    },
+    "per_graph_edge_counts": {
+      "G1": 5,
+      "G2": 5
+    },
+    "answer_list_length": 2,
+    "path_length": 2,
+    "num_time_steps": null,
+    "visual_level": 1
+  },
+  "checks": {
+    "answer_validity_verified": true
+  },
+  "layout": {
+    "G1": {
+      "E64": [
+        -0.6573573776893397,
+        0.0603706696091759
+      ],
+      "E34": [
+        0.3447541302051188,
+        -0.32462893049405944
+      ],
+      "E16": [
+        -0.26745104761588223,
+        -0.42143890049218863
+      ],
+      "E15": [
+        -0.48972836827713323,
+        -1.0
+      ],
+      "E54": [
+        0.44616234984920383,
+        -0.06037066960917578
+      ],
+      "E35": [
+        0.6573573776893397,
+        1.0
+      ],
+      "E48": [
+        0.5517570695626961,
+        0.469800636007661
+      ]
+    },
+    "G2": {
+      "E25": [
+        -1.0,
+        -0.180364083287953
+      ],
+      "E31": [
+        0.33222688374664205,
+        -0.008217351182469525
+      ],
+      "E42": [
+        -0.3339044033152713,
+        -0.09428650933676457
+      ],
+      "E24": [
+        -0.4200290230032642,
+        0.5718034125892233
+      ],
+      "E57": [
+        -0.24776614780880393,
+        -0.7604082318422245
+      ],
+      "E35": [
+        1.0,
+        0.7604082318422245
+      ],
+      "E1": [
+        -0.3322268837466419,
+        0.7604081736087379
+      ]
+    }
+  },
+  "graph_json": [
+    {
+      "graph_id": "G1",
+      "nodes": [
+        "E15",
+        "E16",
+        "E34",
+        "E35",
+        "E48",
+        "E54",
+        "E64"
+      ],
+      "triples": [
+        [
+          "E15",
+          "R3",
+          "E16"
+        ],
+        [
+          "E16",
+          "R1",
+          "E34"
+        ],
+        [
+          "E16",
+          "R3",
+          "E64"
+        ],
+        [
+          "E35",
+          "R1",
+          "E48"
+        ],
+        [
+          "E48",
+          "R2",
+          "E54"
+        ]
+      ],
+      "directed": false
+    },
+    {
+      "graph_id": "G2",
+      "nodes": [
+        "E1",
+        "E24",
+        "E25",
+        "E31",
+        "E35",
+        "E42",
+        "E57"
+      ],
+      "triples": [
+        [
+          "E1",
+          "R2",
+          "E35"
+        ],
+        [
+          "E24",
+          "R1",
+          "E42"
+        ],
+        [
+          "E25",
+          "R1",
+          "E42"
+        ],
+        [
+          "E31",
+          "R4",
+          "E42"
+        ],
+        [
+          "E42",
+          "R4",
+          "E57"
+        ]
+      ],
+      "directed": false
+    }
+  ],
+  "source_task_id": "R1"
+}

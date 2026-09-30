@@ -1,0 +1,151 @@
+{
+  "graph_id": "G2",
+  "title": "Graph 2",
+  "nodes": [
+    "E3",
+    "E12",
+    "E16",
+    "E18",
+    "E23",
+    "E25",
+    "E35",
+    "E45",
+    "E47",
+    "E56",
+    "E58",
+    "E66",
+    "E68",
+    "E74"
+  ],
+  "edges": [
+    {
+      "source": "E3",
+      "target": "E12",
+      "relation": "R3"
+    },
+    {
+      "source": "E12",
+      "target": "E74",
+      "relation": "R4"
+    },
+    {
+      "source": "E3",
+      "target": "E16",
+      "relation": "R1"
+    },
+    {
+      "source": "E18",
+      "target": "E35",
+      "relation": "R2"
+    },
+    {
+      "source": "E23",
+      "target": "E74",
+      "relation": "R3"
+    },
+    {
+      "source": "E25",
+      "target": "E45",
+      "relation": "R4"
+    },
+    {
+      "source": "E47",
+      "target": "E66",
+      "relation": "R1"
+    },
+    {
+      "source": "E47",
+      "target": "E74",
+      "relation": "R2"
+    },
+    {
+      "source": "E56",
+      "target": "E68",
+      "relation": "R3"
+    },
+    {
+      "source": "E58",
+      "target": "E68",
+      "relation": "R4"
+    }
+  ],
+  "directed": false,
+  "partitions": {
+    "applicants": [
+      "E68",
+      "E45",
+      "E12",
+      "E49",
+      "E18",
+      "E16",
+      "E47",
+      "E23",
+      "E76",
+      "E27"
+    ],
+    "jobs": [
+      "E56",
+      "E25",
+      "E74",
+      "E67",
+      "E3",
+      "E35",
+      "E61",
+      "E58",
+      "E22",
+      "E66"
+    ]
+  },
+  "triples": [
+    [
+      "E3",
+      "R3",
+      "E12"
+    ],
+    [
+      "E12",
+      "R4",
+      "E74"
+    ],
+    [
+      "E3",
+      "R1",
+      "E16"
+    ],
+    [
+      "E18",
+      "R2",
+      "E35"
+    ],
+    [
+      "E23",
+      "R3",
+      "E74"
+    ],
+    [
+      "E25",
+      "R4",
+      "E45"
+    ],
+    [
+      "E47",
+      "R1",
+      "E66"
+    ],
+    [
+      "E47",
+      "R2",
+      "E74"
+    ],
+    [
+      "E56",
+      "R3",
+      "E68"
+    ],
+    [
+      "E58",
+      "R4",
+      "E68"
+    ]
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "sample_id": "r-sts_000870",
+  "sample_index": 870,
+  "task_id": "R-STS",
+  "task_name": "stable_topological_sorting",
+  "task_english_name": "Stable Topological Sorting",
+  "task_dir": "r-sts_stable_topological_sorting",
+  "graph_scenario": "temporal_graph_evolution",
+  "images": [],
+  "graphs": [],
+  "question": "You are a graph reasoning assistant.\n\nAnswer the question using only the graph facts and question provided below. Do not use images, outside knowledge, or unstated assumptions.\n\nGraph text construction:\n- Each tN block is one time step of a graph in the original image order; the same node label denotes the same node across time.\n- The CSV columns are src, relation, and dst.\n- All graphs are directed. A row \"E1,R1,E2\" means that E1 has an edge to E2 with relation R1; it does not imply an edge from E2 to E1.\n- A row \"E1,,\" means that E1 is an isolated node. Empty relation and destination together are the isolated-node encoding.\n- Every node in the graph appears in at least one row, either as an endpoint of an edge or as an isolated-node row.\n- Treat node labels and relation labels as exact strings. Relation labels such as R1, R2, R3, and R4 have no implicit meaning.\n\nGraph facts:\nt1\nsrc,relation,dst\nE10,R1,E34\nE10,R2,E61\nE23,R3,E10\nE23,R4,E34\nE23,R1,E61\nE34,R3,E7\nE34,R2,E61\nE43,R1,E7\nE43,R4,E23\nE44,R4,E7\nE44,R2,E10\nE44,R3,E61\nE50,R2,E7\nE50,R1,E10\nE50,R2,E23\nE50,R3,E43\nE50,R4,E44\nE50,R1,E61\n\nt2\nsrc,relation,dst\nE7,R4,E44\nE13,R3,E43\nE34,R4,E43\nE43,R1,E10\nE44,R2,E23\nE44,R3,E34\nE44,R4,E43\nE50,R2,E7\nE50,R2,E23\nE50,R4,E44\n\nt3\nsrc,relation,dst\nE7,R2,E80\nE23,R3,E10\nE34,R3,E7\nE43,R1,E10\nE43,R3,E50\nE44,R2,E10\nE44,R2,E23\nE44,R4,E43\nE44,R1,E80\nE50,R1,E10\nE80,R3,E50\n\nQuestion:\nGive one valid topological ordering for each time step, in image order. Among all valid sequences, minimize the total number of pairwise order inversions for nodes shared by consecutive time steps.\nReturn only a valid JSON object of the form {\"answer\": [[\"<NODE_AT_T1>\", ...], [\"<NODE_AT_T2>\", ...], ...]}. Do not include explanation or extra fields.",
+  "answer": [
+    [
+      "E50",
+      "E44",
+      "E43",
+      "E23",
+      "E10",
+      "E34",
+      "E61",
+      "E7"
+    ],
+    [
+      "E13",
+      "E50",
+      "E7",
+      "E44",
+      "E34",
+      "E43",
+      "E23",
+      "E10"
+    ],
+    [
+      "E34",
+      "E7",
+      "E44",
+      "E43",
+      "E80",
+      "E50",
+      "E23",
+      "E10"
+    ]
+  ],
+  "answer_type": "temporal_topological_orders",
+  "required_images": [],
+  "source": null,
+  "target": null,
+  "graph_generator": "filtered_random_high_level",
+  "difficulty": {
+    "num_images": 3,
+    "num_unique_nodes": 10,
+    "num_unique_edges": 29,
+    "per_graph_node_counts": {
+      "t1": 8,
+      "t2": 8,
+      "t3": 8
+    },
+    "per_graph_edge_counts": {
+      "t1": 18,
+      "t2": 10,
+      "t3": 11
+    },
+    "num_time_steps": 3,
+    "visual_level": 1
+  },
+  "checks": {
+    "semantic_gold_valid": true,
+    "multi_image": true,
+    "all_images_required_by_task_contract": true
+  },
+  "layout": {},
+  "graph_json": [
+    {
+      "graph_id": "t1",
+      "title": "t1",
+      "nodes": [
+        "E7",
+        "E10",
+        "E23",
+        "E34",
+        "E43",
+        "E44",
+        "E50",
+        "E61"
+      ],
+      "edges": [
+        {
+          "source": "E10",
+          "target": "E34",
+          "relation": "R1"
+        },
+        {
+          "source": "E10",
+          "target": "E61",
+          "relation": "R2"
+        },
+        {
+          "source": "E23",
+          "target": "E10",
+          "relation": "R3"
+        },
+        {
+          "source": "E23",
+          "target": "E34",
+          "relation": "R4"
+        },
+        {
+          "source": "E23",
+          "target": "E61",
+          "relation": "R1"
+        },
+        {
+          "source": "E34",
+          "target": "E61",
+          "relation": "R2"
+        },
+        {
+          "source": "E34",
+          "target": "E7",
+          "relation": "R3"
+        },
+        {
+          "source": "E43",
+          "target": "E23",
+          "relation": "R4"
+        },
+        {
+          "source": "E43",
+          "target": "E7",
+          "relation": "R1"
+        },
+        {
+          "source": "E44",
+          "target": "E10",
+          "relation": "R2"
+        },
+        {
+          "source": "E44",
+          "target": "E61",
+          "relation": "R3"
+        },
+        {
+          "source": "E44",
+          "target": "E7",
+          "relation": "R4"
+        },
+        {
+          "source": "E50",
+          "target": "E10",
+          "relation": "R1"
+        },
+        {
+          "source": "E50",
+          "target": "E23",
+          "relation": "R2"
+        },
+        {
+          "source": "E50",
+          "target": "E43",
+          "relation": "R3"
+        },
+        {
+          "source": "E50",
+          "target": "E44",
+          "relation": "R4"
+        },
+        {
+          "source": "E50",
+          "target": "E61",
+          "relation": "R1"
+        },
+        {
+          "source": "E50",
+          "target": "E7",
+          "relation": "R2"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E10",
+          "R1",
+          "E34"
+        ],
+        [
+          "E10",
+          "R2",
+          "E61"
+        ],
+        [
+          "E23",
+          "R3",
+          "E10"
+        ],
+        [
+          "E23",
+          "R4",
+          "E34"
+        ],
+        [
+          "E23",
+          "R1",
+          "E61"
+        ],
+        [
+          "E34",
+          "R2",
+          "E61"
+        ],
+        [
+          "E34",
+          "R3",
+          "E7"
+        ],
+        [
+          "E43",
+          "R4",
+          "E23"
+        ],
+        [
+          "E43",
+          "R1",
+          "E7"
+        ],
+        [
+          "E44",
+          "R2",
+          "E10"
+        ],
+        [
+          "E44",
+          "R3",
+          "E61"
+        ],
+        [
+          "E44",
+          "R4",
+          "E7"
+        ],
+        [
+          "E50",
+          "R1",
+          "E10"
+        ],
+        [
+          "E50",
+          "R2",
+          "E23"
+        ],
+        [
+          "E50",
+          "R3",
+          "E43"
+        ],
+        [
+          "E50",
+          "R4",
+          "E44"
+        ],
+        [
+          "E50",
+          "R1",
+          "E61"
+        ],
+        [
+          "E50",
+          "R2",
+          "E7"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t2",
+      "title": "t2",
+      "nodes": [
+        "E7",
+        "E10",
+        "E13",
+        "E23",
+        "E34",
+        "E43",
+        "E44",
+        "E50"
+      ],
+      "edges": [
+        {
+          "source": "E13",
+          "target": "E43",
+          "relation": "R3"
+        },
+        {
+          "source": "E34",
+          "target": "E43",
+          "relation": "R4"
+        },
+        {
+          "source": "E43",
+          "target": "E10",
+          "relation": "R1"
+        },
+        {
+          "source": "E44",
+          "target": "E23",
+          "relation": "R2"
+        },
+        {
+          "source": "E44",
+          "target": "E34",
+          "relation": "R3"
+        },
+        {
+          "source": "E44",
+          "target": "E43",
+          "relation": "R4"
+        },
+        {
+          "source": "E50",
+          "target": "E23",
+          "relation": "R2"
+        },
+        {
+          "source": "E50",
+          "target": "E44",
+          "relation": "R4"
+        },
+        {
+          "source": "E50",
+          "target": "E7",
+          "relation": "R2"
+        },
+        {
+          "source": "E7",
+          "target": "E44",
+          "relation": "R4"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E13",
+          "R3",
+          "E43"
+        ],
+        [
+          "E34",
+          "R4",
+          "E43"
+        ],
+        [
+          "E43",
+          "R1",
+          "E10"
+        ],
+        [
+          "E44",
+          "R2",
+          "E23"
+        ],
+        [
+          "E44",
+          "R3",
+          "E34"
+        ],
+        [
+          "E44",
+          "R4",
+          "E43"
+        ],
+        [
+          "E50",
+          "R2",
+          "E23"
+        ],
+        [
+          "E50",
+          "R4",
+          "E44"
+        ],
+        [
+          "E50",
+          "R2",
+          "E7"
+        ],
+        [
+          "E7",
+          "R4",
+          "E44"
+        ]
+      ]
+    },
+    {
+      "graph_id": "t3",
+      "title": "t3",
+      "nodes": [
+        "E7",
+        "E10",
+        "E23",
+        "E34",
+        "E43",
+        "E44",
+        "E50",
+        "E80"
+      ],
+      "edges": [
+        {
+          "source": "E23",
+          "target": "E10",
+          "relation": "R3"
+        },
+        {
+          "source": "E34",
+          "target": "E7",
+          "relation": "R3"
+        },
+        {
+          "source": "E43",
+          "target": "E10",
+          "relation": "R1"
+        },
+        {
+          "source": "E43",
+          "target": "E50",
+          "relation": "R3"
+        },
+        {
+          "source": "E44",
+          "target": "E10",
+          "relation": "R2"
+        },
+        {
+          "source": "E44",
+          "target": "E23",
+          "relation": "R2"
+        },
+        {
+          "source": "E44",
+          "target": "E43",
+          "relation": "R4"
+        },
+        {
+          "source": "E44",
+          "target": "E80",
+          "relation": "R1"
+        },
+        {
+          "source": "E50",
+          "target": "E10",
+          "relation": "R1"
+        },
+        {
+          "source": "E7",
+          "target": "E80",
+          "relation": "R2"
+        },
+        {
+          "source": "E80",
+          "target": "E50",
+          "relation": "R3"
+        }
+      ],
+      "directed": true,
+      "triples": [
+        [
+          "E23",
+          "R3",
+          "E10"
+        ],
+        [
+          "E34",
+          "R3",
+          "E7"
+        ],
+        [
+          "E43",
+          "R1",
+          "E10"
+        ],
+        [
+          "E43",
+          "R3",
+          "E50"
+        ],
+        [
+          "E44",
+          "R2",
+          "E10"
+        ],
+        [
+          "E44",
+          "R2",
+          "E23"
+        ],
+        [
+          "E44",
+          "R4",
+          "E43"
+        ],
+        [
+          "E44",
+          "R1",
+          "E80"
+        ],
+        [
+          "E50",
+          "R1",
+          "E10"
+        ],
+        [
+          "E7",
+          "R2",
+          "E80"
+        ],
+        [
+          "E80",
+          "R3",
+          "E50"
+        ]
+      ]
+    }
+  ],
+  "original_graph_text": "t1\nsrc,relation,dst\nE10,R1,E34\nE10,R2,E61\nE23,R3,E10\nE23,R4,E34\nE23,R1,E61\nE34,R3,E7\nE34,R2,E61\nE43,R1,E7\nE43,R4,E23\nE44,R4,E7\nE44,R2,E10\nE44,R3,E61\nE50,R2,E7\nE50,R1,E10\nE50,R2,E23\nE50,R3,E43\nE50,R4,E44\nE50,R1,E61\n\nt2\nsrc,relation,dst\nE7,R4,E44\nE13,R3,E43\nE34,R4,E43\nE43,R1,E10\nE44,R2,E23\nE44,R3,E34\nE44,R4,E43\nE50,R2,E7\nE50,R2,E23\nE50,R4,E44\n\nt3\nsrc,relation,dst\nE7,R2,E80\nE23,R3,E10\nE34,R3,E7\nE43,R1,E10\nE43,R3,E50\nE44,R2,E10\nE44,R2,E23\nE44,R4,E43\nE44,R1,E80\nE50,R1,E10\nE80,R3,E50",
+  "validation_context": {
+    "stable_nodes": [
+      "E23",
+      "E34",
+      "E50",
+      "E43",
+      "E44",
+      "E7",
+      "E10"
+    ],
+    "temporal_nodes": [
+      "E61",
+      "E13",
+      "E80"
+    ],
+    "minimum_total_inversions": 14,
+    "optimal_transition_inversions": [
+      8,
+      6
+    ],
+    "topological_order_counts": [
+      6,
+      22,
+      47
+    ],
+    "core_topology_changes": [
+      16,
+      11
+    ],
+    "view_node_sets_are_distinct": true
+  },
+  "generation": {
+    "generator": "sample_gen_high_level",
+    "version": 29
+  }
+}
